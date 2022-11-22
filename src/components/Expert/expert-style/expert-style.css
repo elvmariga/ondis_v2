@@ -1,0 +1,10 @@
+.expert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.expert h2 {
+  font-size: 3.5rem;
+  margin: 0;
+}/*# sourceMappingURL=expert-style.css.map */
