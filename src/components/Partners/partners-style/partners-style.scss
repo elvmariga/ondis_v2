@@ -1,0 +1,34 @@
+.partners {
+    // display: flex;
+    width: 80%;
+    margin: 1rem auto;
+
+    .partners-bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.25rem;
+
+        .join {
+            border: 1px solid #1055DB;
+            height: 130px;
+            width: 150px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #1055DB;
+            font-size: 1.225rem;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .the-partners {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.25rem;
+        }
+    }
+}

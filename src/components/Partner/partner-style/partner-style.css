@@ -1,0 +1,13 @@
+.partner {
+  height: 130px;
+  width: 150px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1055DB;
+  font-size: 1.225rem;
+  background-color: #B8CCF5;
+  border: none;
+}/*# sourceMappingURL=partner-style.css.map */
