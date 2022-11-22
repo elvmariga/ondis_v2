@@ -1,0 +1,13 @@
+.Button {
+    color: #FFFFFF;
+    padding: .6rem 1rem;
+    background-color: #1055DB;
+    width: fit-content;
+    border-radius: 5px;
+    
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
+
+}
+
