@@ -1,0 +1,14 @@
+.stack {
+  display: grid;
+  gap: 1rem;
+}
+.stack .title {
+  color: rgba(0, 0, 0, 0.7);
+}
+.stack stacks {
+  display: flex;
+  gap: 0.5rem;
+}
+.stack stacks img {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=Stack-style.css.map */
