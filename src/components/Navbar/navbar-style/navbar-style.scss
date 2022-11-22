@@ -1,0 +1,41 @@
+.navbar {
+    margin: 1rem auto;
+
+    .navbar-content {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .links {
+            // display: flex;
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 1.225rem;
+
+              
+
+
+                li {
+                    list-style: none;
+                    &:hover {
+                            transform: scale(1.1, 1.1);
+                            color: #1055DB;
+                        }
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        &:hover {
+                             
+                                color: #1055DB;
+                                font-weight: 500;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
