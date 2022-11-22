@@ -1,0 +1,29 @@
+.navbar {
+  margin: 1rem auto;
+}
+.navbar .navbar-content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .navbar-content .links ul {
+  display: flex;
+  align-items: center;
+  gap: 1.225rem;
+}
+.navbar .navbar-content .links ul li {
+  list-style: none;
+}
+.navbar .navbar-content .links ul li:hover {
+  transform: scale(1.1, 1.1);
+  color: #1055DB;
+}
+.navbar .navbar-content .links ul li a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .navbar-content .links ul li a:hover {
+  color: #1055DB;
+  font-weight: 500;
+}/*# sourceMappingURL=navbar-style.css.map */
