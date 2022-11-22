@@ -1,0 +1,19 @@
+.stack{
+    display: grid;
+    gap: 1rem;
+    .title{
+            color: rgba(0, 0, 0, 0.7);
+    
+        }
+    stacks{
+        display: flex;
+        gap: .5rem;
+    
+        // margin: 1rem 0; 
+
+
+        img{
+            margin-right: .5rem;
+        }
+    }
+}

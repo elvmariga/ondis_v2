@@ -1,0 +1,7 @@
+.product {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.7);
+}/*# sourceMappingURL=product-style.css.map */
