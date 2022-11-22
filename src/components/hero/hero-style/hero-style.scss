@@ -1,0 +1,40 @@
+.hero{
+    width: 80%;
+    margin: .5rem auto;
+    display: flex;
+    padding: 1rem 0;
+    gap: 1rem;
+    // align-items: center;
+
+    img{
+        height: auto;
+        width: 50%;
+    }
+    .hero-left{
+        h1{
+            color: #1055DB;
+            font-size: 3.2rem;
+        }
+        p{
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 1.5rem;
+            padding: 3rem 0;
+        }
+
+
+        .btns{
+            display: flex;
+            gap: 1rem;
+
+            a{
+                text-decoration: none;
+                border: 1px solid #1055DB;
+                border-radius: 5px;
+                padding: .5rem 1rem ;
+                &:hover{
+                    transform: scale(1.1, 1.1);
+                }
+            }
+        }
+    }
+}

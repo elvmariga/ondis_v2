@@ -1,0 +1,33 @@
+.hero {
+  width: 80%;
+  margin: 0.5rem auto;
+  display: flex;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.hero img {
+  height: auto;
+  width: 50%;
+}
+.hero .hero-left h1 {
+  color: #1055DB;
+  font-size: 3.2rem;
+}
+.hero .hero-left p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
+  padding: 3rem 0;
+}
+.hero .hero-left .btns {
+  display: flex;
+  gap: 1rem;
+}
+.hero .hero-left .btns a {
+  text-decoration: none;
+  border: 1px solid #1055DB;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+.hero .hero-left .btns a:hover {
+  transform: scale(1.1, 1.1);
+}/*# sourceMappingURL=hero-style.css.map */
