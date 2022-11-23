@@ -1,0 +1,34 @@
+.graphics .graphics-content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 2rem 0;
+}
+.graphics .graphics-content .graphics-right img {
+  width: 100%;
+  height: auto;
+}
+.graphics .graphics-content .graphics-left {
+  display: grid;
+  flex-direction: column;
+  align-items: space-between;
+}
+.graphics .graphics-content .graphics-left h2 {
+  color: #1055db;
+}
+.graphics .graphics-content .graphics-left p {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.graphics .graphics-content .graphics-left .web-graphicss {
+  display: flex;
+  gap: 3rem;
+}
+.graphics .graphics-content .graphics-left .tech-stack {
+  margin: 1rem 0;
+}
+.graphics .graphics-content .graphics-left .tech-stack img:hover {
+  transform: scale(1.1, 1.1);
+}/*# sourceMappingURL=Graphics-style.css.map */

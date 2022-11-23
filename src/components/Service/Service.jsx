@@ -26,24 +26,36 @@ const Service = () => {
           </div>
           <div className="web-services">
             <div className="right">
-              {sites.map(({image, text}, i) => {
+              {sites.map(({ icon, text }, i) => {
                 return (
                   <p>
                     <img
-                      src={image}
+                      src={icon}
                       style={{ marginRight: "1rem" }}
                       alt="sdsdd"
                     />
-                  
+
                     {text}
                   </p>
                 );
               })}
             </div>
             <div className="left">
-              <Product />
-              <Product />
-              <Product />
+              <div className="right">
+                {sites.map(({ icon, text }, i) => {
+                  return (
+                    <p>
+                      <img
+                        src={icon}
+                        style={{ marginRight: "1rem" }}
+                        alt="sdsdd"
+                      />
+
+                      {text}
+                    </p>
+                  );
+                })}
+              </div>
             </div>
           </div>
 

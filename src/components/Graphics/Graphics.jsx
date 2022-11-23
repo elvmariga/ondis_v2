@@ -1,49 +1,41 @@
 import React from "react";
-import PropTypes from "prop-types";
-import "./Service-style/Service-style.css";
-import Image from "./assets/web-development.svg";
+import "./Graphics-style/Graphics-style.css";
+import Image from "./assets/graphics.svg";
 import Product from "../Product/Product";
-import Stack from "../Stack/Stack";
 import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
 import { sites } from "./assets/stacks";
 
-const Service = () => {
+const Graphics = () => {
   return (
-    <div className="service">
-      <div className="service-content">
-        <div className="service-left">
-          <img src={Image} alt="" />
-        </div>
-
-        <div className="service-right">
+    <div className="graphics">
+      <div className="graphics-content">
+        <div className="graphics-left">
           <div>
-            <h2>Web Development</h2>
+            <h2>Graphics Design</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur. Ligula donec quis erat ut.
               Nisl egestas.
             </p>
           </div>
-          <div className="web-services">
+          <div className="web-graphicss">
             <div className="right">
-              {sites.map(({image, text}, i) => {
+              {sites.map(({ icon, text }, i) => {
                 return (
                   <p>
                     <img
-                      src={image}
+                      src={icon}
                       style={{ marginRight: "1rem" }}
                       alt="sdsdd"
                     />
-                  
+
                     {text}
                   </p>
                 );
               })}
             </div>
             <div className="left">
-              <Product />
-              <Product />
-              <Product />
+            
             </div>
           </div>
 
@@ -57,13 +49,14 @@ const Service = () => {
           </div>
           <Button />
         </div>
+        <div className="graphics-right">
+          <img src={Image} alt="" />
+        </div>
       </div>
     </div>
   );
 };
 
-Service.propTypes = {};
 
-Service.defaultProps = {};
 
-export default Service;
+export default Graphics;
