@@ -1,13 +1,15 @@
-.partners {
+.partners .partners-content {
   width: 80%;
-  margin: 1rem auto;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
 }
-.partners .partners-bottom {
+.partners .partners-content .partners-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1.25rem;
 }
-.partners .partners-bottom .join {
+.partners .partners-content .partners-bottom .join {
   border: 1px solid #1055DB;
   height: 130px;
   width: 150px;
@@ -19,11 +21,11 @@
   color: #1055DB;
   font-size: 1.225rem;
 }
-.partners .partners-bottom .join p {
+.partners .partners-content .partners-bottom .join p {
   margin: 0;
 }
-.partners .partners-bottom .the-partners {
+.partners .partners-content .partners-bottom .the-partners {
   display: flex;
   justify-content: space-between;
-  gap: 1.25rem;
+  gap: 2rem;
 }/*# sourceMappingURL=partners-style.css.map */
