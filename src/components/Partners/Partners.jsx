@@ -22,6 +22,7 @@ const Partners = () => {
             {partnerIcon.map((image) => {
               return <img src={image} alt="partner" />;
             })}
+            
           </div>
         </div>
       </div>
