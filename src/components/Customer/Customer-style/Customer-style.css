@@ -1,0 +1,23 @@
+.customer {
+  margin: 2rem auto;
+}
+.customer .customer-content {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+.customer .customer-content .title h2 {
+  text-align: center;
+  color: #1055DB;
+}
+.customer .customer-content .cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 835px) {
+  .customer .customer-content .cards {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=Customer-style.css.map */
