@@ -11,6 +11,9 @@ const Graphics = () => {
     <div className="graphics">
       <div className="graphics-content">
         <div className="graphics-left">
+          <img src={Image} alt="" />
+        </div>
+        <div className="graphics-right">
           <div>
             <h2>Graphics Design</h2>
             <p>
@@ -34,9 +37,7 @@ const Graphics = () => {
                 );
               })}
             </div>
-            <div className="left">
-            
-            </div>
+            <div className="left"></div>
           </div>
 
           <div className="tech-stack">
@@ -48,9 +49,6 @@ const Graphics = () => {
             })}
           </div>
           <Button />
-        </div>
-        <div className="graphics-right">
-          <img src={Image} alt="" />
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@
   justify-content: center;
   gap: 2rem;
 }
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 785px) {
   .customer .customer-content .cards {
     flex-wrap: wrap;
   }

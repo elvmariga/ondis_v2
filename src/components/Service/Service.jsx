@@ -10,13 +10,14 @@ import { sites } from "./assets/stacks";
 
 const Service = () => {
   return (
-    <div className="service">
-      <div className="service-content">
-        <div className="service-left">
+    <div className="web">
+      <div className="web-content">
+        <div className="web-left">
+          <h2>Web Development</h2>
           <img src={Image} alt="" />
         </div>
 
-        <div className="service-right">
+        <div className="web-right">
           <div>
             <h2>Web Development</h2>
             <p>

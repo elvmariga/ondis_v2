@@ -1,37 +1,57 @@
-.service {
+.web {
   background-color: #f2f2f2;
 }
-.service .service-content {
-  display: flex;
-  justify-content: space-evenly;
+.web h2 {
+  color: #1055db;
+}
+.web .web-content {
+  display: grid;
   gap: 2rem;
   width: 80%;
   margin: 1rem auto;
   padding: 2rem 0;
 }
-.service .service-content .service-left img {
+.web .web-content .web-left img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
-.service .service-content .service-right {
+.web .web-content .web-right {
   display: grid;
   flex-direction: column;
   align-items: space-between;
 }
-.service .service-content .service-right h2 {
-  color: #1055db;
+.web .web-content .web-right h2 {
+  display: none;
 }
-.service .service-content .service-right p {
+.web .web-content .web-right p {
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.7);
 }
-.service .service-content .service-right .web-services {
+.web .web-content .web-right .web-services {
   display: flex;
   gap: 3rem;
 }
-.service .service-content .service-right .tech-stack {
+.web .web-content .web-right .tech-stack {
   margin: 1rem 0;
 }
-.service .service-content .service-right .tech-stack img:hover {
+.web .web-content .web-right .tech-stack img:hover {
   transform: scale(1.1, 1.1);
+}
+@media screen and (min-width: 600px) {
+  .web .web-content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+  }
+  .web .web-content .web-left img {
+    width: 100%;
+    height: auto;
+  }
+  .web .web-content .web-left h2 {
+    display: none;
+  }
+  .web .web-content .web-right h2 {
+    display: block;
+  }
 }/*# sourceMappingURL=Service-style.css.map */

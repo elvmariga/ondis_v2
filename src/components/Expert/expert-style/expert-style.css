@@ -7,4 +7,13 @@
 .expert h2 {
   font-size: 3.5rem;
   margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .expert h2 {
+    font-size: 2rem;
+  }
+  .expert img {
+    width: 50%;
+    height: auto;
+  }
 }/*# sourceMappingURL=expert-style.css.map */

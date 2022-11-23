@@ -1,8 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./partners-style/partners-style.css";
 import userIcon from "./assets/user-plus.svg";
-import Partner from "../Partner/Partner";
 import {partnerIcon} from "./assets/partnerIcons.js";
 
 const Partners = () => {
@@ -13,10 +11,10 @@ const Partners = () => {
           <h2>Partners</h2>
         </div>
         <div className="partners-bottom">
-          <div className="join">
+          {/* <div className="join">
             <img src={userIcon} alt="use plus icon" />
             <p>Join us</p>
-          </div>
+          </div> */}
 
           <div className="the-partners">
             {partnerIcon.map((image) => {

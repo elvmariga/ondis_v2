@@ -7,7 +7,42 @@
 }
 .hero img {
   height: auto;
-  width: 50%;
+  width: 70%;
+}
+@media screen and (max-width: 1100px) {
+  .hero img {
+    height: auto;
+    width: 150%;
+    align-self: flex-end;
+  }
+  .hero a {
+    display: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  .hero img {
+    height: auto;
+    width: 300%;
+    align-self: flex-end;
+  }
+  .hero a {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    background-image: url(../assests/hero.svg);
+    background-position: bottom right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+  }
+  .hero img {
+    display: none;
+  }
+  .hero a {
+    display: none;
+  }
 }
 .hero .hero-left h1 {
   color: #1055DB;

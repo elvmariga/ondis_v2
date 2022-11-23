@@ -1,4 +1,4 @@
-.hero{
+.hero {
     width: 80%;
     margin: .5rem auto;
     display: flex;
@@ -6,32 +6,71 @@
     gap: 1rem;
     // align-items: center;
 
-    img{
+    img {
         height: auto;
-        width: 50%;
+        width: 70%;
     }
-    .hero-left{
-        h1{
+@media screen and (max-width:1100px) {
+    img {
+        height: auto;
+        width: 150%;
+        align-self: flex-end;
+    }
+
+    a {
+        display: none;
+    }
+}
+    @media screen and (max-width:850px) {
+        img {
+            height: auto;
+            width: 300%;
+            align-self: flex-end;
+        }
+                 a {
+                     display: none;
+                 }
+    }
+
+    @media screen and(max-width:480px) {
+        background-image: url(../assests/hero.svg);
+        background-position: bottom right;
+        background-size: 50%;
+        background-repeat: no-repeat;
+
+        flex-wrap: wrap;
+        img {
+           display: none;
+        }
+        a{
+            display: none;
+        }
+    }
+
+    .hero-left {
+        h1 {
             color: #1055DB;
             font-size: 3.2rem;
         }
-        p{
+
+        p {
             color: rgba(0, 0, 0, 0.7);
             font-size: 1.5rem;
             padding: 3rem 0;
         }
 
 
-        .btns{
+        .btns {
             display: flex;
             gap: 1rem;
 
-            a{
+            a {
                 text-decoration: none;
                 border: 1px solid #1055DB;
                 border-radius: 5px;
-                padding: .5rem 1rem ;
-                &:hover{
+                padding: .5rem 1rem;
+
+                &:hover {
                     transform: scale(1.1, 1.1);
                 }
             }
