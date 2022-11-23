@@ -2,9 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./partners-style/partners-style.css";
 import userIcon from "./assets/user-plus.svg";
-import Partner from '../Partner/Partner'
+import Partner from "../Partner/Partner";
+import { partnerIcons } from "./assets/partnerIcons.js";
 
-const Partners = () => (
+const Partners = () => {
+  return;
+
   <div className="partners">
     <div className="partners-top">
       <h2>Partners</h2>
@@ -14,18 +17,17 @@ const Partners = () => (
         <img src={userIcon} alt="use plus icon" />
         <p>Join us</p>
       </div>
-      <Partner />
-      <Partner />
-      <Partner />
-      <Partner />
-      <Partner />
-      <Partner />
+
+      <div>
+        {partnerIcons.map((image) => {return (
+          <img src={image} alt="partner" />
+        )
+        )
+      }
+    }
+      </div>
     </div>
-  </div>
-);
-
-Partners.propTypes = {};
-
-Partners.defaultProps = {};
+  </div>;
+};
 
 export default Partners;
