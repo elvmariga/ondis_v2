@@ -29,7 +29,15 @@
 
                 .web-services{
                     display: flex;
-                    justify-content: space-evenly;
+                    gap: 3rem;
+                    // justify-content: space-evenly;
+                }
+                .tech-stack{
+                    margin: 1rem 0;
+
+                    img:hover{
+                        transform: scale(1.1, 1.1);
+                    }
                 }
             }
     }

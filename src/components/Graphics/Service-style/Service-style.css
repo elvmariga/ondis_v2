@@ -27,5 +27,11 @@
 }
 .service .service-content .service-right .web-services {
   display: flex;
-  justify-content: space-evenly;
+  gap: 3rem;
+}
+.service .service-content .service-right .tech-stack {
+  margin: 1rem 0;
+}
+.service .service-content .service-right .tech-stack img:hover {
+  transform: scale(1.1, 1.1);
 }/*# sourceMappingURL=Service-style.css.map */
