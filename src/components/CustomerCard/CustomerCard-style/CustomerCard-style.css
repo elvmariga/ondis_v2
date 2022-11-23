@@ -1,0 +1,18 @@
+.customer-card .card-content {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 850px) {
+  .customer-card .card-content .card-content {
+    width: 300px;
+  }
+}
+.customer-card .card-content .left img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.customer-card .card-content .right h3 {
+  margin: 0;
+}/*# sourceMappingURL=CustomerCard-style.css.map */
