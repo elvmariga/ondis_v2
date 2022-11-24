@@ -1,5 +1,6 @@
 .footer {
   background-color: #1055DB;
+  padding: 0.5rem 0;
   color: #FFFFFF;
   width: 100%;
 }
@@ -38,5 +39,8 @@
   .footer .footer-content {
     flex-wrap: wrap;
     gap: 1.5rem;
+  }
+  .footer .footer-content .footer-left {
+    align-items: center;
   }
 }/*# sourceMappingURL=footer-style.css.map */

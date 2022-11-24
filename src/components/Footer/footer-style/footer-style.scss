@@ -1,6 +1,6 @@
 .footer{
     background-color: #1055DB;
-    // padding: 2rem;
+    padding: .5rem 0;
     color: #FFFFFF;
     // position: fixed;
     // bottom: 0px;
@@ -42,8 +42,11 @@
         @media screen and (max-width:600px) {
            .footer-content{
             flex-wrap: wrap;
-            gap:1.5rem
+            gap:1.5rem;
             // justify-content: center;
+            .footer-left{
+                align-items:center ;
+            }
            }
         }
 
