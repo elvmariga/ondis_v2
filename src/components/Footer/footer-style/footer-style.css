@@ -1,6 +1,5 @@
 .footer {
   background-color: #1055DB;
-  padding: 2rem;
   color: #FFFFFF;
   width: 100%;
 }
@@ -31,4 +30,13 @@
   justify-content: center;
   text-align: center;
   font-size: smaller;
+}
+.footer .copyright a {
+  color: #bd5540;
+}
+@media screen and (max-width: 600px) {
+  .footer .footer-content {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
 }/*# sourceMappingURL=footer-style.css.map */
