@@ -26,4 +26,11 @@
 .navbar .navbar-content .links ul li a:hover {
   color: #1055DB;
   font-weight: 500;
+}
+.navbar .navbar-content .links ul li .active {
+  transform: scale(1.1, 1.1);
+  font-weight: 700;
+  color: #1055DB;
+  -webkit-text-decoration: double;
+          text-decoration: double;
 }/*# sourceMappingURL=navbar-style.css.map */

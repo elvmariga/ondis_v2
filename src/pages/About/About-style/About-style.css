@@ -1,0 +1,57 @@
+.aboutpage {
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+.aboutpage .top img {
+  width: 100%;
+  height: auto;
+}
+.aboutpage .aboutUs img {
+  width: 70%;
+  height: auto;
+}
+.aboutpage .aboutUs h1 {
+  color: #1055db;
+  font-size: 2rem;
+}
+.aboutpage .aboutUs p {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.aboutpage .aboutUs .cont .aboutDetails {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.aboutpage .aboutUs .cont .aboutDetails .details {
+  padding-top: 3rem;
+}
+.aboutpage .aboutUs .cont .aboutDetails .details h1 {
+  display: none;
+}
+.aboutpage .aboutUs .cont .t-tails {
+  flex-direction: row-reverse;
+}
+.aboutpage .aboutUs .tinted {
+  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.7);
+}
+@media only screen and (min-width: 768px) {
+  .aboutpage .cont .aboutDetails .container {
+    display: flex;
+  }
+  .aboutpage .cont .aboutDetails .container img {
+    -o-object-fit: fill;
+       object-fit: fill;
+    width: 80%;
+  }
+  .aboutpage .cont .aboutDetails .container .details {
+    width: 70%;
+  }
+  .aboutpage .tinted .container {
+    flex-direction: row-reverse;
+  }
+}/*# sourceMappingURL=About-style.css.map */

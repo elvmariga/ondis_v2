@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../Navbar/navbar-style/navbar-style.css';
 import logo from "./assests/ondis-logo.svg";
 import Button from '../Button/Button';
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => (
   <div className="navbar">
@@ -12,13 +13,34 @@ export const Navbar = () => (
       <div className="links">
         <ul>
           <li>
-            <a href="http://">Home</a>
+            <NavLink
+              smooth="true"
+              spy="true"
+              activeclassname="active"
+              to="/home"
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="http://">About</a>
+            <NavLink
+              smooth="true"
+              spy="true"
+              activeclassname="active"
+              to="/home"
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <a href="http://">Contact</a>
+            <NavLink
+              smooth="true"
+              spy="true"
+              activeclassname="active"
+              to="/home"
+            >
+              Contact
+            </NavLink>
           </li>
           <li>
             <Button />

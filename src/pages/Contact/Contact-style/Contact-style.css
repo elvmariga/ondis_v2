@@ -1,0 +1,194 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem auto;
+  /* Large devices (laptops/desktops, 992px and up) */
+}
+@media only screen and (min-width: 992px) {
+  .contact {
+    flex-direction: row;
+    align-items: start;
+  }
+  .contact .left {
+    width: 50%;
+    display: grid;
+    justify-content: start;
+    gap: 1.5rem;
+  }
+  .contact .left p {
+    text-align: left;
+  }
+}
+.contact .contact-top {
+  text-align: center;
+}
+.contact .contact-top p a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+.contact .contact-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.3rem;
+}
+@media only screen and (min-width: 600px) {
+  .contact .contact-icon {
+    display: none;
+  }
+}
+.contact .call-form {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  width: 100%;
+  /* Large devices (laptops/desktops, 992px and up) */
+}
+.contact .call-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+.contact .call-form form p {
+  margin: 0;
+}
+.contact .call-form form input {
+  height: 2.6rem;
+  width: 100%;
+  background: #D9D9D9;
+  border-radius: 4px;
+}
+.contact .call-form form input:focus {
+  outline: none;
+}
+.contact .call-form form .callme {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.3rem 1.5rem;
+  background-color: #1055db;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+@media only screen and (min-width: 992px) {
+  .contact .call-form {
+    justify-content: start;
+  }
+  .contact .call-form form {
+    align-items: start;
+  }
+  .contact .call-form form p {
+    text-align: left;
+    font-weight: 500;
+  }
+  .contact .call-form form input {
+    width: 150%;
+  }
+}
+.contact h2 {
+  text-align: left;
+}
+.contact .mail-form,
+.contact .mail-form-tablet {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  width: 80%;
+  margin: 1rem auto;
+}
+.contact .mail-form form,
+.contact .mail-form-tablet form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.contact .mail-form form p,
+.contact .mail-form-tablet form p {
+  margin: 0;
+}
+.contact .mail-form form input,
+.contact .mail-form-tablet form input {
+  height: 2.6rem;
+  width: 100%;
+  background: #D9D9D9;
+  border-radius: 4px;
+}
+.contact .mail-form form input:focus,
+.contact .mail-form-tablet form input:focus {
+  outline: none;
+}
+.contact .mail-form form .row,
+.contact .mail-form-tablet form .row {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+.contact .mail-form form .callme,
+.contact .mail-form-tablet form .callme {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.3rem 1.5rem;
+  background-color: #1055db;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+.contact .mail-form form textarea,
+.contact .mail-form-tablet form textarea {
+  width: 100%;
+  background: #D9D9D9;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.7);
+}
+@media only screen and (min-width: 992px) {
+  .contact .mail-form {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .contact .contact-icon {
+    background-color: #FFFFFF;
+    display: none;
+  }
+  .contact .mail-form-tablet {
+    display: none;
+  }
+  .contact .mail-form {
+    display: block;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mail-form-tablet {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .mail-form-tablet {
+    display: block;
+  }
+  .mail-form {
+    display: none;
+  }
+  .contact-icon {
+    display: none;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=Contact-style.css.map */

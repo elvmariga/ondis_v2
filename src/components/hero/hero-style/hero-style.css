@@ -7,7 +7,7 @@
 }
 .hero img {
   height: auto;
-  width: 50%;
+  width: 70%;
 }
 @media screen and (max-width: 1100px) {
   .hero img {
@@ -44,10 +44,6 @@
     display: none;
   }
 }
-.hero .hero-left {
-  width: 70%;
-  gap: 0rem;
-}
 .hero .hero-left h1 {
   color: #1055DB;
   font-size: 3.2rem;
@@ -55,13 +51,11 @@
 .hero .hero-left p {
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.5rem;
+  padding: 3rem 0;
 }
 .hero .hero-left .btns {
   display: flex;
   gap: 1rem;
-}
-.hero .hero-left .btns p {
-  padding: 0;
 }
 .hero .hero-left .btns a {
   text-decoration: none;

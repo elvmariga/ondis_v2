@@ -34,6 +34,12 @@
                                 font-weight: 500;
                             }
                     }
+                                         .active {
+                                             transform: scale(1.1, 1.1);
+                                             font-weight: 700;
+                                             color:#1055DB;
+                                             text-decoration: double;
+                                         }
                 }
             }
         }

@@ -1,0 +1,257 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto;
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        flex-direction: row;
+        align-items: start;
+       
+
+        .left {
+            width: 50%;
+            display: grid;
+            justify-content: start;
+            gap: 1.5rem;
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+
+    }
+
+    // background-image: url(../Assests/background.svg);
+
+
+    .contact-top {
+        text-align: center;
+
+        p {
+            a {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+
+    .contact-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3.3rem;
+
+        @media only screen and (min-width: 600px) {
+            display: none;
+        }
+
+        // display: none;
+    }
+
+    .call-form {
+        display: flex;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 12px;
+        width: 100%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 12px;
+
+            p {
+                margin: 0;
+            }
+
+            input {
+                height: 2.6rem;
+                width: 100%;
+                background: #D9D9D9;
+                border-radius: 4px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .callme {
+                width: fit-content;
+                padding: .3rem 1.5rem;
+                background-color: #1055db;
+                border: none;
+                color: #FFFFFF;
+                border-radius: 4px;
+            }
+
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            // justify-content: start;
+
+         
+            justify-content: start;
+            form {
+                    align-items: start;
+            
+                    p {
+                        text-align: left;
+                        font-weight: 500;
+                    }
+            
+                    input {
+                        width: 150%;
+                    }
+                   
+                }
+           
+        }
+
+
+
+
+
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .mail-form,
+    .mail-form-tablet {
+
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 12px;
+        width: 80%;
+        margin: 1rem auto;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+
+
+            p {
+                margin: 0;
+            }
+
+            input {
+                height: 2.6rem;
+                width: 100%;
+                background: #D9D9D9;
+                border-radius: 4px;
+
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .row {
+                display: flex;
+                gap: 2rem;
+                width: 100%;
+
+            }
+
+            .callme {
+                width: fit-content;
+                padding: .3rem 1.5rem;
+                background-color: #1055db;
+                border: none;
+                color: #FFFFFF;
+                border-radius: 4px;
+
+            }
+
+            textarea {
+                width: 100%;
+                background: #D9D9D9;
+                border-radius: 4px;
+                color: rgba(0, 0, 0, 0.7);
+            }
+
+
+        }
+
+    }
+
+    .mail-form {
+        @media only screen and (min-width: 992px) {
+            width: 50%;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+
+        .contact-icon {
+            background-color: #FFFFFF;
+            display: none;
+        }
+
+        .mail-form-tablet {
+            display: none;
+        }
+
+        .mail-form {
+            display: block;
+        }
+
+        // .mail-form-tablet {
+        //     // display: none;
+        // }
+
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .mail-form-tablet {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .mail-form-tablet {
+        display: block;
+    }
+
+    .mail-form {
+        display: none;
+    }
+
+    .contact-icon {
+        display: none;
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
