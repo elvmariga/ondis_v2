@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar } from '../../components/Navbar/Navbar';
+// import {Navbar } from '../../components/Navbar/Navbar';
 import Footer from "../../components/Footer/Footer";
 import Mail from './Assests/mail.svg';
 import Phone from './Assests/phone.svg';
@@ -11,7 +11,7 @@ import './Contact-style/Contact-style.css'
 const Contact = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="contact">
         <div className="left">
           <div className="contact-top">
@@ -112,7 +112,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

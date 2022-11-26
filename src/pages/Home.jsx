@@ -1,7 +1,7 @@
 import React from "react";
-import {Navbar} from "../components/Navbar/Navbar";
+// import {Navbar} from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import Hero from "../components/Hero/Hero";
+import Hero from "../components/hero/Hero";
 import Partners from "../components/Partners/Partners";
 import Expert from "../components/Expert/Expert";
 import Service from "../components/Service/Service";
@@ -13,7 +13,7 @@ import Customer from "../components/Customer/Customer";
 export const Home = () => {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Hero/>
       <Partners/>
       <Expert/>
@@ -21,7 +21,7 @@ export const Home = () => {
       <Graphics/>
       <Socials/>
       <Customer/>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };

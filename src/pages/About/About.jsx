@@ -3,14 +3,14 @@ import Footer from "../../components/Footer/Footer";
 import "./About-style/About-style.css";
 import Whatwedo from "./Assets/about.svg";
 import Aboutus from "./Assets/hero.svg";
-import {Navbar} from "../../components/Navbar/Navbar"
+// import {Navbar} from "../../components/Navbar/Navbar"
 
 const About = () => {
   return (
     <div className="aboutpage">
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="top">
-        <img src={Aboutus} alt="About Us Landing Image" />
+        <img src={Aboutus} alt="About Us Landing " />
       </div>
       <div class="aboutUs">
         <div class="cont">
@@ -102,7 +102,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
