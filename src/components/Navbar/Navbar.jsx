@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../Navbar/navbar-style/navbar-style.css';
+import '../Navbar/navbar-style/navbar-style.css';
 import logo from "./assests/ondis-logo.svg";
 import Button from '../Button/Button';
 import { NavLink } from "react-router-dom";
@@ -27,7 +27,7 @@ export const Navbar = () => (
               smooth="true"
               spy="true"
               activeclassname="active"
-              to="/home"
+              to="/about"
             >
               About
             </NavLink>
@@ -37,7 +37,7 @@ export const Navbar = () => (
               smooth="true"
               spy="true"
               activeclassname="active"
-              to="/home"
+              to="/contact"
             >
               Contact
             </NavLink>
