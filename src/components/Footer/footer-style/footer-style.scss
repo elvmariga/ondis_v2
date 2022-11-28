@@ -10,6 +10,11 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @media screen and(max-width:690px) {
+                // display: flex;
+                flex-wrap: wrap-reverse;
+                justify-content: start;
+            }
 
         p {
             font-size: 1rem;
