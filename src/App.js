@@ -14,17 +14,15 @@ export const App = () => {
     <Navbar/>
 
     
-    {/* <Routes>
-      <Route
-      path="/" element={<Navigate to="/home" />} />
+   
 
-    <Routes>
-      <Route path="/" element={<Navigate to="/home" />} />
+        <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
 
-      <Route path="/home" element= {<Home/>} />
-      <Route path="/about" element= {<About/>} />
-      <Route path="/contact" element ={<Contact/>} />
-    </Routes> */}
+        <Route path="/home" element= {<Home/>} />
+        <Route path="/about" element= {<About/>} />
+        <Route path="/contact" element ={<Contact/>} />
+    </Routes>
     <Footer/>
       
     </section>
