@@ -1,47 +1,53 @@
 .navbar {
-    margin: 1rem auto;
+  margin: 1rem auto;
 
-    .navbar-content {
-        width: 80%;
-        margin: 0 auto;
+  .navbar-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .links {
+      // display: flex;
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+
+      ul {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        gap: 1.225rem;
 
-        .links {
-            // display: flex;
+        li {
+          list-style: none;
+          &:hover {
+            transform: scale(1.1, 1.1);
+            color: #1055db;
+          }
 
-            ul {
-                display: flex;
-                align-items: center;
-                gap: 1.225rem;
-
-              
-
-
-                li {
-                    list-style: none;
-                    &:hover {
-                            transform: scale(1.1, 1.1);
-                            color: #1055DB;
-                        }
-
-                    a {
-                        text-decoration: none;
-                        color: black;
-                        &:hover {
-                             
-                                color: #1055DB;
-                                font-weight: 500;
-                            }
-                    }
-                                         .active {
-                                             transform: scale(1.1, 1.1);
-                                             font-weight: 700;
-                                             color:#1055DB;
-                                             text-decoration: double;
-                                         }
-                }
+          a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+              color: #1055db;
+              font-weight: 500;
             }
+          }
+          .active {
+            transform: scale(1.1, 1.1);
+            font-weight: 700;
+            color: #1055db;
+            text-decoration: double;
+          }
         }
+      }
     }
+  }
+
+  .mobile-menu {
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+  }
 }

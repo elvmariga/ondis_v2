@@ -7,6 +7,11 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 600px) {
+  .navbar .navbar-content .links {
+    display: none;
+  }
+}
 .navbar .navbar-content .links ul {
   display: flex;
   align-items: center;
@@ -17,20 +22,25 @@
 }
 .navbar .navbar-content .links ul li:hover {
   transform: scale(1.1, 1.1);
-  color: #1055DB;
+  color: #1055db;
 }
 .navbar .navbar-content .links ul li a {
   text-decoration: none;
   color: black;
 }
 .navbar .navbar-content .links ul li a:hover {
-  color: #1055DB;
+  color: #1055db;
   font-weight: 500;
 }
 .navbar .navbar-content .links ul li .active {
   transform: scale(1.1, 1.1);
   font-weight: 700;
-  color: #1055DB;
+  color: #1055db;
   -webkit-text-decoration: double;
           text-decoration: double;
+}
+@media screen and (min-width: 600px) {
+  .navbar .mobile-menu {
+    display: none;
+  }
 }/*# sourceMappingURL=navbar-style.css.map */
