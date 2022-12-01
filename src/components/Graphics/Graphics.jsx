@@ -5,6 +5,7 @@ import Product from "../Product/Product";
 import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
 import { sites } from "./assets/stacks";
+import Line from "../Line/Line";
 
 const Graphics = () => {
   return (
@@ -15,7 +16,11 @@ const Graphics = () => {
         </div>
         <div className="graphics-right">
           <div>
-            <h2>Graphics Design</h2>
+            <h2>
+              {" "}
+              <Line />
+              Graphics Design
+            </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur. Ligula donec quis erat ut.
               Nisl egestas.

@@ -16,12 +16,12 @@ const Partners = () => {
             <p>Join us</p>
           </div> */}
 
-          <div className="the-partners">
+          {/* <div className="the-partners">
             {partnerIcon.map((image) => {
               return <img src={image} alt="partner" />;
             })}
             
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

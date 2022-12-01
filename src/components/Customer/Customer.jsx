@@ -9,7 +9,8 @@ const Customer = (props) => {
     <div className="customer">
       <div className="customer-content">
         <div className="title">
-          <h2>Customer Feedback</h2>
+          <h2>
+            Customer Feedback</h2>
         </div>
         <div className="cards">
           <CustomerCard
