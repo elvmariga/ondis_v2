@@ -51,6 +51,9 @@
   .socials .socials-content .socials-left h2 {
     display: none;
   }
+  .socials .socials-content .socials-right {
+    width: 50%;
+  }
   .socials .socials-content .socials-right h2 {
     display: block;
   }

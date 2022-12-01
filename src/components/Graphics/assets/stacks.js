@@ -1,14 +1,14 @@
-import Html from './html.svg';
-import Css from './css3.svg';
-import React from './react.svg';
-import Angular from './angular.svg';
+import illustrator from './illustrator.svg';
+import indesign from './indesign.svg';
+import photoshop from './photoshop.svg';
+import canva from './canva.svg';
 import Figma from './figma.svg';
 import Others from './others.svg';
 
-export const stackIcons = [Html, Css, React, Angular, Figma, Others];
+export const stackIcons = [illustrator, photoshop, indesign, canva, Figma, Others];
 
 export const sites = [
-  { icon: Css , text: "Medium " },
-  { icon:  Figma , text: "Premium " },
-  { icon:  React , text: "Large " },
+  { icon: illustrator , text: "Medium " },
+  { icon:  photoshop , text: "Premium " },
+  { icon:  indesign , text: "Large " },
 ];

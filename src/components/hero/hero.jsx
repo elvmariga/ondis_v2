@@ -4,17 +4,24 @@ import  './hero-style/hero-style.css';
 import Button from '../Button/Button';
 import image from './assests/hero.svg';
 
+
+
 const Hero = () => (
   <div className="hero">
     <div className="hero-left">
       <div>
-        <h1>OndisHub</h1>
+        <h1>
+          All You Need is an Attractive
+          <span
+            id="greeting"
+            style={{ color: "#bd0204", fontWeight: "400" }}
+          ></span>
+        </h1>
       </div>
       <div>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Nisi consequat orci dignissim
-          semper est. Pulvinar ut ut amet eget tincidunt metus. Lacinia et magna
-          aliquam cursus.
+          Our skilled content creators, designers and developers are dedicated to ensure you maxmize on the
+          growing differentiated online users.
         </p>
       </div>
       <div className="btns">

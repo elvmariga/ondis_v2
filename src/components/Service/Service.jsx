@@ -7,22 +7,28 @@ import Stack from "../Stack/Stack";
 import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
 import { sites } from "./assets/stacks";
+import Line from "../Line/Line";
 
 const Service = () => {
   return (
     <div className="web">
       <div className="web-content">
         <div className="web-left">
-          <h2>Web Development</h2>
+          <h2>
+            {" "}
+            <Line />
+            Web Development
+          </h2>
           <img src={Image} alt="" />
         </div>
 
         <div className="web-right">
           <div>
-            <h2>Web Development</h2>
+            <h2 className="web-title">Web Development</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Ligula donec quis erat ut.
-              Nisl egestas.
+              Our responsive website let's your prospects enjoy a great
+              exprerience on any screen size and orientation while interacting
+              with your online office.
             </p>
           </div>
           <div className="web-services">

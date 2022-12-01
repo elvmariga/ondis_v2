@@ -1,3 +1,7 @@
+.partners {
+  background-color: rgba(237, 242, 252, 0.9);
+  padding: 8px 0;
+}
 .partners .partners-content {
   width: 80%;
   margin: 0 auto;

@@ -7,22 +7,30 @@ import Stack from "../Stack/Stack";
 import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
 import { sites } from "./assets/stacks";
+import Line from "../Line/Line";
 
 const Socials = () => {
   return (
     <div className="socials">
       <div className="socials-content">
         <div className="socials-left">
-          <h2>Social Media Branding</h2>
+          <h2>
+            <Line />
+            Social Media Branding
+          </h2>
           <img src={Image} alt="" />
         </div>
 
         <div className="socials-right">
           <div>
-            <h2>Social Media Branding</h2>
+            <h2>
+              {" "}
+              <Line /> Social Media Branding
+            </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur. Ligula donec quis erat ut.
-              Nisl egestas.
+              Nisl egestas. Lorem ipsum dolor sit amet consectetur. Ligula donec
+              quis erat ut. Nisl egestas.
             </p>
           </div>
           <div className="social-services">
