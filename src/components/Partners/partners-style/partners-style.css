@@ -2,6 +2,10 @@
   background-color: rgba(237, 242, 252, 0.9);
   padding: 8px 0;
 }
+.partners img {
+  width: 20%;
+  height: auto;
+}
 .partners .partners-content {
   width: 80%;
   margin: 0 auto;
@@ -15,18 +19,14 @@
 }
 .partners .partners-content .partners-bottom .the-partners {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
-.partners .partners-content .partners-bottom .the-partners img {
-  width: 100%;
-  height: auto;
-}
-@media screen and (max-width: 850px) {
+@media screen and (min-width: 850px) {
   .partners .partners-content .partners-bottom .the-partners {
-    gap: 0.5rem;
+    gap: 2rem;
   }
   .partners .partners-content .partners-bottom .the-partners img {
-    width: 70%;
+    width: 10%;
   }
 }/*# sourceMappingURL=partners-style.css.map */

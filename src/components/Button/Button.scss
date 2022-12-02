@@ -1,0 +1,20 @@
+.Button {
+    // color: #FFFFFF;
+    // // padding: .4rem 1rem;
+    // // background-color: #1055DB;
+    // width: fit-content;
+    // border-radius: 5px;
+    
+    a{
+        background-color: #1055DB;
+        color: #FFFFFF;
+        &:hover {
+                transform: scale(1.1, 1.1);
+            }
+    }
+    
+    
+   
+
+}
+

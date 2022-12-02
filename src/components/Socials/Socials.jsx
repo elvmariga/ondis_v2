@@ -9,6 +9,7 @@ import Button from "../Button/Button";
 import { sites } from "./assets/stacks";
 import Line from "../Line/Line";
 
+
 const Socials = () => {
   return (
     <div className="socials">
@@ -50,7 +51,7 @@ const Socials = () => {
               })}
             </div>
             <div className="left">
-              <div className="right">
+              
                 {sites.map(({ icon, text }, i) => {
                   return (
                     <p>
@@ -64,7 +65,7 @@ const Socials = () => {
                     </p>
                   );
                 })}
-              </div>
+           
             </div>
           </div>
 
