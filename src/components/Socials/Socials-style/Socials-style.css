@@ -27,12 +27,13 @@
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.7);
 }
-.socials .socials-content .socials-right .socials-services {
+.socials .socials-content .socials-right .social-services {
   display: flex;
   gap: 3rem;
 }
 .socials .socials-content .socials-right .tech-stack {
   margin: 1rem 0;
+  margin-bottom: 2rem;
 }
 .socials .socials-content .socials-right .tech-stack img:hover {
   transform: scale(1.1, 1.1);

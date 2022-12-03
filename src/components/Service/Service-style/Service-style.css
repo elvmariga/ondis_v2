@@ -33,6 +33,7 @@
 }
 .web .web-content .web-right .tech-stack {
   margin: 1rem 0;
+  margin-bottom: 2rem;
 }
 .web .web-content .web-right .tech-stack img:hover {
   transform: scale(1.1, 1.1);

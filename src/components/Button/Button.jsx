@@ -1,10 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Button.module.css';
+import './Button.css';
+import { NavLink } from "react-router-dom";
 
 const Button = () => (
-  <div className={styles.Button}>
-    Get Quote<i class="fa-solid fa-angles-right"></i>
+  <div className="Button">
+    <NavLink
+      smooth="true"
+      spy="true"
+      style={{
+        textDecoration: "none",
+        fontSize: "1rem",
+        // fontFamily: "Poppins"
+        color: "#FFFFFF ",
+        padding:"0.5rem 1rem",
+        borderRadius:"4px"
+      }}
+       activeclassname="active"
+      to="/contact"
+    >
+      Get Quote<i class="fa-solid fa-angles-right"></i>
+    </NavLink>
   </div>
 );
 
