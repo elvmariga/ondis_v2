@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './Button.css';
 import { NavLink } from "react-router-dom";
 
-const Button = () => (
-  <div className="Button">
+const Button = ({style}) => (
+  <div style={style} className="Button">
     <NavLink
       smooth="true"
       spy="true"

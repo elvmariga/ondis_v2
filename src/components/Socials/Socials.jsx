@@ -1,9 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import "./Socials-style/Socials-style.css";
 import Image from "./assets/web-development.svg";
-import Product from "../Product/Product";
-import Stack from "../Stack/Stack";
+// import Product from "../Product/Product";
+// import Stack from "../Stack/Stack";
 import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
 import { sites } from "./assets/stacks";

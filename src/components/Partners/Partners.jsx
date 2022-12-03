@@ -1,6 +1,6 @@
 import React from "react";
 import "./partners-style/partners-style.css";
-import userIcon from "./assets/user-plus.svg";
+// import userIcon from "./assets/user-plus.svg";
 import {partnerIcon} from "./assets/partnerIcons.js";
 
 const Partners = () => {
