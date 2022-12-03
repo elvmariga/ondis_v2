@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import '../Navbar/navbar-style/navbar-style.css';
 import logo from "./assests/ondis-logo.svg";
 import Button from '../Button/Button';
@@ -7,7 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 
 export const Navbar = () => {
-  const [showLinks, setShowLinks] = React.useState(false);
+  const [showLinks, setShowLinks] = useState(false);
   // const [showModal, setShowModal] = React.useState(false);
 
   const handleClick = () => {
