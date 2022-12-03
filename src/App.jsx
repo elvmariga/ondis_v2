@@ -5,12 +5,14 @@ import Contact from "./pages/Contact/Contact";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import {ScrollUp} from "./components/scrollup/ScrollUp";
 
 export const App = () => {
 
   return (
     <section>
      
+     <ScrollUp/>
     <Navbar/>
 
         <Routes>
