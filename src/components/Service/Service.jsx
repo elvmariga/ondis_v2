@@ -74,7 +74,9 @@ const Service = () => {
               );
             })}
           </div>
-          <Button />
+          <div>
+            <Button />
+          </div>
         </div>
       </div>
     </div>

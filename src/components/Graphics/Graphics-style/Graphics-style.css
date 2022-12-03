@@ -27,6 +27,7 @@
 }
 .graphics .graphics-content .graphics-right .tech-stack {
   margin: 1rem 0;
+  margin-bottom: 2rem;
 }
 .graphics .graphics-content .graphics-right .tech-stack img:hover {
   transform: scale(1.1, 1.1);

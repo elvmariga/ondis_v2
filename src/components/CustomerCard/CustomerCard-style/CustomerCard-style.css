@@ -3,6 +3,10 @@
   border-radius: 60px 8px 8px 60px;
   display: flex;
   gap: 1rem;
+  height: 114px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 @media screen and (max-width: 850px) {
   .customer-card .card-content .card-content {
@@ -15,6 +19,9 @@
 .customer-card .card-content .left img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.customer-card .card-content .right {
+  overflow: scroll;
 }
 .customer-card .card-content .right h3 {
   margin: 0;
