@@ -59,7 +59,8 @@ export const Navbar = () => {
       </div>
     </div>
 
-    <div className="mobile-menu"  style={{ marginRight: "0.5rem" }}>
+    <div className="
+    "  style={{ marginRight: "0.5rem" }}>
             <div className="humberger" onClick={() => handleClick()}>
               {showLinks ? <ImCross /> : <GiHamburgerMenu />}
             </div>
