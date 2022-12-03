@@ -7,7 +7,7 @@
   height: auto;
 }
 .partners .partners-content {
-  width: 80%;
+  width: 30%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2rem;
@@ -22,11 +22,11 @@
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 480px) {
   .partners .partners-content .partners-bottom .the-partners {
     gap: 2rem;
   }
   .partners .partners-content .partners-bottom .the-partners img {
-    width: 10%;
+    width: 20%;
   }
 }/*# sourceMappingURL=partners-style.css.map */

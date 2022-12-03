@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import  './hero-style/hero-style.css';
 import Button from '../Button/Button';
 import image from './assests/hero.svg';
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
 
 
@@ -11,15 +11,12 @@ const Hero = () => (
   <div className="hero">
     <div className="hero-left">
       <div>
-        <Fade Top>
+        
           <h1>
             All You Need is an Attractive
-            <span
-              id="greeting"
-              style={{ color: "#bd0204", fontWeight: "400" }}
-            ></span>
+          
           </h1>
-        </Fade>
+      
       </div>
       <div>
         <p>
@@ -33,7 +30,7 @@ const Hero = () => (
         />
         <a href="http://">
           Whatapp
-          <i class="fa-brands fa-whatsapp fa-xl"></i>
+           <i class="fa-brands fa-whatsapp " style={{marginLeft:"0.4rem"}}></i>
         </a>
       </div>
     </div>

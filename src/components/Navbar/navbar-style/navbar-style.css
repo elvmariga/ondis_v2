@@ -7,12 +7,12 @@
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
   .navbar .navbar-content .logo .large-logo {
     display: none;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 675px) {
   .navbar .navbar-content .logo .mobile-logo {
     display: none;
   }

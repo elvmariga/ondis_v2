@@ -6,7 +6,8 @@ import Phone from "./Assests/phone.svg";
 import Location from "./Assests/location.svg";
 import icons from "./Assests/icons.svg";
 import "./Contact-style/Contact-style.css";
-import emailjs from "@emailjs/browser";
+import emailjs, {init} from "@emailjs/browser";
+import swal from "sweetalert";
 
 const Contact = () => {
   const form = useRef();
@@ -24,11 +25,11 @@ const Contact = () => {
       .then(
         (result) => {
           // show the user an sent success
-          alert("Email Sent Successfully");
+          swal("Email Sent Successfully");
         },
         (error) => {
           // show the user an error
-          alert("Error in sending, try again");
+          swal("Error in sending, try again");
         }
       );
   };
@@ -46,11 +47,11 @@ const Contact = () => {
       .then(
         (result) => {
           // show the user an sent success
-          alert("Email Sent Successfully");
+          swal("Number Sent Succefull!");
         },
         (error) => {
           // show the user an error
-          alert("Error in sending, try again");
+          swal("Error!");
         }
       );
   };

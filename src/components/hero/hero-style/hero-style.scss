@@ -11,12 +11,12 @@
 
   img {
     height: auto;
-    width: 30%;
+    width: 70%;
   }
   @media screen and (max-width: 1100px) {
     img {
       height: auto;
-      width: 100%;
+      width: 80%;
       align-self: flex-end;
     }
 
@@ -27,13 +27,19 @@
   @media screen and (max-width: 850px) {
     img {
       height: auto;
-      width: 100%;
+      width: 80%;
       align-self: flex-end;
     }
     a {
       display: none;
     }
   }
+
+    @media screen and (max-width: 850px) {
+      img{
+        width: 80%;
+      }
+    }
 
   @media screen and(max-width:480px) {
     // background-image: url(../assests/hero.svg);

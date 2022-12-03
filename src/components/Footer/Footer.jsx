@@ -2,30 +2,33 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "../Footer/footer-style/footer-style.css";
 import logo from "./assests/ondis-logo.svg";
+// import Fade from "react-reveal/Fade";
 
 const Footer = () => (
   <div className="footer">
     <div className="footer-content">
       <div className="footer-left">
-        <div>
-          {" "}
-          <img src={logo} alt="logo" />
-        </div>
-
-        <div>
-          <a href="tel:+254719311036">
-            <i class="fa-solid fa-phone"></i> +254 719 311 036
-          </a>
-        </div>
-        <div>
-          <a href="mailto:ondishub@gmail.com">
+       
+          <div>
             {" "}
-            <i class="fa-solid fa-mail"></i> ondishub@gmail
-          </a>
-        </div>
-        <div>
-          <i class="fa-solid fa-mail"></i> Nairobi, Kenya
-        </div>
+            <img src={logo} alt="logo" />
+          </div>
+
+          <div>
+            <a href="tel:+254719311036">
+              <i class="fa-solid fa-phone"></i> +254 719 311 036
+            </a>
+          </div>
+          <div>
+            <a href="mailto:ondishub@gmail.com">
+              {" "}
+              <i class="fa-solid fa-mail"></i> ondishub@gmail
+            </a>
+          </div>
+          <div>
+            <i class="fa-solid fa-mail"></i> Nairobi, Kenya
+          </div>
+       
       </div>
       <div className=".footer-middle">
         <h3>Our Services</h3>
@@ -49,7 +52,6 @@ const Footer = () => (
         <p>
           Copyright &copy; {new Date().getFullYear()} <b>OndisHub </b>{" "}
         </p>
-        
       </div>
       <div>
         <p>
