@@ -68,6 +68,7 @@ export const Navbar = () => {
         </div>
       </div>
 
+
       <div className="mobile-menu" style={{ marginRight: "0.5rem" }}>
         <div className="mobile-nav">
           <div className="logo">
@@ -77,6 +78,7 @@ export const Navbar = () => {
             {showLinks ? <ImCross /> : <GiHamburgerMenu />}
           </div>
         </div>
+
 
         <div className="mobile-container">
           {showLinks && (

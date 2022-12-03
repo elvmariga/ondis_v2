@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import  './hero-style/hero-style.css';
 import Button from '../Button/Button';
 import image from './assests/hero.svg';
@@ -35,7 +35,7 @@ const Hero = () => (
       </div>
     </div>
     <div className="hero-right"></div>
-    <img src={image} alt="Hero Image" />
+    <img src={image} alt={image} />
   </div>
 );
 
