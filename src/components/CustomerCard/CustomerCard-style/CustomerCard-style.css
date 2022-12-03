@@ -25,4 +25,7 @@
 }
 .customer-card .card-content .right h3 {
   margin: 0;
+}
+.customer-card .card-content .right p {
+  padding-right: 0.7rem;
 }/*# sourceMappingURL=CustomerCard-style.css.map */
