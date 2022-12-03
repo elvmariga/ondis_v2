@@ -3,6 +3,7 @@ import React from "react";
 import "../Footer/footer-style/footer-style.css";
 import logo from "./assests/ondis-logo.svg";
 // import Fade from "react-reveal/Fade";
+import Fade from 'react-reveal/Slide';
 
 const Footer = () => (
   <div className="footer">
@@ -30,15 +31,25 @@ const Footer = () => (
           </div>
        
       </div>
-      <div className=".footer-middle">
-        <h3>Our Services</h3>
 
-        <p>Web Development</p>
-        <p>Graphic Design</p>
-        <p>Social Media Branding</p>
-        <p>Serch Engine Optimization</p>
+      <Fade bottom cascade>
+      <div className=".footer-middle">
+
+     
+          <h3>Our Services</h3>
+
+    <p>Web Development</p>
+    <p>Graphic Design</p>
+    <p>Social Media Branding</p>
+    <p>Serch Engine Optimization</p>
+     
+       
       </div>
+      </Fade>
+
+      <Fade cascade right>
       <div className=".footer-right">
+    
         <h3>Company</h3>
 
         <p>About us</p>
@@ -46,6 +57,7 @@ const Footer = () => (
         <p>Privacy Policy</p>
         <p>Terms of Service</p>
       </div>
+      </Fade>
     </div>
     <div className="copyright">
       <div>

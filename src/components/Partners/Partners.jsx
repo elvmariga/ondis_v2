@@ -2,6 +2,8 @@ import React from "react";
 import "./partners-style/partners-style.css";
 // import userIcon from "./assets/user-plus.svg";
 import {partnerIcon} from "./assets/partnerIcons.js";
+import Slide from "react-reveal/Slide";
+
 
 const Partners = () => {
   return (
@@ -16,12 +18,16 @@ const Partners = () => {
             <p>Join us</p>
           </div> */}
 
+          <Slide cascade>
+
           <div className="the-partners">
             {partnerIcon.map((image) => {
               return <img src={image} alt="partner" />;
             })}
             
           </div>
+          </Slide>
+        
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import Typed from 'react-typed';
 import  './hero-style/hero-style.css';
 import Button from '../Button/Button';
 import image from './assests/hero.svg';
-// import Fade from "react-reveal/Fade";
+import Slide from 'react-reveal/Slide';
 
 
 
@@ -16,6 +16,12 @@ const Hero = () => (
             All You Need is an Attractive
           
           </h1>
+          <Typed
+            strings={ ['Graphics', 'Web development','App developemt','Social Media branding']}
+            typeSpeed={40}
+            backSpeed={50}
+            loop >
+          </Typed>
       
       </div>
       <div>
@@ -36,11 +42,10 @@ const Hero = () => (
     </div>
     <div className="hero-right"></div>
     <img src={image} alt="ssf" />
+    <Slide duration={1500} right></Slide>
   </div>
 );
 
-Hero.propTypes = {};
 
-Hero.defaultProps = {};
 
 export default Hero;

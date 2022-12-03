@@ -5,6 +5,7 @@ import Location from "./Assests/location.svg";
 import "./Contact-style/Contact-style.css";
 import emailjs, {init} from "@emailjs/browser";
 import swal from "sweetalert";
+import Zoom from "react-reveal/Zoom";
 
 const Contact = () => {
   const form = useRef();
@@ -106,6 +107,7 @@ const Contact = () => {
           <div>
             <p className="follow">Call me!</p>
             <div className="call-form">
+           
               <form action="" ref={form} onSubmit={phoneNumber}>
                 <input
                   type="tel"
@@ -121,6 +123,7 @@ const Contact = () => {
         </div>
 
         <div className="mail-form">
+        <Zoom cascade>
           <h2>Leave us a Message!</h2>
           <form action="" ref={form} onSubmit={sendEmail}>
             <div className="row">
@@ -166,37 +169,9 @@ const Contact = () => {
 
             <input className="callme" type="submit" value="Send" />
           </form>
+          </Zoom>
         </div>
-        {/* <div className="mail-form-tablet">
-          <h2>Leave us a Message!</h2>
-          <form action="" ref={form} onSubmit={sendEmail}>
-            <div className="row">
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input
-                type="email"
-                name="email"
-                id="email "
-                placeholder="Email"
-              />
-            </div>
-            <div className="row">
-              <input type="tel" name="phone" id="phone" placeholder="Phone " />
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="Subject"
-              />
-            </div>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input className="callme" type="submit" value="Send" />
-          </form>
-        </div> */}
+       
       </div>
       {/* <Footer /> */}
     </div>
