@@ -6,8 +6,8 @@ import Hero from "../components/Hero/Hero";
 import Partners from "../components/Partners/Partners";
 import Expert from "../components/Expert/Expert";
 import Service from "../components/Service/Service";
-import Graphics from '../components/Graphics/Graphics'
-import Socials from '../components/Socials/Socials'
+import Graphics from '../components/Graphics/Graphics';
+import Socials from '../components/Socials/Socials';
 import Customer from "../components/Customer/Customer";
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import Icon from "./assets/stack-icon.svg";
 import Plus from "./assets/plus.svg";
 import "./stack-style/Stack-style.css";

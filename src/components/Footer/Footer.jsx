@@ -1,6 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
-import styles from "../Footer/footer-style/footer-style.css";
+// import PropTypes from "prop-types";
+import "../Footer/footer-style/footer-style.css";
 import logo from "./assests/ondis-logo.svg";
 // import Fade from "react-reveal/Fade";
 

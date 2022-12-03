@@ -1,5 +1,5 @@
 import React from "react";
-import {Home} from "../src/pages/Home";
+import {Home} from "./pages/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import { Navigate, Route, Routes } from "react-router-dom";
@@ -12,9 +12,6 @@ export const App = () => {
     <section>
      
     <Navbar/>
-
-    
-   
 
         <Routes>
         <Route path="/" element={<Navigate to="/home" />} />

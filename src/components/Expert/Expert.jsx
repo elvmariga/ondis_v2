@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './expert-style/expert-style.css';
 import Icon from './assets/down-icon.svg'
 
