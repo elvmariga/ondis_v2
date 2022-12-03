@@ -42,7 +42,7 @@ const Hero = () => (
     </div>
     <div className="hero-right"></div>
     <img src={image} alt="ssf" />
-    <Slide duration={1500} right></Slide>
+    <Slide duration={1500} left></Slide>
   </div>
 );
 
