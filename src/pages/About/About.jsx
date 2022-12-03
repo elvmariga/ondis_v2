@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/Footer/Footer";
 import "./About-style/About-style.css";
 import Whatwedo from "./Assets/whatwedo.png";
 import Line from "../../components/Line/Line";

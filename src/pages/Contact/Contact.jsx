@@ -1,10 +1,7 @@
 import React, { useRef } from "react";
-// import {Navbar } from '../../components/Navbar/Navbar';
-import Footer from "../../components/Footer/Footer";
 import Mail from "./Assests/mail.svg";
 import Phone from "./Assests/phone.svg";
 import Location from "./Assests/location.svg";
-import icons from "./Assests/icons.svg";
 import "./Contact-style/Contact-style.css";
 import emailjs, {init} from "@emailjs/browser";
 import swal from "sweetalert";
