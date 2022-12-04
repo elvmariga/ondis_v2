@@ -6,6 +6,7 @@ import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
 import { sites } from "./assets/stacks";
 import Line from "../Line/Line";
+import Fade from "react-reveal/Slide";
 
 const Graphics = () => {
   return (
@@ -44,22 +45,27 @@ const Graphics = () => {
             </div>
             <div className="left"></div>
           </div>
-
-          <div className="tech-stack">
-            <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
-            {stackIcons.map((image) => {
-              return (
-                <img src={image} style={{ marginRight: "1rem" }} alt="sdsdd" />
-              );
-            })}
-          </div>
+          
+            <div className="tech-stack">
+              <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
+              <Fade cascade right>
+              {stackIcons.map((image) => {
+                return (
+                  <img
+                    src={image}
+                    style={{ marginRight: "1rem" }}
+                    alt="sdsdd"
+                  />
+                );
+              })}
+               </Fade>
+            </div>
+         
           <Button />
         </div>
       </div>
     </div>
   );
 };
-
-
 
 export default Graphics;

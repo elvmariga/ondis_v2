@@ -11,18 +11,14 @@ const Hero = () => (
   <div className="hero">
     <div className="hero-left">
       <div>
-        
-          <h1>
-            All You Need is an Attractive
-          
-          </h1>
-          <Typed
-            strings={ ['Graphics', 'Web development','App developemt','Social Media branding']}
-            typeSpeed={40}
-            backSpeed={50}
-            loop >
-          </Typed>
-      
+        <h1>All You Need is an Attractive</h1>
+        <Typed
+          strings={["Website", "Graphics Design", "Social Media branding"]}
+          typeSpeed={80}
+          backSpeed={50}
+          loop
+          style={{ color: "red", fontSize: "2rem", fontWeight:"600" }}
+        ></Typed>
       </div>
       <div>
         <p>
@@ -36,7 +32,10 @@ const Hero = () => (
         />
         <a href="http://">
           Whatapp
-           <i class="fa-brands fa-whatsapp " style={{marginLeft:"0.4rem"}}></i>
+          <i
+            class="fa-brands fa-whatsapp "
+            style={{ marginLeft: "0.4rem" }}
+          ></i>
         </a>
       </div>
     </div>
