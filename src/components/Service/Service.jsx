@@ -3,6 +3,8 @@ import React from "react";
 import "./Service-style/Service-style.css";
 import Image from "./assets/web-development.svg";
 // import Product from "../Product/Product";
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 // import Stack from "../Stack/Stack";
 import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
@@ -33,7 +35,10 @@ const Service = () => {
           </div>
           <div className="web-services">
             <div className="right">
-              {sites.map(({ icon, text, details  }, i) => {
+
+            <Zoom bottom cascade>
+              {sites.map(({ icon, text }, i) => {
+
                 return (
                   <p>
                     <img
@@ -46,11 +51,14 @@ const Service = () => {
                   </p>
                 );
               })}
+              </Zoom>
             </div>
             <div className="left">
               <div className="right">
+              <Zoom bottom cascade>
                 {sites.map(({ icon, text }, i) => {
                   return (
+                    
                     <p>
                       <img
                         src={icon}
@@ -62,6 +70,7 @@ const Service = () => {
                     </p>
                   );
                 })}
+                </Zoom>
               </div>
             </div>
           </div>
@@ -70,7 +79,9 @@ const Service = () => {
             <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
             {stackIcons.map((image) => {
               return (
+                <Fade right cascade>
                 <img src={image} style={{ marginRight: "1rem" }} alt="sdsdd" />
+                </Fade>
               );
             })}
           </div>
