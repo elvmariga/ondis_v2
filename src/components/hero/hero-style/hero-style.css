@@ -61,7 +61,7 @@
 @media screen and (max-width: 480px) {
   .hero .hero-left p {
     padding: 0;
-    margin: 0;
+    margin: 1rem 0;
   }
 }
 .hero .hero-left .btns {

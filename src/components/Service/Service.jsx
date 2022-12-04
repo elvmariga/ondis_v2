@@ -33,7 +33,7 @@ const Service = () => {
           </div>
           <div className="web-services">
             <div className="right">
-              {sites.map(({ icon, text }, i) => {
+              {sites.map(({ icon, text, details  }, i) => {
                 return (
                   <p>
                     <img

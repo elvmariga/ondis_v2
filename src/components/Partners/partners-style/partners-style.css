@@ -3,8 +3,11 @@
   padding: 8px 0;
 }
 .partners img {
-  width: 20%;
+  width: 30%;
   height: auto;
+}
+.partners img:hover {
+  transform: scale(1.1, 1.1);
 }
 .partners .partners-content {
   width: 30%;
@@ -19,7 +22,7 @@
 }
 .partners .partners-content .partners-bottom .the-partners {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
 }
 @media screen and (min-width: 480px) {
@@ -27,6 +30,6 @@
     gap: 2rem;
   }
   .partners .partners-content .partners-bottom .the-partners img {
-    width: 20%;
+    width: 40%;
   }
 }/*# sourceMappingURL=partners-style.css.map */
