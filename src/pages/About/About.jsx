@@ -9,6 +9,8 @@ import graphic from "./Assets/graphics.svg";
 import social from "./Assets/social-tree.svg";
 import creative from "./Assets/creative.svg";
 import choose from './Assets/choose.png'
+import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Slide";
 // import {Navbar} from "../../components/Navbar/Navbar"
 
 const About = () => {
@@ -28,46 +30,54 @@ const About = () => {
 
             <div className="container">
               <div className="title">
-                <div class="tinted-left">
-                  <img src={Whatwedo} alt="What we do" />
-                </div>
+                <Fade top cascade>
+                  <div class="tinted-left">
+                    <img src={Whatwedo} alt="What we do" />
+                  </div>
+                </Fade>
               </div>
-              <div className="details">
-                {/* <h1>What we do</h1> */}
-                <p>
-                  <strong>ONDIS Hub</strong> is a web Application development
-                  and creative design agency based in Kenya with a team all over
-                  the globe. Our web applications, graphics and user designs are
-                  tailored to create business credibility and increase sales
-                  conversion online
-                </p>
-                <div className="icons">
-                  <div className="icon-details">
-                    <div>
-                      <img src={webDev} className="icon" alt="" />
+              <Fade cascade right>
+                <div className="details">
+                  {/* <h1>What we do</h1> */}
+
+                  <p>
+                    <strong>ONDIS Hub</strong> is a web Application development
+                    and creative design agency based in Kenya with a team all
+                    over the globe. Our web applications, graphics and user
+                    designs are tailored to create business credibility and
+                    increase sales conversion online
+                  </p>
+
+                  <div className="icons">
+                    <div className="icon-details">
+                      <div>
+                        <img src={webDev} className="icon" alt="" />
+                      </div>
+                      <div className="icon-content">
+                        <p>Wed Development</p>
+                      </div>
                     </div>
-                    <div className="icon-content">
-                      <p>Wed Development</p>
+
+                    <div className="icon-details">
+                      <div>
+                        <img src={graphic} className="icon" alt="" />
+                      </div>
+                      <div className="icon-content">
+                        <p>Graphic Designing</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="icon-details">
-                    <div>
-                      <img src={graphic} className="icon" alt="" />
-                    </div>
-                    <div className="icon-content">
-                      <p>Graphic Designing</p>
-                    </div>
-                  </div>
-                  <div className="icon-details">
-                    <div>
-                      <img src={social} className="icon" alt="" />
-                    </div>
-                    <div className="icon-content">
-                      <p>Social Media Branding</p>
+                    <div className="icon-details">
+                      <div>
+                        <img src={social} className="icon" alt="" />
+                      </div>
+
+                      <div className="icon-content">
+                        <p>Social Media Branding</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Fade>
             </div>
           </div>
         </div>
@@ -81,22 +91,26 @@ const About = () => {
             </h1>
             <div className="container">
               <div className="title">
-                <div class="tinted-left">
-                  <img src={values} alt="What we do" />
-                </div>
+                <Slide right cascade>
+                  <div class="tinted-left">
+                    <img src={values} alt="What we do" />
+                  </div>
+                </Slide>
               </div>
-              <div className="details">
-                <h1>Our Values</h1>
-                <p>
-                  To provide Top Class Online Services Support through offering
-                  web application, graphics and other digital services to help
-                  business make more sales and increase online presence also
-                  product credibility.
-                </p>
-                {/* <p>
+              <Fade top cascade>
+                <div className="details">
+                  <h1>Our Values</h1>
+                  <p>
+                    To provide Top Class Online Services Support through
+                    offering web application, graphics and other digital
+                    services to help business make more sales and increase
+                    online presence also product credibility.
+                  </p>
+                  {/* <p>
                   <img src={values} alt="" />
                 </p> */}
-              </div>
+                </div>
+              </Fade>
             </div>
           </div>
         </div>
@@ -112,9 +126,11 @@ const About = () => {
             </h1>
             <div className="container">
               <div className="title">
-                <div class="tinted-left">
-                  <img src={choose} alt="What we do" />
-                </div>
+                <Slide left cascade>
+                  <div class="tinted-left">
+                    <img src={choose} alt="What we do" />
+                  </div>
+                </Slide>
               </div>
               <div className="details">
                 {/* <h1>What we do</h1> */}

@@ -35,8 +35,10 @@ const Service = () => {
           </div>
           <div className="web-services">
             <div className="right">
+
             <Zoom bottom cascade>
               {sites.map(({ icon, text }, i) => {
+
                 return (
                   
                   <p>

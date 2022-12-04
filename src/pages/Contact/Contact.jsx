@@ -6,31 +6,33 @@ import "./Contact-style/Contact-style.css";
 import emailjs, {init} from "@emailjs/browser";
 import swal from "sweetalert";
 import Zoom from "react-reveal/Zoom";
+import Slide from "react-reveal/Slide";
 
 const Contact = () => {
   const form = useRef();
+  const forms= useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+  // const sendEmail = (e) => {
+  //   e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
-    emailjs
-      .sendForm(
-        "service_ptk1q7r",
-        "template_t4ephna ",
-        form.current,
-        "9byfXctYyiSASCu0T"
-      )
-      .then(
-        (result) => {
-          // show the user an sent success
-          swal("Email Sent Successfully");
-        },
-        (error) => {
-          // show the user an error
-          swal("Error in sending, try again");
-        }
-      );
-  };
+  //   emailjs
+  //     .sendForm(
+  //       "service_ptk1q7r",
+  //       "template_t4ephna",
+  //       form.current,
+  //       "9byfXctYyiSASCu0T"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         // show the user an sent success
+  //         swal("Email Sent Successfully");
+  //       },
+  //       (error) => {
+  //         // show the user an error
+  //         swal("Error in sending, try again");
+  //       }
+  //     );
+  // };
 
   const phoneNumber = (e) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
@@ -50,6 +52,28 @@ const Contact = () => {
         (error) => {
           // show the user an error
           swal("Error!");
+        }
+      );
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+
+    emailjs
+      .sendForm(
+        "service_ptk1q7r",
+        "template_t4ephna",
+        form.current,
+        "9byfXctYyiSASCu0T"
+      )
+      .then(
+        (result) => {
+          // show the user an sent success
+          swal("Email Sent Successfully");
+        },
+        (error) => {
+          // show the user an error
+          swal("Error in sending, try again");
         }
       );
   };

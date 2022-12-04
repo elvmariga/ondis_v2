@@ -4,6 +4,7 @@ import  './hero-style/hero-style.css';
 import Button from '../Button/Button';
 import image from './assests/hero.svg';
 import Slide from 'react-reveal/Slide';
+import Fade from "react-reveal/Slide";
 
 
 
@@ -17,14 +18,16 @@ const Hero = () => (
           typeSpeed={80}
           backSpeed={50}
           loop
-          style={{ color: "red", fontSize: "2rem", fontWeight:"600" }}
+          style={{ color: "red", fontSize: "1.8rem", fontWeight: "600" }}
         ></Typed>
       </div>
       <div>
-        <p>
-          Our skilled content creators, designers and developers are dedicated
-          to ensure you maxmize on the growing differentiated online users.
-        </p>
+        <Slide duration={2500} right>
+          <p>
+            Our skilled content creators, designers and developers are dedicated
+            to ensure you maxmize on the growing differentiated online users.
+          </p>
+        </Slide>
       </div>
       <div className="btns">
         <Button
@@ -40,8 +43,10 @@ const Hero = () => (
       </div>
     </div>
     <div className="hero-right"></div>
-    <img src={image} alt="ssf" />
-    <Slide duration={1500} left></Slide>
+
+    <Slide duration={1500} left>
+      <img src={image} alt="ssf" />
+    </Slide>
   </div>
 );
 
