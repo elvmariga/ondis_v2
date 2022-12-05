@@ -10,6 +10,7 @@
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.14",
     "@mui/material": "^5.10.14",
+    "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.1.2",
     "email-js": "^2.0.2",
@@ -27,8 +28,7 @@
     "react-scroll-up-button": "^1.6.4",
     "react-typed": "^1.2.0",
     "scss": "^0.2.4",
-    "sweetalert": "^2.1.2",
-    "web-vitals": "^2.1.4"
+    "sweetalert": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -56,6 +56,7 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.3.0",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "web-vitals": "^3.1.0"
   }
 }
