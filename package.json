@@ -1,8 +1,10 @@
 {
-  "name": "sogy-hotel",
+  "name": "ondis_v2",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@emotion/core": "^10.1.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -10,6 +12,9 @@
     "@mui/material": "^5.10.14",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.1.2",
+    "email-js": "^2.0.2",
+    "emailer-js": "^1.0.2",
+    "emailjs": "^4.0.1",
     "react": "^16.14.0",
     "react-carousel-minimal": "^1.4.1",
     "react-dom": "^16.14.0",
@@ -22,6 +27,7 @@
     "react-scroll-up-button": "^1.6.4",
     "react-typed": "^1.2.0",
     "scss": "^0.2.4",
+    "sweetalert": "^2.1.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
