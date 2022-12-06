@@ -13,7 +13,7 @@ export const sites = [
     details: "This is ideal for blogs and portifolio" },
   {
     icon: Figma,
-    text: "Informative website",
+    text: "Informative websitesdsdfsdfsdfsdfsdfsd sdfsfsdfsdfsdfsd",
     details: "2",
   },
   {
