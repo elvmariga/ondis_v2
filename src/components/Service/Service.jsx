@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 // import PropTypes from "prop-types";
+import {  FcExpand,FcCollapse } from 'react-icons/fc';
 import "./Service-style/Service-style.css";
 import Image from "./assets/web-development.svg";
 // import Product from "../Product/Product";
@@ -12,6 +13,14 @@ import { sites } from "./assets/stacks";
 import Line from "../Line/Line";
 
 const Service = () => {
+
+  const [expanded, setExpanded] = useState(false);
+  const [showIcons, setShowIcons] = useState(true);
+
+  function toggleExpansion() {
+    setExpanded(!expanded);
+  }
+
   return (
     <div className="web">
       <div className="web-content">
@@ -37,29 +46,68 @@ const Service = () => {
             <div className="right">
 
             <Zoom bottom cascade>
-              {sites.map(({ icon, text }, i) => {
+              {sites.map(({ icon, text ,details }, i) => {
 
                 return (
-                  
-                  <p>
+                  <>
+                  <p onClick={toggleExpansion} onMouseEnter={()=>{setShowIcons(true)}} onMouseLeave={()=>{setShowIcons(false)}}>
                     <img
                       src={icon}
                       style={{ marginRight: "1rem" }}
-                      alt="sdsdd"
+                      alt={details}
                     />
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     {text}
+                   {showIcons &&  <div className="collapse" >  {expanded ?  <FcCollapse/>: <FcExpand/> }</div>}
+                 
                   </p>
+                  { expanded && `${details}`}
+                  </>
+                 
                 );
               })}
               </Zoom>
             </div>
-            <div className="left">
+            {/* <div className="left">
               <div className="right">
               <Zoom bottom cascade>
-                {sites.map(({ icon, text }, i) => {
+                {sites.map(({ icon, text  ,details }, i) => {
                   return (
-                    
+                    <>
                     <p>
                       <img
                         src={icon}
@@ -67,13 +115,22 @@ const Service = () => {
                         alt="sdsdd"
                       />
 
-                      {text}
+                      <span  onClick={toggleExpansion}>{text}</span> 
+                      <div className="collapse">
+                        { expanded ? <FcExpand/> : <FcCollapse/>}
+                     </div>
                     </p>
+                 
+
+                    </>
+                   
+
+                  
                   );
                 })}
                 </Zoom>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="tech-stack">

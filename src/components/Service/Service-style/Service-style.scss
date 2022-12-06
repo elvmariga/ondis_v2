@@ -38,6 +38,17 @@
                 display: flex;
                 gap: 3rem;
                 // justify-content: space-evenly;
+                .right{
+                    .collapse{
+                        display:flex;
+    
+                        // &:hover{
+                        //     display: flex;
+                        // }
+                    }
+                }
+
+              
             }
 
             .tech-stack {

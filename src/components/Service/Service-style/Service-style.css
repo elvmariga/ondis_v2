@@ -31,6 +31,9 @@
   display: flex;
   gap: 3rem;
 }
+.web .web-content .web-right .web-services .right .collapse {
+  display: flex;
+}
 .web .web-content .web-right .tech-stack {
   margin: 1rem 0;
   margin-bottom: 2rem;
