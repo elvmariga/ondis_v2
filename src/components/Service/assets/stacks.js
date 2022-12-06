@@ -8,15 +8,18 @@ import Others from "./others.svg";
 export const stackIcons = [Html, Css, React, Angular, Figma, Others];
 
 export const sites = [
-  { icon: Css, 
+  { id:0,
+    icon: Css, 
     text: "Standard", 
     details: "1" },
   {
+    id:1,
     icon: Figma,
     text: "Informative website",
     details: "2",
   },
   {
+    id:2,
     icon: React,
     text: "E-commerce",
     details: "3",

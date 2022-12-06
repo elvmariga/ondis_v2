@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 // import PropTypes from "prop-types";
 import {  FcExpand,FcCollapse } from 'react-icons/fc';
 import "./Service-style/Service-style.css";
@@ -13,147 +13,49 @@ import { sites } from "./assets/stacks";
 import Line from "../Line/Line";
 
 const Service = () => {
+  const [expanded, setExpanded] = useState({});
+  const [showIcons, setShowIcons] = useState(null);
 
-  const [expanded, setExpanded] = useState(false);
-  const [showIcons, setShowIcons] = useState(true);
-
-  function toggleExpansion() {
-    setExpanded(!expanded);
+  function toggleExpansion(index) {
+    setExpanded({
+      ...expanded,
+      [index]: !expanded[index],
+    });
   }
 
   return (
-    <div className="web">
-      <div className="web-content">
-        <div className="web-left">
-          <h2>
-            {" "}
-            <Line />
-            Web Development
-          </h2>
-          <img src={Image} alt="" />
-        </div>
-
-        <div className="web-right">
-          <div>
-            <h2 className="web-title">Web Development</h2>
-            <p>
-              Our responsive website let's your prospects enjoy a great
-              exprerience on any screen size and orientation while interacting
-              with your online office.
+    <div>
+      {sites.map(({ icon, text, details, id }, i) => {
+        return (
+          <>
+            <p
+              onClick={() => toggleExpansion(i)}
+              onMouseEnter={() => {
+                setShowIcons(i);
+              }}
+              onMouseLeave={() => {
+                setShowIcons(null);
+              }}
+              key={id}
+            >
+              <img
+                src={icon}
+                style={{ marginRight: "1rem" }}
+                alt={details}
+              />
+              {text}
+              {showIcons === i && (
+                <div className="collapse">
+                  {expanded[i] ? <FcCollapse /> : <FcExpand />}
+                </div>
+              )}
             </p>
-          </div>
-          <div className="web-services">
-            <div className="right">
-
-            <Zoom bottom cascade>
-              {sites.map(({ icon, text ,details }, i) => {
-
-                return (
-                  <>
-                  <p onClick={toggleExpansion} onMouseEnter={()=>{setShowIcons(true)}} onMouseLeave={()=>{setShowIcons(false)}}>
-                    <img
-                      src={icon}
-                      style={{ marginRight: "1rem" }}
-                      alt={details}
-                    />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    {text}
-                   {showIcons &&  <div className="collapse" >  {expanded ?  <FcCollapse/>: <FcExpand/> }</div>}
-                 
-                  </p>
-                  { expanded && `${details}`}
-                  </>
-                 
-                );
-              })}
-              </Zoom>
-            </div>
-            {/* <div className="left">
-              <div className="right">
-              <Zoom bottom cascade>
-                {sites.map(({ icon, text  ,details }, i) => {
-                  return (
-                    <>
-                    <p>
-                      <img
-                        src={icon}
-                        style={{ marginRight: "1rem" }}
-                        alt="sdsdd"
-                      />
-
-                      <span  onClick={toggleExpansion}>{text}</span> 
-                      <div className="collapse">
-                        { expanded ? <FcExpand/> : <FcCollapse/>}
-                     </div>
-                    </p>
-                 
-
-                    </>
-                   
-
-                  
-                  );
-                })}
-                </Zoom>
-              </div>
-            </div> */}
-          </div>
-
-          <div className="tech-stack">
-            <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
-            {stackIcons.map((image) => {
-              return (
-                <Fade right cascade>
-                <img src={image} style={{ marginRight: "1rem" }} alt="sdsdd" />
-                </Fade>
-              );
-            })}
-          </div>
-          <div>
-            <Button />
-          </div>
-        </div>
-      </div>
+            {expanded[i] && `${details}`}
+          </>
+        );
+      })}
     </div>
   );
 };
-
-Service.propTypes = {};
-
-Service.defaultProps = {};
 
 export default Service;

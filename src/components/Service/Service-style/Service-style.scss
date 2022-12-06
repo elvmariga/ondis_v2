@@ -37,13 +37,18 @@
             .web-services {
                 display: flex;
                 gap: 3rem;
+                cursor: pointer;
                 // justify-content: space-evenly;
+               
                 .right{
+                    &:hover{
+                        background-color: azure;
+                    }
                     .collapse{
                         display:flex;
     
                         // &:hover{
-                        //     display: flex;
+                            display: flex;
                         // }
                     }
                 }
