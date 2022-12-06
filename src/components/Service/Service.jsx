@@ -50,52 +50,58 @@ const Service = () => {
 
                 return (
                   <>
-                  <p onClick={toggleExpansion} onMouseEnter={()=>{setShowIcons(true)}} onMouseLeave={()=>{setShowIcons(false)}}>
-                    <img
-                      src={icon}
-                      style={{ marginRight: "1rem" }}
-                      alt={details}
-                    />
-                    {text}
-                   {showIcons &&  <div className="collapse" >  {expanded ?  <FcCollapse/>: <FcExpand/> }</div>}
-                 
-                  </p>
-                  { expanded && `${details}`}
+                    <p
+                      onClick={toggleExpansion}
+                      onMouseEnter={() => {
+                        setShowIcons(true);
+                      }}
+                      onMouseLeave={() => {
+                        setShowIcons(false);
+                      }}
+                    >
+                      <img
+                        src={icon}
+                        // style={{ marginRight: "1rem" }}
+                        alt={details}
+                      />
+                      {text}
+                      {showIcons && (
+                        <div className="collapse">
+                          {" "}
+                          {expanded ? <FcCollapse /> : <FcExpand />}
+                        </div>
+                      )}
+                    </p>
+                   {expanded && `${details}`}
                   </>
-                 
                 );
               })}
               </Zoom>
             </div>
-            <div className="left">
+            {/* <div className="left">
               <div className="right">
               <Zoom bottom cascade>
-                {sites.map(({ icon, text  ,details }, i) => {
+                {sites.map(({ icon, text }, i) => {
                   return (
                     <>
-                    <p>
-                      <img
-                        src={icon}
-                        style={{ marginRight: "1rem" }}
-                        alt="sdsdd"
-                      />
+                      <p>
+                        <img
+                          src={icon}
+                          // style={{ marginRight: "1rem" }}
+                          alt="service icon"
+                        />
 
-                      <span  onClick={toggleExpansion}>{text}</span> 
+                        <span onClick={toggleExpansion}>{text}</span>
+                      </p>
                       <div className="collapse">
-                        { expanded ? <FcExpand/> : <FcCollapse/>}
-                     </div>
-                    </p>
-                 
-
+                        {expanded ? <FcExpand /> : <FcCollapse />}
+                      </div>
                     </>
-                   
-
-                  
                   );
                 })}
                 </Zoom>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="tech-stack">
@@ -103,7 +109,9 @@ const Service = () => {
             {stackIcons.map((image) => {
               return (
                 <Fade right cascade>
-                <img src={image} style={{ marginRight: "1rem" }} alt="sdsdd" />
+                <img src={image} 
+                style={{ marginRight: "1rem" }}
+                 alt="sdsdd" />
                 </Fade>
               );
             })}
