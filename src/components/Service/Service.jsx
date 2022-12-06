@@ -56,41 +56,6 @@ const Service = () => {
                       style={{ marginRight: "1rem" }}
                       alt={details}
                     />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     {text}
                    {showIcons &&  <div className="collapse" >  {expanded ?  <FcCollapse/>: <FcExpand/> }</div>}
                  
@@ -102,7 +67,7 @@ const Service = () => {
               })}
               </Zoom>
             </div>
-            {/* <div className="left">
+            <div className="left">
               <div className="right">
               <Zoom bottom cascade>
                 {sites.map(({ icon, text  ,details }, i) => {
@@ -130,7 +95,7 @@ const Service = () => {
                 })}
                 </Zoom>
               </div>
-            </div> */}
+            </div>
           </div>
 
           <div className="tech-stack">

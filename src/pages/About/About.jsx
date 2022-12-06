@@ -3,12 +3,12 @@ import "./About-style/About-style.css";
 import Whatwedo from "./Assets/whatwedo.png";
 import Line from "../../components/Line/Line";
 import Aboutus from "./Assets/hero2.jpg";
-import values from "./Assets/values.svg";
+import values from "./Assets/values (2).png";
 import webDev from "./Assets/web-development.svg";
 import graphic from "./Assets/graphics.svg";
 import social from "./Assets/social-tree.svg";
 import creative from "./Assets/creative.svg";
-import choose from './Assets/choose.png'
+import choose from './Assets/choose.jpg'
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Slide";
 // import {Navbar} from "../../components/Navbar/Navbar"

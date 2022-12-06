@@ -10,7 +10,7 @@ export const stackIcons = [Html, Css, React, Angular, Figma, Others];
 export const sites = [
   { icon: Css, 
     text: "Standard", 
-    details: "1" },
+    details: "This is ideal for blogs and portifolio" },
   {
     icon: Figma,
     text: "Informative website",
