@@ -30,55 +30,48 @@
 .web .web-content .web-right .web-services {
   display: flex;
   gap: 3rem;
-  cursor: pointer;
 }
-.web .web-content .web-right .web-services .right:hover {
-  background-color: azure;
-}
-.web .web-content .web-right .web-services .right .collapse {
-  display: flex;
-}
-.web .web-content .web-right .web-services .right .collapse .right {
+.web .web-content .web-right .web-services .right {
   text-align: left;
 }
-.web .web-content .web-right .web-services .right .collapse .right p {
+.web .web-content .web-right .web-services .right p {
   display: flex;
   font-size: medium;
-  gap: 0.2rem;
+  gap: 0.5rem;
   width: 100%;
 }
-.web .web-content .web-right .web-services .right .collapse .right .collapse {
+.web .web-content .web-right .web-services .right .collapse {
   justify-content: center;
   display: flex;
 }
-.web .web-content .web-right .web-services .right .collapse .right .dropdown p {
+.web .web-content .web-right .web-services .right .dropdown p {
   border: #1055db 1px solid;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 1rem;
   border-radius: 8px;
 }
-.web .web-content .web-right .web-services .right .tech-stack {
+.web .web-content .web-right .tech-stack {
   margin: 1rem 0;
   margin-bottom: 2rem;
 }
-.web .web-content .web-right .web-services .right .tech-stack img:hover {
+.web .web-content .web-right .tech-stack img:hover {
   transform: scale(1.1, 1.1);
 }
 @media screen and (min-width: 600px) {
-  .web .web-content .web-right .web-content {
+  .web .web-content {
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
     align-items: center;
   }
-  .web .web-content .web-right .web-content .web-left img {
+  .web .web-content .web-left img {
     width: 100%;
     height: auto;
   }
-  .web .web-content .web-right .web-content .web-right {
+  .web .web-content .web-right {
     width: 50%;
   }
-  .web .web-content .web-right .web-content .web-right h2 {
+  .web .web-content .web-right h2 {
     display: block;
   }
 }/*# sourceMappingURL=Service-style.css.map */
