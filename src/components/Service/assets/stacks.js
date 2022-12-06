@@ -11,11 +11,11 @@ export const sites = [
   { id:0,
     icon: Css, 
     text: "Standard", 
-    details: "1" },
+    details: "This is ideal for blogs and portifolio" },
   {
     id:1,
     icon: Figma,
-    text: "Informative website",
+    text: "Informative websitesdsdfsdfsdfsdfsdfsd sdfsfsdfsdfsdfsd",
     details: "2",
   },
   {
