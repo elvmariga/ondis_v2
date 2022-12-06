@@ -15,7 +15,7 @@ export const sites = [
   {
     id:1,
     icon: Figma,
-    text: "Informative websitesdsdfsdfsdfsdfsdfsd sdfsfsdfsdfsdfsd",
+    text: "Informative websites",
     details: "2",
   },
   {
