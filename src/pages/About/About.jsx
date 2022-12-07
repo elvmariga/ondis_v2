@@ -3,7 +3,7 @@ import "./About-style/About-style.css";
 import Whatwedo from "./Assets/whatwedo.png";
 import Line from "../../components/Line/Line";
 import Aboutus from "./Assets/hero2.jpg";
-import values from "./Assets/values (2).png";
+import values from "./Assets/values.svg";
 import webDev from "./Assets/web-development.svg";
 import graphic from "./Assets/graphics.svg";
 import social from "./Assets/social-tree.svg";
@@ -11,6 +11,12 @@ import creative from "./Assets/creative.svg";
 import choose from './Assets/choose.jpg'
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Slide";
+import customer from './Assets/customer.svg';
+import team from "./Assets/team.svg";
+import support from "./Assets/support.svg";
+import best from "./Assets/best.svg";
+import price from "./Assets/price.svg";
+import credibility from "./Assets/credibility.svg";
 // import {Navbar} from "../../components/Navbar/Navbar"
 
 const About = () => {
@@ -106,9 +112,34 @@ const About = () => {
                     services to help business make more sales and increase
                     online presence also product credibility.
                   </p>
-                  {/* <p>
-                  <img src={values} alt="" />
-                </p> */}
+                  <div className="icons">
+                    <div className="icon-details">
+                      <div>
+                        <img src={customer} className="icon" alt="" />
+                      </div>
+                      <div className="icon-content">
+                        <p>Custom Tailored</p>
+                      </div>
+                    </div>
+
+                    <div className="icon-details">
+                      <div>
+                        <img src={team} className="icon" alt="" />
+                      </div>
+                      <div className="icon-content">
+                        <p>Creative Team</p>
+                      </div>
+                    </div>
+                    <div className="icon-details">
+                      <div>
+                        <img src={credibility} className="icon" alt="" />
+                      </div>
+
+                      <div className="icon-content">
+                        <p>Product Credibility</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </Fade>
             </div>
@@ -141,6 +172,35 @@ const About = () => {
                   tailored to create business credibility and increase sales
                   conversion online
                 </p>
+
+                <div className="icons">
+                  <div className="icon-details">
+                    <div>
+                      <img src={support} className="icon" alt="" />
+                    </div>
+                    <div className="icon-content">
+                      <p>24/7 Customer Support</p>
+                    </div>
+                  </div>
+
+                  <div className="icon-details">
+                    <div>
+                      <img src={best} className="icon" alt="" />
+                    </div>
+                    <div className="icon-content">
+                      <p>Creative Tailored Design</p>
+                    </div>
+                  </div>
+                  <div className="icon-details">
+                    <div>
+                      <img src={price} className="icon" alt="" />
+                    </div>
+
+                    <div className="icon-content">
+                      <p>Best Price Guarantee</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

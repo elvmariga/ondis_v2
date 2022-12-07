@@ -71,9 +71,7 @@
         }
 
         .creative {
-
-            // background-color: #f2f2f2;
-            // margin-top: 2rem;
+            // background-image: url(../Assets/creative.svg);
             img {
                 width: 100%;
                 height: auto;
@@ -85,6 +83,13 @@
             background-color: #f2f2f2;
 
             color: rgb(0, 0, 0, 0.7);
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+                @media only screen and (min-width: 600px) {
+                    img {
+                            margin-left: 3rem;
+                        }
+                }
+          
         }
     }
 
