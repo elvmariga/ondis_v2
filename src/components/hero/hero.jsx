@@ -22,12 +22,12 @@ const Hero = () => (
         ></Typed>
       </div>
       <div>
-        <Slide duration={2500} right>
+        
           <p>
             Our skilled content creators, designers and developers are dedicated
             to ensure you maxmize on the growing differentiated online users.
           </p>
-        </Slide>
+        
       </div>
       <div className="btns">
         <Button
@@ -44,8 +44,8 @@ const Hero = () => (
     </div>
     <div className="hero-right"></div>
 
-    <Slide duration={1500} left>
-      <img src={image} alt="ssf" />
+    <Slide duration={1500} bottom>
+      <img src={image} alt="Hero imagine" />
     </Slide>
   </div>
 );

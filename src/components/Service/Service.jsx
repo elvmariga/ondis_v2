@@ -13,11 +13,17 @@ import { sites } from "./assets/stacks";
 import Line from "../Line/Line";
 
 const Service = () => {
-  const [expanded, setExpanded] = useState(false);
-  const [showIcons, setShowIcons] = useState(true);
+  const [expanded, setExpanded] = useState({});
+  const [currentExpanded, setCurrentExpanded] = useState(null);
+  const [showIcons, setShowIcons] = useState(null);
 
-  function toggleExpansion() {
-    setExpanded(!expanded);
+  function toggleExpansion(index) {
+    if (currentExpanded !== index) {
+      setExpanded({ [index]: true });
+      setCurrentExpanded(index);
+    } else {
+      setExpanded({ [index]: !expanded[index] });
+    }
   }
 
   return (
@@ -42,6 +48,41 @@ const Service = () => {
             </p>
           </div>
           <div className="web-services">
+            <div className="right">
+              <Zoom bottom cascade>
+                {sites.map(({ icon, text, details, id }, i) => {
+                  return (
+                    <>
+                      <p
+                        onClick={() => toggleExpansion(i)}
+                        onMouseEnter={() => {
+                          setShowIcons(i);
+                        }}
+                        onMouseLeave={() => {
+                          setShowIcons(null);
+                        }}
+                        key={id}
+                      >
+                        <img
+                          src={icon}
+                          style={{ marginRight: "1rem" }}
+                          alt={details}
+                        />
+                        {text}
+                        {showIcons === i && (
+                          <div className="collapse">
+                            {expanded[i] ? <FcCollapse /> : <FcExpand />}
+                          </div>
+                        )}
+                      </p>
+                      {expanded[i] && <p>{`${details}`}</p>}
+                    </>
+                  );
+                })}
+              </Zoom>
+            </div>
+          </div>
+          {/* <div className="web-services">
             <div className="right">
               <Zoom bottom cascade>
                 {sites.map(({ icon, text, details }, i) => {
@@ -99,7 +140,6 @@ const Service = () => {
                 </Zoom>
               </div>
             </div> */}
-          </div>
 
           <div className="tech-stack">
             <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
