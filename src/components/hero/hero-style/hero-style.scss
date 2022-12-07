@@ -64,8 +64,18 @@
 
   .hero-left {
     h1 {
-      color: #1055db;
-      font-size: 3.2rem;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 2rem;
+      @media screen and (max-width:600px) {
+         font-size: 1.2rem;
+        }
+    }
+
+    span{
+      @media screen and (max-width:600px) {
+          font-size: 1.7rem;
+          font-weight: 700;
+        }
     }
 
     p {

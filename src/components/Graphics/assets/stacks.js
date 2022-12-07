@@ -11,13 +11,13 @@ export const sites = [
   {
     id: 0,
     icon: illustrator,
-    text: "Standard",
-    details: "This is ideal for blogs and portifolio",
+    text: "Logos",
+    details: "This is ideal for blogs and portifolio \n 1. sdsdf 2.",
   },
   {
     id: 1,
     icon: photoshop,
-    text: "Informative websites",
+    text: "Business Cards",
     details: "2",
   },
   {

@@ -18,7 +18,7 @@ const Partners = () => {
             <p>Join us</p>
           </div> */}
 
-          <Slide top cascade>
+          <Slide bottom cascade>
 
           <div className="the-partners">
             {partnerIcon.map((image) => {

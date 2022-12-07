@@ -69,7 +69,7 @@ const Socials = () => {
                       >
                         <img
                           src={icon}
-                          style={{ marginRight: "1rem" }}
+                          // style={{ marginRight: "1rem" }}
                           alt={details}
                         />
                         {text}
@@ -79,7 +79,7 @@ const Socials = () => {
                           </div>
                         )}
                       </p>
-                      {expanded[i] && <p>{`${details}`}</p>}
+                      {expanded[i] && <p className="dropdown">{`${details}`}</p>}
                     </>
                   );
                 })}

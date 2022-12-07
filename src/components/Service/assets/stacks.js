@@ -24,4 +24,17 @@ export const sites = [
     text: "E-commerce",
     details: "3",
   },
+  
+   {
+    id:3,
+    icon: React,
+    text: "E-commerce",
+    details: "3",
+  },
+   {
+    id:4,
+    icon: React,
+    text: "E-commerce",
+    details: "3",
+  },
 ];

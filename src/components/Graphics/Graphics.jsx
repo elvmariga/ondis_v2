@@ -61,7 +61,7 @@ const Graphics = () => {
                       >
                         <img
                           src={icon}
-                          style={{ marginRight: "1rem" }}
+                          // style={{ marginRight: "1rem" }}
                           alt={details}
                         />
                         {text}
@@ -71,7 +71,7 @@ const Graphics = () => {
                           </div>
                         )}
                       </p>
-                      {expanded[i] && <p>{`${details}`}</p>}
+                      {expanded[i] && <p className="dropdown">{`${details}`}</p>}
                     </>
                   );
                 })}
