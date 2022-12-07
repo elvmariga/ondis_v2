@@ -50,8 +50,19 @@
   }
 }
 .hero .hero-left h1 {
-  color: #1055db;
-  font-size: 3.2rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-left h1 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-left span {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
 }
 .hero .hero-left p {
   color: rgba(0, 0, 0, 0.7);

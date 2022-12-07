@@ -25,18 +25,34 @@
   display: flex;
   gap: 3rem;
 }
-.graphics .graphics-content .graphics-right .collapse {
-  justify-content: center;
-  display: flex;
-}
 .graphics .graphics-content .graphics-right .right {
   text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .graphics .graphics-content .graphics-right .right p {
+  cursor: pointer;
   display: flex;
   font-size: medium;
   gap: 0.5rem;
   width: 100%;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.graphics .graphics-content .graphics-right .right .dropdown {
+  border: #1055db 1px solid;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  color: black;
+  box-shadow: 2px 2px 4px 1px rgba(16, 85, 219, 0.25);
+}
+.graphics .graphics-content .graphics-right .right .collapse {
+  justify-content: center;
+  display: flex;
 }
 .graphics .graphics-content .graphics-right .tech-stack {
   margin: 1rem 0;

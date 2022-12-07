@@ -1,9 +1,10 @@
 .socials {
     background-color: #f2f2f2;
 
-h2 {
+    h2 {
         color: #1055db;
     }
+
     .socials-content {
         display: grid;
         gap: 2rem;
@@ -22,10 +23,11 @@ h2 {
             display: grid;
             flex-direction: column;
             align-items: space-between;
-            h2{
+
+            h2 {
                 display: none;
             }
-            
+
 
             p {
                 font-size: 1.3rem;
@@ -35,19 +37,51 @@ h2 {
             .social-services {
                 display: flex;
                 gap: 3rem;
+
                 // justify-content: space-evenly;
                 .right {
                         text-align: left;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        // gap: 1rem;
+                        flex-wrap: wrap;
+                        width: 100%;
                 
                         p {
+                            cursor: pointer;
                             // height: fit-content;
                             display: flex;
                             font-size: medium;
                             gap: .5rem;
                             width: 100%;
-                            // justify-content: space-between;
-                            // white-space: nowrap;
+                            margin: 0;
+                            margin-top: .5rem;
+                
+                
                         }
+                
+                        .dropdown {
+                            border: #1055db 1px solid;
+                            border-radius: 5px;
+                            padding: 1rem;
+                            width: 80%;
+                            margin: 0 auto;
+                            color: black;
+                            box-shadow: 2px 2px 4px 1px rgba(16, 85, 219, 0.25);
+                        }
+                
+                        .collapse {
+                            justify-content: center;
+                            // margin-left: 1rem;
+                            display: flex;
+                            // border: 1px solid #1055db;
+                
+                            // &:hover{
+                            //     display: flex;
+                            // }
+                        }
+                
+                
                     }
             }
 
@@ -66,7 +100,7 @@ h2 {
     @media screen and (min-width:600px) {
         .socials-content {
             display: flex;
-            
+
             justify-content: space-evenly;
             gap: 2rem;
             align-items: center;
@@ -76,13 +110,16 @@ h2 {
                     width: 100%;
                     height: auto;
                 }
-                h2{
+
+                h2 {
                     display: none;
                 }
             }
-            .socials-right{
+
+            .socials-right {
                 width: 50%;
-                h2{
+
+                h2 {
                     display: block;
                 }
             }

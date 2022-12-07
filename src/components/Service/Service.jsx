@@ -77,7 +77,7 @@ const Service = () => {
                           </div>
                         )}
                       </p>
-                      {expanded[i] && <p>{`${details}`}</p>}
+                      {expanded[i] && <p className="dropdown">{`${details}`}</p>}
                     </>
                   );
                 })}
@@ -90,7 +90,7 @@ const Service = () => {
             <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
             {stackIcons.map((image) => {
               return (
-                <Fade right cascade>
+                <Fade bottom cascade>
                   <img
                     src={image}
                     style={{ marginRight: "1rem" }}
