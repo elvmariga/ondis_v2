@@ -1,0 +1,43 @@
+.social-container {
+    position: fixed;
+    width: 100%;
+    // margin-bottom: 1rem;
+     top: 0;
+     z-index: 1;
+    // left: 0;
+    background-color: #1055db;
+    padding: 1rem 0;
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        @media screen and (min-width: 600px) {
+                gap: 3rem;
+            }
+       
+        
+        
+
+    
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+    @media screen and (min-width: 600px) {
+            .fa{
+                font-size: larger;
+                &:hover {
+                        transform: scale(1.4, 1.4);
+                    }
+            }
+        }
+    }
+
+
+
+      
+
+
+    }
+}
+

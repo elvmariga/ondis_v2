@@ -1,5 +1,6 @@
-import React from "react";
-// import PropTypes from "prop-types";
+import React, { useState } from "react";
+import { FcExpand, FcCollapse } from "react-icons/fc";
+import Zoom from "react-reveal/Zoom";
 import "./Socials-style/Socials-style.css";
 import Image from "./assets/web-development.svg";
 // import Product from "../Product/Product";
@@ -8,9 +9,23 @@ import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
 import { sites } from "./assets/stacks";
 import Line from "../Line/Line";
-
+import Fade from "react-reveal/Slide";
 
 const Socials = () => {
+
+
+   const [expanded, setExpanded] = useState({});
+   const [currentExpanded, setCurrentExpanded] = useState(null);
+   const [showIcons, setShowIcons] = useState(null);
+
+   function toggleExpansion(index) {
+     if (currentExpanded !== index) {
+       setExpanded({ [index]: true });
+       setCurrentExpanded(index);
+     } else {
+       setExpanded({ [index]: !expanded[index] });
+     }
+   }
   return (
     <div className="socials">
       <div className="socials-content">
@@ -19,7 +34,9 @@ const Socials = () => {
             <Line />
             Social Media Branding
           </h2>
-          <img src={Image} alt="" />
+          <Fade bottom>
+            <img src={Image} alt="" />
+          </Fade>
         </div>
 
         <div className="socials-right">
@@ -36,46 +53,53 @@ const Socials = () => {
           </div>
           <div className="social-services">
             <div className="right">
-              {sites.map(({ icon, text }, i) => {
-                return (
-                  <p>
-                    <img
-                      src={icon}
-                      style={{ marginRight: "1rem" }}
-                      alt="sdsdd"
-                    />
-
-                    {text}
-                  </p>
-                );
-              })}
-            </div>
-            <div className="left">
-              
-                {sites.map(({ icon, text }, i) => {
+              <Fade bottom>
+                {sites.map(({ icon, text, details, id }, i) => {
                   return (
-                    <p>
-                      <img
-                        src={icon}
-                        style={{ marginRight: "1rem" }}
-                        alt="sdsdd"
-                      />
-
-                      {text}
-                    </p>
+                    <>
+                      <p
+                        onClick={() => toggleExpansion(i)}
+                        onMouseEnter={() => {
+                          setShowIcons(i);
+                        }}
+                        onMouseLeave={() => {
+                          setShowIcons(null);
+                        }}
+                        key={id}
+                      >
+                        <img
+                          src={icon}
+                          style={{ marginRight: "1rem" }}
+                          alt={details}
+                        />
+                        {text}
+                        {showIcons === i && (
+                          <div className="collapse">
+                            {expanded[i] ? <FcCollapse /> : <FcExpand />}
+                          </div>
+                        )}
+                      </p>
+                      {expanded[i] && <p>{`${details}`}</p>}
+                    </>
                   );
                 })}
-           
+              </Fade>
             </div>
           </div>
 
           <div className="tech-stack">
             <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
-            {stackIcons.map((image) => {
-              return (
-                <img src={image} style={{ marginRight: "1rem" }} alt="sdsdd" />
-              );
-            })}
+            <Fade cascade bottom>
+              {stackIcons.map((image) => {
+                return (
+                  <img
+                    src={image}
+                    style={{ marginRight: "1rem" }}
+                    alt="sdsdd"
+                  />
+                );
+              })}
+            </Fade>
           </div>
           <Button />
         </div>
@@ -83,7 +107,5 @@ const Socials = () => {
     </div>
   );
 };
-
-
 
 export default Socials;

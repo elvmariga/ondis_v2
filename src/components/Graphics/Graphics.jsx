@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { FcExpand, FcCollapse } from "react-icons/fc";
+import Zoom from "react-reveal/Zoom";
 import "./Graphics-style/Graphics-style.css";
 import Image from "./assets/graphics.svg";
 import Product from "../Product/Product";
@@ -9,12 +11,26 @@ import Line from "../Line/Line";
 import Fade from "react-reveal/Slide";
 
 const Graphics = () => {
+  const [expanded, setExpanded] = useState({});
+  const [currentExpanded, setCurrentExpanded] = useState(null);
+  const [showIcons, setShowIcons] = useState(null);
+
+  function toggleExpansion(index) {
+    if (currentExpanded !== index) {
+      setExpanded({ [index]: true });
+      setCurrentExpanded(index);
+    } else {
+      setExpanded({ [index]: !expanded[index] });
+    }
+  }
   return (
     <div className="graphics">
       <div className="graphics-content">
-        <div className="graphics-left">
-          <img src={Image} alt="" />
-        </div>
+        <Fade bottom>
+          <div className="graphics-left">
+            <img src={Image} alt="" />
+          </div>
+        </Fade>
         <div className="graphics-right">
           <div>
             <h2>
@@ -29,26 +45,44 @@ const Graphics = () => {
           </div>
           <div className="web-graphicss">
             <div className="right">
-              {sites.map(({ icon, text }, i) => {
-                return (
-                  <p>
-                    <img
-                      src={icon}
-                      style={{ marginRight: "1rem" }}
-                      alt="sdsdd"
-                    />
-
-                    {text}
-                  </p>
-                );
-              })}
+              <Fade bottom>
+                {sites.map(({ icon, text, details, id }, i) => {
+                  return (
+                    <>
+                      <p
+                        onClick={() => toggleExpansion(i)}
+                        onMouseEnter={() => {
+                          setShowIcons(i);
+                        }}
+                        onMouseLeave={() => {
+                          setShowIcons(null);
+                        }}
+                        key={id}
+                      >
+                        <img
+                          src={icon}
+                          style={{ marginRight: "1rem" }}
+                          alt={details}
+                        />
+                        {text}
+                        {showIcons === i && (
+                          <div className="collapse">
+                            {expanded[i] ? <FcCollapse /> : <FcExpand />}
+                          </div>
+                        )}
+                      </p>
+                      {expanded[i] && <p>{`${details}`}</p>}
+                    </>
+                  );
+                })}
+              </Fade>
             </div>
             <div className="left"></div>
           </div>
-          
-            <div className="tech-stack">
-              <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
-              <Fade cascade right>
+
+          <div className="tech-stack">
+            <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
+            <Fade cascade bottom>
               {stackIcons.map((image) => {
                 return (
                   <img
@@ -58,9 +92,9 @@ const Graphics = () => {
                   />
                 );
               })}
-               </Fade>
-            </div>
-         
+            </Fade>
+          </div>
+
           <Button />
         </div>
       </div>

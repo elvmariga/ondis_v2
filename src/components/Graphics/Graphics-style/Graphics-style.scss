@@ -33,7 +33,33 @@
             .graphics-services {
                 display: flex;
                 gap: 3rem;
+
                 // justify-content: space-evenly;
+            }
+
+            .collapse {
+                justify-content: center;
+                // margin-left: 1rem;
+                display: flex;
+                // border: 1px solid #1055db;
+
+                // &:hover{
+                //     display: flex;
+                // }
+            }
+
+            .right {
+                text-align: left;
+
+                p {
+                    // height: fit-content;
+                    display: flex;
+                    font-size: medium;
+                    gap: .5rem;
+                    width: 100%;
+                    // justify-content: space-between;
+                    // white-space: nowrap;
+                }
             }
 
             .tech-stack {
@@ -62,13 +88,14 @@
                     height: 100%;
                 }
             }
-                         .graphics-right {
-                             width: 50%;
-            
-                             h2 {
-                                 display: block;
-                             }
-                         }
+
+            .graphics-right {
+                width: 50%;
+
+                h2 {
+                    display: block;
+                }
+            }
         }
     }
 

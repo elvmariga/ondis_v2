@@ -36,6 +36,19 @@ h2 {
                 display: flex;
                 gap: 3rem;
                 // justify-content: space-evenly;
+                .right {
+                        text-align: left;
+                
+                        p {
+                            // height: fit-content;
+                            display: flex;
+                            font-size: medium;
+                            gap: .5rem;
+                            width: 100%;
+                            // justify-content: space-between;
+                            // white-space: nowrap;
+                        }
+                    }
             }
 
             .tech-stack {

@@ -6,6 +6,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import {ScrollUp} from "./components/scrollup/ScrollUp";
+import { SocialMedia } from "./components/SocialMedia/SocialMedia";
 
 export const App = () => {
 
@@ -13,6 +14,7 @@ export const App = () => {
     <section>
      
      <ScrollUp/>
+     <SocialMedia/>
     <Navbar/>
 
         <Routes>

@@ -8,7 +8,22 @@ import Others from './others.svg';
 export const stackIcons = [illustrator, photoshop, indesign, canva, Figma, Others];
 
 export const sites = [
-  { icon: illustrator , text: "Medium " },
-  { icon:  photoshop , text: "Premium " },
-  { icon:  indesign , text: "Large " },
+  {
+    id: 0,
+    icon: illustrator,
+    text: "Standard",
+    details: "This is ideal for blogs and portifolio",
+  },
+  {
+    id: 1,
+    icon: photoshop,
+    text: "Informative websites",
+    details: "2",
+  },
+  {
+    id: 2,
+    icon: indesign,
+    text: "E-commerce",
+    details: "3",
+  },
 ];

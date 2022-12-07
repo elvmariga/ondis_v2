@@ -31,6 +31,15 @@
   display: flex;
   gap: 3rem;
 }
+.socials .socials-content .socials-right .social-services .right {
+  text-align: left;
+}
+.socials .socials-content .socials-right .social-services .right p {
+  display: flex;
+  font-size: medium;
+  gap: 0.5rem;
+  width: 100%;
+}
 .socials .socials-content .socials-right .tech-stack {
   margin: 1rem 0;
   margin-bottom: 2rem;

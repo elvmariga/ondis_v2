@@ -25,6 +25,19 @@
   display: flex;
   gap: 3rem;
 }
+.graphics .graphics-content .graphics-right .collapse {
+  justify-content: center;
+  display: flex;
+}
+.graphics .graphics-content .graphics-right .right {
+  text-align: left;
+}
+.graphics .graphics-content .graphics-right .right p {
+  display: flex;
+  font-size: medium;
+  gap: 0.5rem;
+  width: 100%;
+}
 .graphics .graphics-content .graphics-right .tech-stack {
   margin: 1rem 0;
   margin-bottom: 2rem;

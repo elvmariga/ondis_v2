@@ -35,7 +35,9 @@ const Service = () => {
             <Line />
             Web Development
           </h2>
-          <img src={Image} alt="" />
+          <Fade bottom>
+            <img src={Image} alt="" />
+          </Fade>
         </div>
 
         <div className="web-right">
@@ -49,7 +51,7 @@ const Service = () => {
           </div>
           <div className="web-services">
             <div className="right">
-              <Zoom bottom cascade>
+              <Fade bottom>
                 {sites.map(({ icon, text, details, id }, i) => {
                   return (
                     <>
@@ -79,67 +81,10 @@ const Service = () => {
                     </>
                   );
                 })}
-              </Zoom>
+              </Fade>
             </div>
           </div>
-          {/* <div className="web-services">
-            <div className="right">
-              <Zoom bottom cascade>
-                {sites.map(({ icon, text, details }, i) => {
-                  return (
-                    <>
-                      <p
-                        onClick={toggleExpansion}
-                        onMouseEnter={() => {
-                          setShowIcons(true);
-                        }}
-                        onMouseLeave={() => {
-                          setShowIcons(false);
-                        }}
-                      >
-                        <img
-                          src={icon}
-                          // style={{ marginRight: "1rem" }}
-                          alt={details}
-                        />
-                        {text}
-                        {showIcons && (
-                          <div className="collapse">
-                            {" "}
-                            {expanded ? <FcCollapse /> : <FcExpand />}
-                          </div>
-                        )}
-                      </p>
-                      {expanded && `${details}`}
-                    </>
-                  );
-                })}
-              </Zoom>
-            </div>
-            {/* <div className="left">
-              <div className="right">
-              <Zoom bottom cascade>
-                {sites.map(({ icon, text }, i) => {
-                  return (
-                    <>
-                      <p>
-                        <img
-                          src={icon}
-                          // style={{ marginRight: "1rem" }}
-                          alt="service icon"
-                        />
-
-                        <span onClick={toggleExpansion}>{text}</span>
-                      </p>
-                      <div className="collapse">
-                        {expanded ? <FcExpand /> : <FcCollapse />}
-                      </div>
-                    </>
-                  );
-                })}
-                </Zoom>
-              </div>
-            </div> */}
+         
 
           <div className="tech-stack">
             <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
