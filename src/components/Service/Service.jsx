@@ -25,37 +25,7 @@ const Service = () => {
   }
 
   return (
-    // <div>
-    //   {sites.map(({ icon, text, details, id }, i) => {
-    //     return (
-    //       <>
-    //         <p
-    //           onClick={() => toggleExpansion(i)}
-    //           onMouseEnter={() => {
-    //             setShowIcons(i);
-    //           }}
-    //           onMouseLeave={() => {
-    //             setShowIcons(null);
-    //           }}
-    //           key={id}
-    //         >
-    //           <img
-    //             src={icon}
-    //             style={{ marginRight: "1rem" }}
-    //             alt={details}
-    //           />
-    //           {text}
-    //           {showIcons === i && (
-    //             <div className="collapse">
-    //               {expanded[i] ? <FcCollapse /> : <FcExpand />}
-    //             </div>
-    //           )}
-    //         </p>
-    //         {expanded[i] && `${details}`}
-    //       </>
-    //     );
-    //   })}
-    // </div>
+  
     <div className="web">
       <div className="web-content">
         <div className="web-left">
@@ -92,11 +62,7 @@ const Service = () => {
               }}
               key={id}
             >
-              <img
-                src={icon}
-                style={{ marginRight: "1rem" }}
-                alt={details}
-              />
+              <img src={icon} style={{ marginRight: "1rem" }} alt={details} />
               {text}
               {showIcons === i && (
                 <div className="collapse">
@@ -104,7 +70,7 @@ const Service = () => {
                 </div>
               )}
             </p>
-            {expanded[i] && `${details}`}
+            <p>{expanded[i] && `${details}`}</p>
           </>
         );
       })}
