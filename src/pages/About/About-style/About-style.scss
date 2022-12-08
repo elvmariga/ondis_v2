@@ -67,6 +67,11 @@
                     }
 
                     .icons {
+                        display: grid;
+                        gap: 1rem;
+                        @media only screen and (min-width: 600px) {
+                                display: flex;
+                            }
                         img {
                             height: 48px;
                             width: 48px;
@@ -74,6 +79,7 @@
 
                         p {
                             font-weight: 600;
+                            font-size:medium;
                         }
 
 

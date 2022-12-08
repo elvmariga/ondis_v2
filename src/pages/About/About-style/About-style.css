@@ -56,12 +56,22 @@
 .aboutpage .aboutUs .cont .aboutDetails .details h1 {
   display: none;
 }
+.aboutpage .aboutUs .cont .aboutDetails .details .icons {
+  display: grid;
+  gap: 1rem;
+}
+@media only screen and (min-width: 600px) {
+  .aboutpage .aboutUs .cont .aboutDetails .details .icons {
+    display: flex;
+  }
+}
 .aboutpage .aboutUs .cont .aboutDetails .details .icons img {
   height: 48px;
   width: 48px;
 }
 .aboutpage .aboutUs .cont .aboutDetails .details .icons p {
   font-weight: 600;
+  font-size: medium;
 }
 .aboutpage .aboutUs .cont .aboutDetails .details .icons .icon-details {
   display: flex;
