@@ -6,7 +6,7 @@ import Icon from './assets/down-icon.svg'
 const Expert = () => (
   <div className='expert'>
     <div>
-      <h2>Experts in:</h2>
+      <h2 className='title'>Experts in:</h2>
     </div>
     <div>
       <img src={Icon} alt="Down Icon" />

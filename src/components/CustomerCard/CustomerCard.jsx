@@ -10,7 +10,7 @@ const CustomerCard = (props) => {
           <img src={props.dp} alt="Customer image" />
         </div>
         <div className="right">
-          <h3>{props.name}</h3>
+          <h4>{props.name}</h4>
           <p>{props.testimony}</p>
           <img src={props.rating} alt="Rating" />
         </div>

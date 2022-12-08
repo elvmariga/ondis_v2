@@ -9,12 +9,13 @@
             gap: 1rem;
             height: 114px;
             min-width: fit-content;
-            
+            width: 380px;
+           
 
             @media screen and (max-width:850px) {
-                    .card-content {
-                        width: 300px;
-                    }
+                    // .card-content {
+                    //     width: 300px;
+                    // }
                 }
             .left{
                 align-self: center;
@@ -26,12 +27,14 @@
             .right{
                 // padding: 1rem;
                 // align-self: center;
-                overflow: scroll;
-                h3{
-                    margin: 0;
+                // overflow: scroll;
+                h4{
+                    margin: .2rem 0 0 0;
                 }
                 p{
                     padding-right: .7rem;
+                    text-overflow: ellipsis;
+                        overflow: hidden;
                 }
             }
     }

@@ -41,14 +41,15 @@ const Socials = () => {
 
         <div className="socials-right">
           <div>
-            <h2>
+            <h2 className="title">
               {" "}
               <Line /> Social Media Branding
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Ligula donec quis erat ut.
-              Nisl egestas. Lorem ipsum dolor sit amet consectetur. Ligula donec
-              quis erat ut. Nisl egestas.
+              We develop a social media branding strategy that aligns with your
+              overall branding and marketing goals. Keeping in mind an effective way for businesses and
+              organizations to connect with their customers, improve their
+              online presence, and build a strong and positive reputation.
             </p>
           </div>
           <div className="social-services">
@@ -79,7 +80,9 @@ const Socials = () => {
                           </div>
                         )}
                       </p>
-                      {expanded[i] && <p className="dropdown">{`${details}`}</p>}
+                      {expanded[i] && (
+                        <p className="dropdown">{`${details}`}</p>
+                      )}
                     </>
                   );
                 })}

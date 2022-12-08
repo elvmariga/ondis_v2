@@ -44,9 +44,10 @@ const Service = () => {
           <div>
             <h2 className="web-title">Web Development</h2>
             <p>
-              Our responsive website let's your prospects enjoy a great
-              exprerience on any screen size and orientation while interacting
-              with your online office.
+              We create websites with user experience in mind, making it easy for
+              users to find what they are looking for. Helping you
+              create websites that are more user-friendly and effective at
+              achieving their goals.
             </p>
           </div>
           <div className="web-services">
@@ -67,7 +68,7 @@ const Service = () => {
                       >
                         <img
                           src={icon}
-                          style={{ marginRight: "1rem" }}
+                          // style={{ marginRight: "1rem" }}
                           alt={details}
                         />
                         {text}
@@ -77,14 +78,15 @@ const Service = () => {
                           </div>
                         )}
                       </p>
-                      {expanded[i] && <p className="dropdown">{`${details}`}</p>}
+                      {expanded[i] && (
+                        <p className="dropdown">{`${details}`}</p>
+                      )}
                     </>
                   );
                 })}
               </Fade>
             </div>
           </div>
-         
 
           <div className="tech-stack">
             <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>

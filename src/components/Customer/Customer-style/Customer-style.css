@@ -15,9 +15,6 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-}
-@media screen and (max-width: 785px) {
-  .customer .customer-content .cards {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
+  color: rgba(0, 0, 0, 0.7);
 }/*# sourceMappingURL=Customer-style.css.map */

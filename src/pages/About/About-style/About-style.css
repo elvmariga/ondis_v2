@@ -10,8 +10,27 @@
   width: 100%;
   height: auto;
 }
+.aboutpage .top .aboutDetails {
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+}
+.aboutpage .top .aboutDetails .title {
+  display: none;
+}
+.aboutpage .top .aboutDetails p {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.9);
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+}
+@media only screen and (min-width: 600px) {
+  .aboutpage .top .aboutDetails p {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .aboutpage .aboutUs img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 .aboutpage .aboutUs h1 {

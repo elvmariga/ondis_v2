@@ -16,7 +16,10 @@ import team from "./Assets/team.svg";
 import support from "./Assets/support.svg";
 import best from "./Assets/best.svg";
 import price from "./Assets/price.svg";
+import down from './Assets/down.svg';
+
 import credibility from "./Assets/credibility.svg";
+import Expert from "../../components/Expert/Expert";
 // import {Navbar} from "../../components/Navbar/Navbar"
 
 const About = () => {
@@ -25,6 +28,22 @@ const About = () => {
       {/* <Navbar/> */}
       <div className="top">
         <img src={Aboutus} alt="About Us Landing " />
+        <div className="aboutDetails">
+          <p>
+            {" "}
+            We offer digital services typically with expertise in areas of
+            digital technology and help businesses and organizations improve
+            their online presence, reach new customers, and streamline their
+            operations. Digital services can provide many benefits, including
+            increased efficiency, cost savings, and improved customer
+            experiences.
+          </p>
+          <Fade bottom cascade>
+            <p>
+              <Expert />
+            </p>
+          </Fade>
+        </div>
       </div>
       <div class="aboutUs">
         <div class="cont">
@@ -36,33 +55,35 @@ const About = () => {
 
             <div className="container">
               <div className="title">
-                <Fade top cascade>
+                <Fade bottom cascade>
                   <div class="tinted-left">
                     <img src={Whatwedo} alt="What we do" />
                   </div>
                 </Fade>
               </div>
-              <Fade cascade right>
-                <div className="details">
-                  {/* <h1>What we do</h1> */}
 
-                  <p>
-                    <strong>ONDIS Hub</strong> is a web Application development
-                    and creative design agency based in Kenya with a team all
-                    over the globe. Our web applications, graphics and user
-                    designs are tailored to create business credibility and
-                    increase sales conversion online
-                  </p>
+              <div className="details">
+                {/* <h1>What we do</h1> */}
 
+                <p>
+                  <strong>ONDIS Hub</strong> is a web Application development
+                  and creative design agency based in Kenya with a team all over
+                  the globe. Our web applications, graphics and user designs are
+                  tailored to create business credibility and increase sales
+                  conversion online
+                </p>
+                <Fade bottom cascade>
                   <div className="icons">
-                    <div className="icon-details">
-                      <div>
-                        <img src={webDev} className="icon" alt="" />
+                    <Fade bottom cascade>
+                      <div className="icon-details">
+                        <div>
+                          <img src={webDev} className="icon" alt="" />
+                        </div>
+                        <div className="icon-content">
+                          <p>Wed Development</p>
+                        </div>
                       </div>
-                      <div className="icon-content">
-                        <p>Wed Development</p>
-                      </div>
-                    </div>
+                    </Fade>
 
                     <div className="icon-details">
                       <div>
@@ -82,8 +103,8 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              </Fade>
+                </Fade>
+              </div>
             </div>
           </div>
         </div>
@@ -97,13 +118,13 @@ const About = () => {
             </h1>
             <div className="container">
               <div className="title">
-                <Slide right cascade>
+                <Slide bottom cascade>
                   <div class="tinted-left">
                     <img src={values} alt="What we do" />
                   </div>
                 </Slide>
               </div>
-              <Fade top cascade>
+             
                 <div className="details">
                   <h1>Our Values</h1>
                   <p>
@@ -112,6 +133,7 @@ const About = () => {
                     services to help business make more sales and increase
                     online presence also product credibility.
                   </p>
+                   <Fade bottom cascade>
                   <div className="icons">
                     <div className="icon-details">
                       <div>
@@ -140,8 +162,9 @@ const About = () => {
                       </div>
                     </div>
                   </div>
+                  </Fade>
                 </div>
-              </Fade>
+            
             </div>
           </div>
         </div>
@@ -157,11 +180,11 @@ const About = () => {
             </h1>
             <div className="container">
               <div className="title">
-                <Slide left cascade>
+                <Fade bottom cascade>
                   <div class="tinted-left">
                     <img src={choose} alt="What we do" />
                   </div>
-                </Slide>
+                </Fade>
               </div>
               <div className="details">
                 {/* <h1>What we do</h1> */}
@@ -172,7 +195,7 @@ const About = () => {
                   tailored to create business credibility and increase sales
                   conversion online
                 </p>
-
+ <Fade bottom cascade>
                 <div className="icons">
                   <div className="icon-details">
                     <div>
@@ -201,6 +224,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
+                </Fade>
               </div>
             </div>
           </div>
