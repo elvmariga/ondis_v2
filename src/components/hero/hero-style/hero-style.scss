@@ -1,82 +1,31 @@
 .hero {
 
-    width: 80%;
+    width: 90%;
     margin: .5rem auto;
-    display: flex;
     padding: 1rem 0;
-    gap: 1rem;
-    // align-items: center;
-  
-
-
-  img {
-    height: auto;
-    width: 70%;
-  }
-  @media screen and (max-width: 1100px) {
-    img {
-      height: auto;
-      width: 80%;
-      align-self: flex-end;
-    }
-
-    a {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 850px) {
-    img {
-      height: auto;
-      width: 80%;
-      align-self: flex-end;
-    }
-    a {
-      display: none;
-    }
-  }
-
-    @media screen and (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+      gap: 1rem;
+   
+    .hero-right{
       img{
-        width: 80%;
+        width: 100%;
+        height: auto;
       }
     }
-
-  @media screen and(max-width:480px) {
-    // background-image: url(../assests/hero.svg);
-    // background-position: bottom right;
-    // background-size: 50%;
-    // background-repeat: no-repeat;
-
-    flex-wrap: wrap;
-     
-    .hero-right{
-      justify-content: end;
-      img {
-          height: auto;
-          width: 20%;
-        
-        }
-    }
-    a {
-      display: block;
-    }
-  }
 
   .hero-left {
     h1 {
       color: rgba(0, 0, 0, 0.7);
-      font-size: 2rem;
-      @media screen and (max-width:600px) {
-         font-size: 1.2rem;
-        }
+      font-size: 1.2rem;
+    
     }
 
     span{
-      @media screen and (max-width:600px) {
-          font-size: 1.7rem;
+           font-size: 1.7rem;
           font-weight: 700;
         }
-    }
+    
 
     p {
       color: rgba(0, 0, 0, 0.7);
@@ -106,4 +55,9 @@
       }
     }
   }
+
+    @media only screen and (min-width: 600px) {
+      flex-direction: row;
+      width: 80%;
+    }
 }

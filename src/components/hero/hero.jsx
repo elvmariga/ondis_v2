@@ -24,8 +24,8 @@ const Hero = () => (
       <div>
         <p>
           A team of skilled professionals with expertise content creation,
-          design, and development, dedicated to our <strong>Client's</strong> 
-           to improve their online presence and reach new customers.
+          design, and development, dedicated to our <strong>Client's</strong>
+          to improve their online presence and reach new customers.
         </p>
       </div>
       <div className="btns">
@@ -41,11 +41,11 @@ const Hero = () => (
         </a>
       </div>
     </div>
-    <div className="hero-right"></div>
-
-    <Slide duration={1500} bottom>
-      <img src={image} alt="Hero imagine" />
-    </Slide>
+    <div className="hero-right">
+      <Slide duration={1500} bottom>
+        <img src={image} alt="Hero imagine" />
+      </Slide>
+    </div>
   </div>
 );
 
