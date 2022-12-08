@@ -1,9 +1,11 @@
 .navbar {
   margin: 1rem auto auto 0;
   border-bottom: #b9b8b8 1px solid;
-  padding-top: 3rem;
+    position: sticky;
+
 
   .navbar-content {
+   
     width: 80%;
     margin: 0 auto;
     display: flex;

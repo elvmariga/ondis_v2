@@ -1,8 +1,4 @@
 .social-container {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
   background-color: #1055db;
   padding: 1rem 0;
 }

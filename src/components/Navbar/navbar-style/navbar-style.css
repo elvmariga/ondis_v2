@@ -1,7 +1,8 @@
 .navbar {
   margin: 1rem auto auto 0;
   border-bottom: #b9b8b8 1px solid;
-  padding-top: 3rem;
+  position: -webkit-sticky;
+  position: sticky;
 }
 .navbar .navbar-content {
   width: 80%;
