@@ -39,8 +39,9 @@ const Graphics = () => {
               Graphics Design
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Ligula donec quis erat ut.
-              Nisl egestas.
+              A combination of artistic and technical skills to create designs
+              that are visually appealing, effective at conveying a message, and
+              in line with the branding and image of your business or organization.
             </p>
           </div>
           <div className="web-graphicss">
@@ -71,7 +72,9 @@ const Graphics = () => {
                           </div>
                         )}
                       </p>
-                      {expanded[i] && <p className="dropdown">{`${details}`}</p>}
+                      {expanded[i] && (
+                        <p className="dropdown">{`${details}`}</p>
+                      )}
                     </>
                   );
                 })}

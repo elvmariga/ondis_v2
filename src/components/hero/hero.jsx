@@ -22,12 +22,11 @@ const Hero = () => (
         ></Typed>
       </div>
       <div>
-        
-          <p>
-            Our skilled content creators, designers and developers are dedicated
-            to ensure you maxmize on the growing differentiated online users.
-          </p>
-        
+        <p>
+          A team of skilled professionals with expertise content creation,
+          design, and development, dedicated to our <strong>Client's</strong> 
+           to improve their online presence and reach new customers.
+        </p>
       </div>
       <div className="btns">
         <Button

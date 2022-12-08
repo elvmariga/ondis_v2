@@ -18,16 +18,9 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-
-            @media screen and (max-width:785px) {
-
-                flex-wrap: wrap;
-                // img{
-                //     width: 80%;
-                //     height: auto;
-                // }
-
-            }
+flex-wrap: wrap;
+color: rgb(0, 0, 0, 0.7);
+            
         }
     }
 

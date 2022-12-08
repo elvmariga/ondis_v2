@@ -1,17 +1,39 @@
 .aboutpage {
     font-family: 'Montserrat', sans-serif;
+   
 
     .top {
         img {
             width: 100%;
             height: auto;
         }
+
+                .aboutDetails{
+                    margin: 0 auto;
+                    width: 80%;
+                    text-align: left;
+
+                    .title{
+                        display: none;
+                    }
+                    p{
+                        font-size:1.3rem;
+                            color: rgb(0, 0, 0, 0.9);
+
+                            /* Small devices (portrait tablets and large phones, 600px and up) */
+                                @media only screen and (min-width: 600px) {
+                                    font-size: 2rem;
+                                    text-align: center;
+                                }
+                    }
+                    
+                }
     }
 
 
     .aboutUs {
         img {
-            width: 100%;
+            width: 80%;
             height: auto;
         }
 

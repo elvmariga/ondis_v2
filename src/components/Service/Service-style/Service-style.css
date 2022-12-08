@@ -38,6 +38,9 @@
   flex-wrap: wrap;
   width: 100%;
 }
+.web .web-content .web-right .web-services .right img {
+  margin: 0;
+}
 .web .web-content .web-right .web-services .right p {
   cursor: pointer;
   display: flex;
@@ -46,6 +49,7 @@
   width: 100%;
   margin: 0;
   margin-top: 0.5rem;
+  align-items: center;
 }
 .web .web-content .web-right .web-services .right .dropdown {
   border: #1055db 1px solid;
