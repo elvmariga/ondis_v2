@@ -24,7 +24,7 @@ const Hero = () => (
       <div>
         <p>
           A team of skilled professionals with expertise content creation,
-          design, and development, dedicated to our <strong>Client's</strong>
+          design, and development, dedicated to our <strong>Client's </strong>
           to improve their online presence and reach new customers.
         </p>
       </div>
