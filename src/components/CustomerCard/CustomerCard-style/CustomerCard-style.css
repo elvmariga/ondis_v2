@@ -7,7 +7,6 @@
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  width: 380px;
 }
 .customer-card .card-content .left {
   align-self: center;
@@ -23,4 +22,14 @@
   padding-right: 0.7rem;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .customer-card .card-content .right p {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 350px) {
+  .customer-card .card-content .right p {
+    font-size: x-small;
+  }
 }/*# sourceMappingURL=CustomerCard-style.css.map */
