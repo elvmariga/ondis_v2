@@ -10,7 +10,7 @@ const Footer = () => (
   <div className="footer">
     <div className="footer-content">
       <div className="footer-left">
-        <div>
+        <div className="footerlogo">
           {" "}
           <img src={logo} alt="logo" />
         </div>

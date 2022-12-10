@@ -18,6 +18,11 @@
   justify-content: center;
   gap: 1rem;
 }
+.footer .footer-content .footer-left .footerlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer .footer-content .footer-left a {
   color: #dddcdc;
   text-decoration: none;
