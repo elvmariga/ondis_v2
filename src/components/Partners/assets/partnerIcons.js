@@ -6,4 +6,4 @@ import p5 from "./p5.svg";
 import p6 from "./p6.svg";
 import join from "./join.svg"
 
-export const partnerIcon = [join, p1, p2, p3, p4];
+export const partnerIcon = [ p1, p2, p3, p4];

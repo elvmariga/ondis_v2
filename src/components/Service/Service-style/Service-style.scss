@@ -76,7 +76,8 @@
                     .collapse {
                         justify-content: center;
                         // margin-left: 1rem;
-                        display: flex;
+                        // display: flex;
+                        z-index: 2;
                         // border: 1px solid #1055db;
 
                         // &:hover{

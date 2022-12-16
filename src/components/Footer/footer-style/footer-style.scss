@@ -53,11 +53,29 @@
         width: 80%;
         margin: 1rem auto;
         display: grid;
-        justify-content: center;
+        // justify-content: center;
         text-align: center;
         font-size: smaller;
     }
 
+
+         .links {
+             display: flex;
+            //  justify-content: center;
+             align-items: center;
+             gap: 1rem;
+    
+            //  @media screen and (min-width: 600px) {
+            //      gap: 3rem;
+            //  }
+    
+             a {
+                 color: #FFFFFF;
+                 text-decoration: none;
+    
+             }
+    
+         }
 
 
 }

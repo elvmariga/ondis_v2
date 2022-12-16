@@ -62,7 +62,7 @@
 }
 .web .web-content .web-right .web-services .right .collapse {
   justify-content: center;
-  display: flex;
+  z-index: 2;
 }
 .web .web-content .web-right .tech-stack {
   margin: 1rem 0;
