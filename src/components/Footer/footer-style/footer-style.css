@@ -38,7 +38,15 @@
   width: 80%;
   margin: 1rem auto;
   display: grid;
-  justify-content: center;
   text-align: center;
   font-size: smaller;
+}
+.footer .links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer .links a {
+  color: #FFFFFF;
+  text-decoration: none;
 }/*# sourceMappingURL=footer-style.css.map */

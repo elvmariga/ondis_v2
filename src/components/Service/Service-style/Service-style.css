@@ -12,7 +12,7 @@
   padding: 2rem 0;
 }
 .web .web-content .web-left img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 .web .web-content .web-right {
@@ -68,7 +68,7 @@
 }
 .web .web-content .web-right .web-services .right .collapse {
   justify-content: center;
-  display: flex;
+  z-index: 2;
 }
 .web .web-content .web-right .tech-stack {
   margin: 1rem 0;

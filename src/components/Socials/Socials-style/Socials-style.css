@@ -11,8 +11,15 @@
   margin: 1rem auto;
   padding: 2rem 0;
 }
+.socials .socials-content .socials-left {
+  justify-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
 .socials .socials-content .socials-left img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 .socials .socials-content .socials-right {
