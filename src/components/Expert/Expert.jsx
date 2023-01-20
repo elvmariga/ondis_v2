@@ -14,8 +14,6 @@ const Expert = () => (
   </div>
 );
 
-Expert.propTypes = {};
 
-Expert.defaultProps = {};
 
 export default Expert;

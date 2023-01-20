@@ -57,12 +57,14 @@ const Service = () => {
                   return (
                     <>
                       <p
-                        onClick={() => toggleExpansion(i)}
+                        className="item"
                         onMouseEnter={() => {
                           setShowIcons(i);
+                          toggleExpansion(i)
                         }}
                         onMouseLeave={() => {
                           setShowIcons(null);
+                          toggleExpansion(-1)
                         }}
                         key={id}
                       >
@@ -70,17 +72,19 @@ const Service = () => {
                           src={icon}
                           // style={{ marginRight: "1rem" }}
                           alt={details}
+                          
                         />
-                        {text}
+                        {text} {!expanded[i] &&
+                          <div className="collapse"><FcExpand /></div> }
                         {showIcons === i && (
                           <div className="collapse">
-                            {expanded[i] ? <FcCollapse /> : <FcExpand />}
+                             
+                            {expanded[i] && <FcCollapse /> }
                           </div>
                         )}
+                         <Zoom >{expanded[i] && <p className="dropdown">{`${details}`}</p> }</Zoom>
                       </p>
-                      {expanded[i] && (
-                        <p className="dropdown">{`${details}`}</p>
-                      )}
+                     
                     </>
                   );
                 })}
