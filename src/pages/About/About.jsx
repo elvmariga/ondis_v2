@@ -80,7 +80,7 @@ const About = () => {
                           <img src={webDev} className="icon" alt="" />
                         </div>
                         <div className="icon-content">
-                          <p>Wed Development</p>
+                          <p>Web Development</p>
                         </div>
                       </div>
                     </Fade>

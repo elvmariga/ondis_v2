@@ -24,7 +24,7 @@ export const sites = [
   {
     id: 2,
     icon: tick,
-    text: "Premium Websites",
+    text: "Premium Website",
     details: "Ideal for Large Corporates, and Learning Institutes",
   },
 
