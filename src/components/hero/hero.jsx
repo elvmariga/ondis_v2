@@ -4,12 +4,13 @@ import  './hero-style/hero-style.css';
 import Button from '../Button/Button';
 import image from './assests/hero.svg';
 import Slide from 'react-reveal/Slide';
-import Fade from "react-reveal/Slide";
+// import Fade from "react-reveal/Slide";
 
 
 
 const Hero = () => (
   <div className="hero">
+    
     <div className="hero-left">
       <div>
         <h1>All You Need is an Attractive</h1>
@@ -32,8 +33,13 @@ const Hero = () => (
         <Button
           style={{ transform: "scale(1.1, 1.1) !important", color: "red" }}
         />
-        <a href="http://">
-          Whatapp
+        <a
+          href="https://wa.me/254700526125?text=I%20am%20interested%20in%20your%20your%20 services"
+          target="_blank"
+          rel="noopener noreferrer"
+          className='whatsapp-icon'
+        >
+          WhatsApp
           <i
             class="fa-brands fa-whatsapp "
             style={{ marginLeft: "0.4rem" }}

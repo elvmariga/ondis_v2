@@ -23,10 +23,16 @@
                 // flex-wrap: wrap;
                 width: 100%;
                 gap: 1rem;
+                
 
                 img {
                     width: 40%;
                     height: auto;
+                    opacity: 0.4 !important;
+                    
+                    &:hover{
+                        opacity: 0.9 !important;
+                    }
 
                     @media screen and (min-width:600px) {
 

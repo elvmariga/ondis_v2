@@ -3,10 +3,10 @@ import Mail from "./Assests/mail.svg";
 import Phone from "./Assests/phone.svg";
 import Location from "./Assests/location.svg";
 import "./Contact-style/Contact-style.css";
-import emailjs, {init} from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
 import Zoom from "react-reveal/Zoom";
-import Slide from "react-reveal/Slide";
+// import Slide from "react-reveal/Slide";
 
 const Contact = () => {
   const form = useRef();
@@ -90,20 +90,40 @@ const Contact = () => {
           <div>
             <p className="follow">Follow us</p>
             <div className="social-icon">
-              <a href="">
-                <i class="fa-brands fa-facebook fa-xl"></i>
+              <a
+                href="http://facebook.com/ondishub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-facebook fa"></i>
               </a>
-              <a href="">
-                <i class="fa-brands fa-twitter fa-xl"></i>
+              <a
+                href="http://twitter.com/ondishub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-twitter fa"></i>
               </a>
-              <a href="">
-                <i class="fa-brands fa-instagram fa-xl"></i>
+              <a
+                href="http://instagram.com/ondishub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-instagram fa"></i>
               </a>
-              <a href="">
-                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              <a
+                href="http://linkedin.com/in/ondishub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-linkedin-in fa"></i>
               </a>
-              <a href="">
-                <i class="fa-brands fa-whatsapp fa-xl"></i>
+              <a
+                href="https://wa.me/254700526125?text=I%20am%20interested%20in%20your%20your%20 services"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-whatsapp fa" target="_blank"></i>
               </a>
             </div>
           </div>

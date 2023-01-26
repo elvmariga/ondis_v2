@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FcExpand, FcCollapse } from "react-icons/fc";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import "./Socials-style/Socials-style.css";
 import Image from "./assets/web-development.svg";
 // import Product from "../Product/Product";

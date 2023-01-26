@@ -73,10 +73,21 @@
         border-radius: 5px;
         padding: 0.5rem 1rem;
 
+
         &:hover {
           transform: scale(1.1, 1.1);
         }
+                
       }
+      .whatsapp-icon{
+        color: #1055db;
+        &:hover{
+          color: #FFFFFF;
+          border: none;
+          background-color: green;
+        }
+      }
+           
     }
 
     @media screen and(min-width:600px) {
