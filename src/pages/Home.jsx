@@ -9,7 +9,7 @@ import Service from "../components/Service/Service";
 import Graphics from '../components/Graphics/Graphics';
 import Socials from '../components/Socials/Socials';
 import Customer from "../components/Customer/Customer";
-import Parallaxy from "../components/Parallaxy/Parallaxy";
+
 
 
 export const Home = () => {
@@ -17,7 +17,7 @@ export const Home = () => {
     <>
       {/* <Navbar/> */}
       <Hero/>
-      <Parallaxy/>
+   
       <Partners/>
       <Expert/>
       <Service/>
