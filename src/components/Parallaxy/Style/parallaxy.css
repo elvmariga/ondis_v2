@@ -1,0 +1,36 @@
+.wrapper_outer {
+  height: 100vh;
+  overflow: hidden;
+}
+.wrapper_outer .wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 1px;
+}
+.wrapper_outer .wrapper .parallax_section {
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+.wrapper_outer .wrapper .parallax_section .parallax_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  transform: translate3d(0, 0, -1px) scale(2);
+}
+.wrapper_outer .wrapper .parallax_section .bg1 {
+  background-image: url(../bg1.jpg);
+}
+.wrapper_outer .wrapper .parallax_section .bg2 {
+  background-image: url(../bg2.jpg);
+}/*# sourceMappingURL=parallaxy.css.map */
