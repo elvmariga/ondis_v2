@@ -19,7 +19,7 @@ const Hero = () => (
           typeSpeed={80}
           backSpeed={50}
           loop
-          style={{ color: "#1055db", fontSize: "3rem", fontWeight: "800" }}
+          style={{ color: "#2068B0", fontSize: "3rem", fontWeight: "800" }}
         ></Typed>
       </div>
       <div>

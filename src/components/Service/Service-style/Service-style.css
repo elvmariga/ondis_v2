@@ -2,7 +2,7 @@
   background-color: rgba(237, 242, 252, 0.5);
 }
 .web h2 {
-  color: #1055db;
+  color: #2068B0;
 }
 .web .web-content {
   display: grid;
@@ -78,7 +78,7 @@
 .web .web-content .web-right .web-services .right .collapse {
   justify-content: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 .web .web-content .web-right .tech-stack {
   margin: 1rem 0;

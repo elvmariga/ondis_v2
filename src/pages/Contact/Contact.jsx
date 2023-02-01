@@ -91,7 +91,7 @@ const Contact = () => {
             <p className="follow">Follow us</p>
             <div className="social-icon">
               <a
-                href="http://facebook.com/ondishub"
+                href="https://www.facebook.com/profile.php?id=100068420811214"
                 target="_blank"
                 rel="noopener noreferrer"
               >

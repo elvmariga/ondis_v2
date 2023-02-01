@@ -1,5 +1,5 @@
 .footer {
-    background-color: #1055DB;
+    background-color: #2068B0;
     padding: 2rem;
     color: #dddcdc;
     // width: 100%;
@@ -14,6 +14,9 @@
 
         p {
             font-size: 1rem;
+        }
+        h3{
+            color: #EC5962;
         }
 
         .footer-left {
@@ -37,6 +40,13 @@
             a {
                 color: #dddcdc;
                 text-decoration: none;
+
+                i{
+                    color: #EC5962;
+                }
+            }
+            .fa-location{
+color: #EC5962;
             }
         }
 
@@ -70,7 +80,7 @@
             //  }
     
              a {
-                 color: #FFFFFF;
+                 color: #EC5962;
                  text-decoration: none;
     
              }

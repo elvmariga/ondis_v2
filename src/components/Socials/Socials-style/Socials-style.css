@@ -28,7 +28,7 @@
   align-items: space-between;
 }
 .socials .socials-content .socials-right .title {
-  display: none;
+  visibility: hidden;
 }
 .socials .socials-content .socials-right p {
   font-size: 1.3rem;
@@ -92,6 +92,6 @@
     width: 50%;
   }
   .socials .socials-content .socials-right h2 {
-    display: block;
+    visibility: visible;
   }
 }/*# sourceMappingURL=Socials-style.css.map */

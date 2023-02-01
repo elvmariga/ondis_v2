@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1055DB;
+  background-color: #2068B0;
   padding: 2rem;
   color: #dddcdc;
 }
@@ -11,6 +11,9 @@
 }
 .footer .footer-content p {
   font-size: 1rem;
+}
+.footer .footer-content h3 {
+  color: #EC5962;
 }
 .footer .footer-content .footer-left {
   display: flex;
@@ -26,6 +29,12 @@
 .footer .footer-content .footer-left a {
   color: #dddcdc;
   text-decoration: none;
+}
+.footer .footer-content .footer-left a i {
+  color: #EC5962;
+}
+.footer .footer-content .footer-left .fa-location {
+  color: #EC5962;
 }
 @media only screen and (min-width: 600px) {
   .footer .footer-content {
@@ -47,6 +56,6 @@
   gap: 1rem;
 }
 .footer .links a {
-  color: #FFFFFF;
+  color: #EC5962;
   text-decoration: none;
 }/*# sourceMappingURL=footer-style.css.map */

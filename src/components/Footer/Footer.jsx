@@ -54,20 +54,39 @@ const Footer = () => (
           <p>Privacy Policy</p>
           <p>Terms of Service</p>
           <div className="links">
-         
-            <a href="http://twitter.com/ondishub" target="_blank">
+            <a
+              href="http://twitter.com/ondishub"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-brands fa-twitter fa"></i>
             </a>
-            <a href="http://facebook.com/ondishub" target="_blank">
+            <a
+              href="https://www.facebook.com/profile.php?id=100068420811214"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-brands fa-facebook fa"></i>
             </a>
-            <a href="http://instagram.com/ondishub" target="_blank">
+            <a
+              href="http://instagram.com/ondishub"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-brands fa-instagram fa"></i>
             </a>
-            <a href="http://linkedin.com/in/ondishub" target="_blank">
+            <a
+              href="http://linkedin.com/in/ondishub"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-brands fa-linkedin-in fa"></i>
             </a>
-            <a href="http://tiktok.com/ondishub" target="_blank">
+            <a
+              href="http://tiktok.com/ondishub"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i class="fa-brands fa-tiktok"></i>
             </a>
           </div>
@@ -77,12 +96,16 @@ const Footer = () => (
     <div className="copyright">
       <div>
         <p>
-          Copyright &copy; {new Date().getFullYear()} <b>OndisHub </b>{" "}
+          Copyright &copy; {new Date().getFullYear()}{" "}
+          <b style={{ color: "#EC5962" }}>OndisHub </b>{" "}
         </p>
       </div>
       <div>
         <p>
-          Designed by <a href="http://ondishub.co.ke" style={{color:"#FFFFFF"}}>OndisHub</a>
+          Designed by{" "}
+          <a href="http://ondishub.co.ke" style={{ color: "#EC5962" }}>
+            OndisHub
+          </a>
         </p>
       </div>
     </div>
