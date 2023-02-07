@@ -1,10 +1,7 @@
 .Button a {
-  background-color: #3673b0;
+  background-color: #E8303A;
   color: #FFFFFF;
 }
 .Button a:hover {
   transform: scale(1.1, 1.1);
-}
-.Button a i {
-  color: rgb(227, 6, 19);
 }/*# sourceMappingURL=Button.css.map */

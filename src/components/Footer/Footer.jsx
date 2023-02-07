@@ -3,6 +3,7 @@ import React from "react";
 import "../Footer/footer-style/footer-style.css";
 import logo from "./assests/ondis-logo.svg";
 // import Fade from "react-reveal/Fade";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Fade from 'react-reveal/Slide';
 import { SocialMedia } from "../SocialMedia/SocialMedia";
 
@@ -37,10 +38,16 @@ const Footer = () => (
       <Fade bottom cascade>
         <div className=".footer-middle">
           <h3>Our Services</h3>
+          <a className="footLinks" href="#web">
+            Web Development
+          </a>
+          <a className="footLinks" href="#graphics">
+            Graphic Design
+          </a>
+          <a className="footLinks" href="#socialMedia">
+            Social Media Branding
+          </a>
 
-          <p>Web Development</p>
-          <p>Graphic Design</p>
-          <p>Social Media Branding</p>
           <p>Serch Engine Optimization</p>
         </div>
       </Fade>
@@ -48,9 +55,13 @@ const Footer = () => (
       <Fade cascade bottom>
         <div className=".footer-right">
           <h3>Company</h3>
-
-          <p>About us</p>
-          <p>Contact us</p>
+         
+          <a className="footLinks" href="#about">
+            About
+          </a>
+          <a className="footLinks" href="#contact">
+            Contact
+          </a>
           <p>Privacy Policy</p>
           <p>Terms of Service</p>
           <div className="links">

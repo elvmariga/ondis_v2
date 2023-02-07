@@ -3,6 +3,12 @@
   padding: 2rem;
   color: #dddcdc;
 }
+.footer .footLinks {
+  color: #dddcdc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+}
 .footer .footer-content {
   width: 80%;
   margin: 0 auto;

@@ -27,7 +27,7 @@ const Socials = () => {
      }
    }
   return (
-    <div className="socials">
+    <div className="socials" id="socialMedia">
       <div className="socials-content">
         <div className="socials-left">
           <h2>
@@ -47,9 +47,10 @@ const Socials = () => {
             </h2>
             <p>
               We develop a social media branding strategy that aligns with your
-              overall branding and marketing goals. Keeping in mind an effective way for businesses and
-              organizations to connect with their customers, improve their
-              online presence, and build a strong and positive reputation.
+              overall branding and marketing goals. Keeping in mind an effective
+              way for businesses and organizations to connect with their
+              customers, improve their online presence, and build a strong and
+              positive reputation.
             </p>
           </div>
           <div className="social-services">

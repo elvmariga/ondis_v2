@@ -15,6 +15,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .logo{
       @media screen and (max-width: 675px) {
           .large-logo{

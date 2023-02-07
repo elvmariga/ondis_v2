@@ -24,7 +24,7 @@ import Expert from "../../components/Expert/Expert";
 
 const About = () => {
   return (
-    <div className="aboutpage">
+    <div className="aboutpage" id="about">
       {/* <Navbar/> */}
       <div className="top">
         <img src={Aboutus} alt="About Us Landing " />

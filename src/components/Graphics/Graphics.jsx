@@ -24,7 +24,7 @@ const Graphics = () => {
     }
   }
   return (
-    <div className="graphics">
+    <div className="graphics" id="graphics">
       <div className="graphics-content">
         <Fade bottom>
           <div className="graphics-left">
@@ -39,9 +39,9 @@ const Graphics = () => {
               Graphics Design
             </h2>
             <p>
-              A combination of artistic and technical skills to create designs
-              that are visually appealing, effective at conveying a message, and
-              in line with the branding and image of your business or organization.
+              Transform Your Online Image with Our Art-Tech Magic - Unleashing
+              Visual Masterpieces that Wow, Communicate, and Reflect Your Unique
+              Brand.
             </p>
           </div>
           <div className="web-graphicss">

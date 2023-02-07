@@ -59,7 +59,7 @@ const Contact = () => {
   return (
     <div>
       {/* <Navbar /> */}
-      <div className="contact">
+      <div className="contact" id="contact">
         <div className="left">
           <div className="contact-top">
             <h1>Feel free to contact us</h1>

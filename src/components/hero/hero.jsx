@@ -10,7 +10,6 @@ import Slide from 'react-reveal/Slide';
 
 const Hero = () => (
   <div className="hero">
-    
     <div className="hero-left">
       <div>
         <h1>All You Need is an Attractive</h1>
@@ -24,9 +23,9 @@ const Hero = () => (
       </div>
       <div>
         <p>
-          A team of skilled professionals with expertise content creation,
-          design, and development, dedicated to our <strong>Client's </strong>
-          to improve their online presence and reach new customers.
+          Unleash Your Online Potential with Our Dream Team of Content Kings,
+          Design Wizards, and Development Gurus - Dedicated to Boosting Your
+          Business and Connecting You with a Wider Audience.
         </p>
       </div>
       <div className="btns">
@@ -37,7 +36,7 @@ const Hero = () => (
           href="https://wa.me/254700526125?text=I%20am%20interested%20in%20your%20your%20 services"
           target="_blank"
           rel="noopener noreferrer"
-          className='whatsapp-icon'
+          className="whatsapp-icon"
         >
           WhatsApp
           <i
