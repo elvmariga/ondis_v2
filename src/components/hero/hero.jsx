@@ -12,9 +12,9 @@ const Hero = () => (
   <div className="hero">
     <div className="hero-left">
       <div>
-        <h1>Unlock the potential of the digital world!</h1>
+        <h1>Unlock the Potential of the Digital World!</h1>
         <Typed
-          strings={["Website", "Graphics Design", "Social Media branding"]}
+          strings={["Website", "Graphics Design", "Social Media Branding"]}
           typeSpeed={80}
           backSpeed={50}
           loop
