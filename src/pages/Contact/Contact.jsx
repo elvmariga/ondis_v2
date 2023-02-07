@@ -5,7 +5,7 @@ import Location from "./Assests/location.svg";
 import "./Contact-style/Contact-style.css";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import MailForm from "./MailForm";
 // import Slide from "react-reveal/Slide";
 

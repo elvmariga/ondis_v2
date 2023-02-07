@@ -130,11 +130,12 @@ const About = () => {
               <div className="details">
                 <h1>Our Values</h1>
                 <p>
-                  Empowering businesses to reach new heights. Our mission is to
-                  deliver top-notch online services support, through exceptional
-                  web applications, graphics, and digital solutions. Helping
-                  businesses boost sales, amplify online presence, and establish
-                  product credibility - all with one goal in mind, your success.
+                  We believe in delivering personalized solutions that meet the
+                  unique needs of our clients, leveraging the expertise and
+                  innovation of our talented creative team, and always
+                  maintaining the highest standards of product credibility.
+                  These values are the foundation of our success and the key to
+                  delivering exceptional results for our clients.
                 </p>
                 <Fade bottom cascade>
                   <div className="icons">
