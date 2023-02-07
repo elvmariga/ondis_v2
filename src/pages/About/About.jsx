@@ -31,12 +31,11 @@ const About = () => {
         <div className="aboutDetails">
           <p>
             {" "}
-            We offer digital services typically with expertise in areas of
-            digital technology and help businesses and organizations improve
-            their online presence, reach new customers, and streamline their
-            operations. Digital services can provide many benefits, including
-            increased efficiency, cost savings, and improved customer
-            experiences.
+            Unleashing digital potential for businesses with our expert tech
+            touch. Transforming online presence, reaching new horizons,
+            streamlining operations, and delivering unparalleled efficiency,
+            cost-savings, and customer experiences. Embrace the power of online
+            presence for your business success!
           </p>
           <Fade bottom cascade>
             <p>
@@ -66,11 +65,12 @@ const About = () => {
                 {/* <h1>What we do</h1> */}
 
                 <p>
-                  <strong>ONDIS Hub</strong> is a web Application development
-                  and creative design agency based in Kenya with a team all over
-                  the globe. Our web applications, graphics and user designs are
-                  tailored to create business credibility and increase sales
-                  conversion online
+                  <strong>ONDIS Hub</strong> Crafting digital solutions for a
+                  thriving business. As a global web development and design
+                  agency, based in Kenya, we blend creativity with technology to
+                  bring your vision to life. Our tailor-made web applications,
+                  graphics, and user designs are engineered to boost your
+                  business credibility and skyrocket sales conversions online.
                 </p>
                 <Fade bottom cascade>
                   <div className="icons">
@@ -124,16 +124,17 @@ const About = () => {
                   </div>
                 </Slide>
               </div>
-             
-                <div className="details">
-                  <h1>Our Values</h1>
-                  <p>
-                    To provide Top Class Online Services Support through
-                    offering web application, graphics and other digital
-                    services to help business make more sales and increase
-                    online presence also product credibility.
-                  </p>
-                   <Fade bottom cascade>
+
+              <div className="details">
+                <h1>Our Values</h1>
+                <p>
+                  Empowering businesses to reach new heights. Our mission is to
+                  deliver top-notch online services support, through exceptional
+                  web applications, graphics, and digital solutions. Helping
+                  businesses boost sales, amplify online presence, and establish
+                  product credibility - all with one goal in mind, your success.
+                </p>
+                <Fade bottom cascade>
                   <div className="icons">
                     <div className="icon-details">
                       <div>
@@ -162,9 +163,8 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                  </Fade>
-                </div>
-            
+                </Fade>
+              </div>
             </div>
           </div>
         </div>
@@ -189,41 +189,42 @@ const About = () => {
               <div className="details">
                 {/* <h1>What we do</h1> */}
                 <p>
-                  <strong>ONDIS Hub</strong> is a web Application development
-                  and creative design agency based in Kenya with a team all over
-                  the globe. Our web applications, graphics and user designs are
-                  tailored to create business credibility and increase sales
-                  conversion online
+                  Choosing us means choosing expertise, innovation, and results.
+                  With a dedicated team of skilled professionals, a passion for
+                  technology, and a track record of delivering exceptional
+                  outcomes, we are the perfect partner to help you achieve your
+                  digital goals. Let's join forces to bring your vision to life
+                  and drive your business to new heights.
                 </p>
- <Fade bottom cascade>
-                <div className="icons">
-                  <div className="icon-details">
-                    <div>
-                      <img src={support} className="icon" alt="" />
-                    </div>
-                    <div className="icon-content">
-                      <p>24/7 Customer Support</p>
-                    </div>
-                  </div>
-
-                  <div className="icon-details">
-                    <div>
-                      <img src={best} className="icon" alt="" />
-                    </div>
-                    <div className="icon-content">
-                      <p>Creative Tailored Design</p>
-                    </div>
-                  </div>
-                  <div className="icon-details">
-                    <div>
-                      <img src={price} className="icon" alt="" />
+                <Fade bottom cascade>
+                  <div className="icons">
+                    <div className="icon-details">
+                      <div>
+                        <img src={support} className="icon" alt="" />
+                      </div>
+                      <div className="icon-content">
+                        <p>24/7 Customer Support</p>
+                      </div>
                     </div>
 
-                    <div className="icon-content">
-                      <p>Best Price Guarantee</p>
+                    <div className="icon-details">
+                      <div>
+                        <img src={best} className="icon" alt="" />
+                      </div>
+                      <div className="icon-content">
+                        <p>Creative Tailored Design</p>
+                      </div>
+                    </div>
+                    <div className="icon-details">
+                      <div>
+                        <img src={price} className="icon" alt="" />
+                      </div>
+
+                      <div className="icon-content">
+                        <p>Best Price Guarantee</p>
+                      </div>
                     </div>
                   </div>
-                </div>
                 </Fade>
               </div>
             </div>

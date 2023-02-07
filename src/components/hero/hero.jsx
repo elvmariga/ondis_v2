@@ -25,7 +25,7 @@ const Hero = () => (
         <p>
           Unleash Your Online Potential with Our Dream Team of Content Kings,
           Design Wizards, and Development Gurus - Dedicated to Boosting Your
-          Business and Connecting You with a Wider Audience.
+          Business and Connecting You with a Wider Online Audience.
         </p>
       </div>
       <div className="btns">

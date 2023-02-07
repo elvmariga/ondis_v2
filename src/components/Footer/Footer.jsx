@@ -49,13 +49,14 @@ const Footer = () => (
           </a>
 
           <p>Serch Engine Optimization</p>
+          <p>Branding and Printing</p>
         </div>
       </Fade>
 
       <Fade cascade bottom>
         <div className=".footer-right">
           <h3>Company</h3>
-         
+
           <a className="footLinks" href="#about">
             About
           </a>
