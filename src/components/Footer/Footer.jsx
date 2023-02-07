@@ -3,9 +3,9 @@ import React from "react";
 import "../Footer/footer-style/footer-style.css";
 import logo from "./assests/ondis-logo.svg";
 // import Fade from "react-reveal/Fade";
-import { Navigate, Route, Routes } from "react-router-dom";
+// import { Navigate, Route, Routes } from "react-router-dom";
 import Fade from 'react-reveal/Slide';
-import { SocialMedia } from "../SocialMedia/SocialMedia";
+// import { SocialMedia } from "../SocialMedia/SocialMedia";
 
 const Footer = () => (
   <div className="footer">

@@ -12,7 +12,7 @@ const Hero = () => (
   <div className="hero">
     <div className="hero-left">
       <div>
-        <h1>All You Need is an Attractive</h1>
+        <h1>Unlock the potential of the digital world!</h1>
         <Typed
           strings={["Website", "Graphics Design", "Social Media branding"]}
           typeSpeed={80}
