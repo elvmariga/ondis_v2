@@ -31,11 +31,13 @@ const About = () => {
         <div className="aboutDetails">
           <p>
             {" "}
-            Unleashing digital potential for businesses with our expert tech
-            touch. Transforming online presence, reaching new horizons,
-            streamlining operations, and delivering unparalleled efficiency,
-            cost-savings, and customer experiences. Embrace the power of online
-            presence for your business success!
+            ONDIS Hub is your go-to global digital agency for digital solutions
+            that will help your business thrive. We are experts in crafting
+            tailor-made web applications, graphics design, and social media
+            management that blend creativity and technology to bring your vision
+            to life. Our services have been designed to help increase your
+            business credibility, expand your reach and skyrocket sales
+            conversions online.
           </p>
           <Fade bottom cascade>
             <p>

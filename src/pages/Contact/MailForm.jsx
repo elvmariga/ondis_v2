@@ -19,10 +19,10 @@ const MailForm = () => {
 
     emailjs
       .sendForm(
-        "service_dwnim4l",
+        "service_nhz8rve",
         "template_jml97na",
         form.current,
-        "oKzu40EY3P8xKvkWZ"
+        "3j5gJxnaqRpoOS_jT"
       )
       .then(
         (result) => {
@@ -39,7 +39,7 @@ const MailForm = () => {
 
       
         <div className="mail-form">
-          <Zoom cascade>
+          {/* <Zoom cascade> */}
             <h2>Leave us a Message!</h2>
             <form action="" ref={form} onSubmit={sendEmail}>
               <div className="row">
@@ -85,7 +85,7 @@ const MailForm = () => {
 
               <input className="callme" type="submit" value="Send" />
             </form>
-          </Zoom>
+          {/* </Zoom> */}
         </div>
      
   );

@@ -2,7 +2,7 @@
     background-color: #eef3fc;
 
     h2 {
-        color: #1055db;
+        color: #2068B0;
     }
 
     .socials-content {
@@ -29,8 +29,8 @@
             flex-direction: column;
             align-items: space-between;
 
-            .title {
-                visibility: hidden;
+            .social-title {
+            display: none;
             }
 
  @media screen and (min-width:600px) {
@@ -119,7 +119,7 @@
                 }
 
                 h2 {
-                    display: none;
+                    // display: none;
                 }
             }
 
@@ -127,7 +127,7 @@
                 width: 50%;
 
                 h2 {
-                    visibility: visible;
+                    display: block;
                 }
             }
         }

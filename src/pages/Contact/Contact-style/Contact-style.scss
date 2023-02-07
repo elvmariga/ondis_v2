@@ -107,9 +107,9 @@
             input {
                 height: 2.6rem;
                     width: 90%;
-                    background: rgba(249, 205, 208, 0.3);
+                    background: rgba(184, 204, 245, .3);
                     border-radius: 4px;
-                    border: 1px solid #F6ACB0;
+                    border: 1px solid rgba(184, 204, 245, .3);
                     padding: 0 1rem;
                     font-size: medium;
                     font-weight: 500;
@@ -122,7 +122,7 @@
             .callme {
                 width: fit-content;
                 padding: .3rem 1.5rem;
-                background-color: #1055db;
+                background-color: rgb(232, 48, 58);
                 border: none;
                 color: #FFFFFF;
                 border-radius: 4px;
@@ -189,9 +189,9 @@
             input {
                 height: 2.6rem;
                 width: 90%;
-                        background: rgba(249, 205, 208, 0.3);
+                        background: rgba(184, 204, 245, .3);
                 border-radius: 4px;
-                border: 1px solid #F6ACB0;
+            border: 1px solid rgba(184, 204, 245, .3);
                 padding: 0 1rem;
                 font-size: medium;
                 font-weight: 500;
@@ -219,7 +219,7 @@
             .callme {
                 width: fit-content;
                 padding: .3rem 1.5rem;
-                background-color: #1055db;
+                background-color: rgb(232, 48, 58);
                 border: none;
                 color: #FFFFFF;
                 border-radius: 4px;
@@ -228,11 +228,10 @@
 
             textarea {
                 width: 100%;
-                        background: rgba(249, 205, 208, 0.3);
+                        background: rgba(184, 204, 245, .3);
                 border-radius: 4px;
                 color: rgba(0, 0, 0, 0.7);
-            border: 1px solid #F6ACB0;
-
+        border: 1px solid rgba(184, 204, 245, .3);
                 // padding: 0 1rem;
                 &:focus {
                     outline: none;

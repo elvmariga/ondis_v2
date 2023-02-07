@@ -39,9 +39,9 @@ const Graphics = () => {
               Graphics Design
             </h2>
             <p>
-              Transform Your Online Image with Our Art-Tech Magic - Unleashing
-              Visual Masterpieces that Wow, Communicate, and Reflect Your Unique
-              Brand.
+              Transform your online image with our art-tech magic - unleashing
+              visual masterpieces that wow, communicate, and reflect your unique
+              brand.
             </p>
           </div>
           <div className="web-graphicss">

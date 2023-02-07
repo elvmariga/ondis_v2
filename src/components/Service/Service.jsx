@@ -44,9 +44,9 @@ const Service = () => {
           <div>
             <h2 className="web-title">Web Development</h2>
             <p>
-              Crafting websites with user-centric design, making navigation a
-              breeze. Elevating your online presence with user-friendly sites
-              that drive results and exceed your goals
+              We create user-centric websites that prioritize user experience
+              and are easy to navigate. Our expertise helps you elevate your
+              online presence and reach your goals.
             </p>
           </div>
           <div className="web-services">
