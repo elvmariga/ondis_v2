@@ -4,7 +4,7 @@ import  './hero-style/hero-style.css';
 import Button from '../Button/Button';
 import image from './assests/hero.svg';
 import Slide from 'react-reveal/Slide';
-import Fade from "react-reveal/Slide";
+// import Fade from "react-reveal/Slide";
 
 
 
@@ -12,28 +12,33 @@ const Hero = () => (
   <div className="hero">
     <div className="hero-left">
       <div>
-        <h1>All You Need is an Attractive</h1>
+        <h1>Unlock the Potential of the Digital World!</h1>
         <Typed
-          strings={["Website", "Graphics Design", "Social Media branding"]}
+          strings={["Website", "Graphics Design", "Social Media Branding"]}
           typeSpeed={80}
           backSpeed={50}
           loop
-          style={{ color: "#1055db", fontSize: "3rem", fontWeight: "800" }}
+          style={{ color: "#2068B0", fontSize: "3rem", fontWeight: "800" }}
         ></Typed>
       </div>
       <div>
         <p>
-          A team of skilled professionals with expertise content creation,
-          design, and development, dedicated to our <strong>Client's </strong>
-          to improve their online presence and reach new customers.
+          Unleash Your Online Potential with Our Dream Team of Content Kings,
+          Design Wizards, and Development Gurus - Dedicated to Boosting Your
+          Business and Connecting You with a Wider Online Audience.
         </p>
       </div>
       <div className="btns">
         <Button
           style={{ transform: "scale(1.1, 1.1) !important", color: "red" }}
         />
-        <a href="http://">
-          Whatapp
+        <a
+          href="https://wa.me/254700526125?text=I%20am%20interested%20in%20your%20your%20 services"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-icon"
+        >
+          WhatsApp
           <i
             class="fa-brands fa-whatsapp "
             style={{ marginLeft: "0.4rem" }}

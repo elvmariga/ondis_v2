@@ -11,14 +11,17 @@ import Socials from '../components/Socials/Socials';
 import Customer from "../components/Customer/Customer";
 
 
+
 export const Home = () => {
   return (
     <>
       {/* <Navbar/> */}
       <Hero/>
+   
       <Partners/>
       <Expert/>
       <Service/>
+
       <Graphics/>
       <Socials/>
       <Customer/>

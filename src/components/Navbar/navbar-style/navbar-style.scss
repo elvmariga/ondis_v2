@@ -1,12 +1,12 @@
 .navbar {
   margin: 0rem auto auto 0;
-  border-bottom: #b9b8b8 1px solid;
+  border-bottom: #afc7f5 1px solid;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0px;
   padding-top: 15px;
   z-index: 6; 
-  background-color: #f2f2f2;
+  background-color: #eef3fc;
 
 
   .navbar-content {
@@ -15,6 +15,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .logo{
       @media screen and (max-width: 675px) {
           .large-logo{
@@ -45,21 +46,21 @@
           list-style: none;
           &:hover {
             transform: scale(1.1, 1.1);
-            color: #1055db;
+            color: #2068B0;
           }
 
           a {
             text-decoration: none;
             color: black;
             &:hover {
-              color: #1055db;
+              color: #E8303A;
               font-weight: 500;
             }
           }
           .active {
             transform: scale(1.1, 1.1);
             font-weight: 700;
-            color: #1055db;
+            color: #E8303A;
             text-decoration: double;
           }
         }

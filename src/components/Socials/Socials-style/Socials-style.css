@@ -1,8 +1,8 @@
 .socials {
-  background-color: #f2f2f2;
+  background-color: #eef3fc;
 }
 .socials h2 {
-  color: #1055db;
+  color: #2068B0;
 }
 .socials .socials-content {
   display: grid;
@@ -27,7 +27,7 @@
   flex-direction: column;
   align-items: space-between;
 }
-.socials .socials-content .socials-right .title {
+.socials .socials-content .socials-right .social-title {
   display: none;
 }
 .socials .socials-content .socials-right p {
@@ -84,9 +84,6 @@
   .socials .socials-content .socials-left img {
     width: 100%;
     height: auto;
-  }
-  .socials .socials-content .socials-left h2 {
-    display: none;
   }
   .socials .socials-content .socials-right {
     width: 50%;

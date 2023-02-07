@@ -65,7 +65,7 @@
 }
 .contact .social-icon a {
   text-decoration: none;
-  color: hsla(220deg, 86%, 46%, 0.8);
+  color: #EC5962;
 }
 .contact .call-form {
   display: flex;
@@ -90,9 +90,9 @@
 .contact .call-form form input {
   height: 2.6rem;
   width: 90%;
-  background: hsla(220deg, 75%, 84%, 0.3);
+  background: rgba(184, 204, 245, 0.3);
   border-radius: 4px;
-  border: 1px solid hsla(220deg, 75%, 84%, 0.3);
+  border: 1px solid rgba(184, 204, 245, 0.3);
   padding: 0 1rem;
   font-size: medium;
   font-weight: 500;
@@ -105,7 +105,7 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.3rem 1.5rem;
-  background-color: #1055db;
+  background-color: rgb(232, 48, 58);
   border: none;
   color: #FFFFFF;
   border-radius: 4px;
@@ -147,9 +147,9 @@
 .contact .mail-form form input {
   height: 2.6rem;
   width: 90%;
-  background: hsla(220deg, 75%, 84%, 0.3);
+  background: rgba(184, 204, 245, 0.3);
   border-radius: 4px;
-  border: 1px solid hsla(220deg, 75%, 84%, 0.3);
+  border: 1px solid rgba(184, 204, 245, 0.3);
   padding: 0 1rem;
   font-size: medium;
   font-weight: 500;
@@ -173,17 +173,17 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.3rem 1.5rem;
-  background-color: #1055db;
+  background-color: rgb(232, 48, 58);
   border: none;
   color: #FFFFFF;
   border-radius: 4px;
 }
 .contact .mail-form form textarea {
   width: 100%;
-  background: hsla(220deg, 75%, 84%, 0.3);
+  background: rgba(184, 204, 245, 0.3);
   border-radius: 4px;
   color: rgba(0, 0, 0, 0.7);
-  border: 1px solid hsla(220deg, 75%, 84%, 0.3);
+  border: 1px solid rgba(184, 204, 245, 0.3);
 }
 .contact .mail-form form textarea:focus {
   outline: none;

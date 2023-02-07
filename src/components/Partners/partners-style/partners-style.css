@@ -22,6 +22,10 @@
 .partners .partners-content .partners-bottom .the-partners img {
   width: 40%;
   height: auto;
+  opacity: 0.4 !important;
+}
+.partners .partners-content .partners-bottom .the-partners img:hover {
+  opacity: 0.9 !important;
 }
 @media screen and (min-width: 600px) {
   .partners .partners-content .partners-bottom .the-partners img {

@@ -14,27 +14,28 @@ export const sites = [
     icon: tick,
     text: "Letterheads",
     details:
-      "This includes logos, emblems, corporate design, background pattern, names, and addresses that conform to the current branding and marketing plans",
+      "Designed to match a company's brand guidelines, including color, typography, and other visual elements.",
   },
   {
     id: 1,
     icon: tick,
     text: "Business Cards",
-    details: "Customizable designs, papers, shapes & more",
+    details:
+      "A card with unique designs, graphics, and layouts to stand out from the crowd.",
   },
   {
     id: 2,
     icon: tick,
     text: "Bronchues",
     details:
-      "With brochues, there are many ways to show off your products and services.Our neatly designed brochures helps your business or individual pursuits get attention",
+      "A brochure that provides an overview of a company, its history, mission, products, and services.",
   },
   {
     id: 3,
     icon: tick,
     text: "Banners & Roll-up Banners",
     details:
-      "With brochures, there are many ways to show off your products and services.Our neatly designed brochures helps your business or individual pursuits get attention",
+      "Designed with art for trade shows, conferences, or other events, to promote a company or product.",
   },
   {
     id: 4,

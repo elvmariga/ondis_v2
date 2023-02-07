@@ -1,6 +1,6 @@
 {
   "name": "ondis_v2",
-  "homepage":"http://ondishub.co.ke",
+  "homepage": "http://ondishub.co.ke",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,6 +21,7 @@
     "react-scroll": "^1.8.7",
     "react-scroll-up-button": "^1.6.4",
     "react-typed": "^1.2.0",
+    "scroll-to-element": "^2.0.3",
     "scss": "^0.2.4",
     "sweetalert": "^2.1.2",
     "web-vitals": "^2.1.4"

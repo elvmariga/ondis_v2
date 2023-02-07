@@ -27,7 +27,7 @@ const Service = () => {
   }
 
   return (
-    <div className="web">
+    <div className="web" id="web">
       <div className="web-content">
         <div className="web-left">
           <h2>
@@ -44,10 +44,9 @@ const Service = () => {
           <div>
             <h2 className="web-title">Web Development</h2>
             <p>
-              We create websites with user experience in mind, making it easy for
-              users to find what they are looking for. Helping you
-              create websites that are more user-friendly and effective at
-              achieving their goals.
+              We create user-centric websites that prioritize user experience
+              and are easy to navigate. Our expertise helps you elevate your
+              online presence and reach your goals.
             </p>
           </div>
           <div className="web-services">
@@ -60,11 +59,11 @@ const Service = () => {
                         className="item"
                         onMouseEnter={() => {
                           setShowIcons(i);
-                          toggleExpansion(i)
+                          toggleExpansion(i);
                         }}
                         onMouseLeave={() => {
                           setShowIcons(null);
-                          toggleExpansion(-1)
+                          toggleExpansion(-1);
                         }}
                         key={id}
                       >
@@ -72,19 +71,24 @@ const Service = () => {
                           src={icon}
                           // style={{ marginRight: "1rem" }}
                           alt={details}
-                          
                         />
-                        {text} {!expanded[i] &&
-                          <div className="collapse"><FcExpand /></div> }
-                        {showIcons === i && (
+                        {text}{" "}
+                        {!expanded[i] && (
                           <div className="collapse">
-                             
-                            {expanded[i] && <FcCollapse /> }
+                            <FcExpand />
                           </div>
                         )}
-                         <Zoom >{expanded[i] && <p className="dropdown">{`${details}`}</p> }</Zoom>
+                        {showIcons === i && (
+                          <div className="collapse">
+                            {expanded[i] && <FcCollapse />}
+                          </div>
+                        )}
+                        <Zoom>
+                          {expanded[i] && (
+                            <p className="dropdown">{`${details}`}</p>
+                          )}
+                        </Zoom>
                       </p>
-                     
                     </>
                   );
                 })}

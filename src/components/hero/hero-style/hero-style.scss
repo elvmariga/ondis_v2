@@ -69,14 +69,26 @@
 
       a {
         text-decoration: none;
-        border: 1px solid #1055db;
+        
         border-radius: 5px;
-        padding: 0.5rem 1rem;
+        padding: 0.45rem 1rem;
+
 
         &:hover {
           transform: scale(1.1, 1.1);
         }
+                
       }
+      .whatsapp-icon{
+        color: #2068B0;
+        border: 1px solid #2068B0;
+        &:hover{
+          color: #FFFFFF;
+          border: none;
+          background-color: green;
+        }
+      }
+           
     }
 
     @media screen and(min-width:600px) {

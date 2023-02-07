@@ -3,84 +3,44 @@ import Mail from "./Assests/mail.svg";
 import Phone from "./Assests/phone.svg";
 import Location from "./Assests/location.svg";
 import "./Contact-style/Contact-style.css";
-import emailjs, {init} from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
-import Zoom from "react-reveal/Zoom";
-import Slide from "react-reveal/Slide";
+// import Zoom from "react-reveal/Zoom";
+import MailForm from "./MailForm";
+// import Slide from "react-reveal/Slide";
 
 const Contact = () => {
   const form = useRef();
-  const forms= useRef();
+  // const formEmail= useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault(); // prevents the page from reloading when you hit “Send”
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_ptk1q7r",
-  //       "template_t4ephna",
-  //       form.current,
-  //       "9byfXctYyiSASCu0T"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         // show the user an sent success
-  //         swal("Email Sent Successfully");
-  //       },
-  //       (error) => {
-  //         // show the user an error
-  //         swal("Error in sending, try again");
-  //       }
-  //     );
-  // };
-
+ 
   const phoneNumber = (e) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
     emailjs
       .sendForm(
-        "service_ptk1q7r",
-        "template_hynzgve",
+        "service_nhz8rve",
+        "template_hyjr4ke",
         form.current,
-        "9byfXctYyiSASCu0T"
+        "3j5gJxnaqRpoOS_jT"
       )
       .then(
         (result) => {
           // show the user an sent success
-          swal("Number Sent Succefull!");
+          swal("Number Sent Succefull!, we will call you in a few");
         },
         (error) => {
           // show the user an error
-          swal("Error!");
+          swal("Number not sent, try again");
         }
       );
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
-
-    emailjs
-      .sendForm(
-        "service_ptk1q7r",
-        "template_t4ephna",
-        form.current,
-        "9byfXctYyiSASCu0T"
-      )
-      .then(
-        (result) => {
-          // show the user an sent success
-          swal("Email Sent Successfully");
-        },
-        (error) => {
-          // show the user an error
-          swal("Error in sending, try again");
-        }
-      );
-  };
+ 
   return (
     <div>
       {/* <Navbar /> */}
-      <div className="contact">
+      <div className="contact" id="contact">
         <div className="left">
           <div className="contact-top">
             <h1>Feel free to contact us</h1>
@@ -111,27 +71,46 @@ const Contact = () => {
           <div>
             <p className="follow">Follow us</p>
             <div className="social-icon">
-              <a href="">
-                <i class="fa-brands fa-facebook fa-xl"></i>
+              <a
+                href="https://www.facebook.com/profile.php?id=100068420811214"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-facebook fa"></i>
               </a>
-              <a href="">
-                <i class="fa-brands fa-twitter fa-xl"></i>
+              <a
+                href="http://twitter.com/ondishub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-twitter fa"></i>
               </a>
-              <a href="">
-                <i class="fa-brands fa-instagram fa-xl"></i>
+              <a
+                href="http://instagram.com/ondishub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-instagram fa"></i>
               </a>
-              <a href="">
-                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              <a
+                href="http://linkedin.com/in/ondishub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-linkedin-in fa"></i>
               </a>
-              <a href="">
-                <i class="fa-brands fa-whatsapp fa-xl"></i>
+              <a
+                href="https://wa.me/254700526125?text=I%20am%20interested%20in%20your%20your%20 services"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-whatsapp fa" target="_blank"></i>
               </a>
             </div>
           </div>
           <div>
             <p className="follow">Call me!</p>
             <div className="call-form">
-           
               <form action="" ref={form} onSubmit={phoneNumber}>
                 <input
                   type="tel"
@@ -146,56 +125,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="mail-form">
-        <Zoom cascade>
-          <h2>Leave us a Message!</h2>
-          <form action="" ref={form} onSubmit={sendEmail}>
-            <div className="row">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required="required"
-              />
-              <input
-                type="email"
-                name="email"
-                id="email "
-                placeholder="Email"
-                required="required"
-              />
-            </div>
-            <div className="row">
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="Phone "
-                required="required"
-              />
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="Subject"
-                required="required"
-              />
-            </div>
-
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              required="required"
-            ></textarea>
-
-            <input className="callme" type="submit" value="Send" />
-          </form>
-          </Zoom>
-        </div>
-       
+        <MailForm/>
       </div>
       {/* <Footer /> */}
     </div>

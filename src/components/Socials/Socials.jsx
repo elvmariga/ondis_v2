@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FcExpand, FcCollapse } from "react-icons/fc";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import "./Socials-style/Socials-style.css";
 import Image from "./assets/web-development.svg";
 // import Product from "../Product/Product";
@@ -27,7 +27,7 @@ const Socials = () => {
      }
    }
   return (
-    <div className="socials">
+    <div className="socials" id="socialMedia">
       <div className="socials-content">
         <div className="socials-left">
           <h2>
@@ -41,15 +41,16 @@ const Socials = () => {
 
         <div className="socials-right">
           <div>
-            <h2 className="title">
+            <h2 className="social-title">
               {" "}
-              <Line /> Social Media Branding
+              <Line />
+              Social Media Branding
             </h2>
             <p>
-              We develop a social media branding strategy that aligns with your
-              overall branding and marketing goals. Keeping in mind an effective way for businesses and
-              organizations to connect with their customers, improve their
-              online presence, and build a strong and positive reputation.
+              We specialize in crafting and promoting a brand's identity,
+              messages, and content on various social media platforms with the
+              purpose of increasing brand recognition, improving customer
+              experience, and creating a positive perception of the brand.
             </p>
           </div>
           <div className="social-services">

@@ -13,25 +13,25 @@ export const sites = [
     id: 0,
     icon: tick,
     text: "Standard Website",
-    details: "This is ideal for blogs and portifolio websites",
+    details: "This is ideal for Blogs, Landing page and Portifolio websites",
   },
   {
     id: 1,
     icon: tick,
     text: "Business Website",
-    details: "Ideal for SME's, Corporate, and Learning Institutes",
+    details: "Ideal for SME's, company portfolio, and Institues websites",
   },
   {
     id: 2,
     icon: tick,
-    text: "Premium Website",
-    details: "Ideal for Large Corporates, and Learning Institutes",
+    text: "Corporates Website",
+    details: "Ideal for Large Corporates, and Learning Institutes websites",
   },
 
   {
     id: 3,
     icon: tick,
-    text: "Ultimate Websites",
-    details: "Ideal for Business in the Retail Industry (E-Commerce)",
+    text: "E-commerce Websites",
+    details: "Ideal for Business in the Retail Industry (E-Commerce) websites",
   },
 ];
