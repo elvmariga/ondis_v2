@@ -1,7 +1,6 @@
 .navbar {
   margin: 0rem auto auto 0;
-  border-bottom: #afc7f5 1px solid;
-  position: -webkit-sticky; /* Safari */
+  border-bottom: #afc7f5 1px solid; /* Safari */
   position: sticky;
   top: 0px;
   padding-top: 15px;

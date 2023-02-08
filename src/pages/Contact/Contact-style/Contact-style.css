@@ -101,7 +101,6 @@
   outline: none;
 }
 .contact .call-form form .callme {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.3rem 1.5rem;
@@ -169,7 +168,6 @@
   }
 }
 .contact .mail-form form .callme {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.3rem 1.5rem;

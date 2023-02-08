@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 850px) {
   .social-container .links .fa-envelope,
-.social-container .links .fa-phone {
+  .social-container .links .fa-phone {
     display: block;
   }
 }/*# sourceMappingURL=style.css.map */

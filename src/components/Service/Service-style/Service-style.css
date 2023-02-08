@@ -2,7 +2,7 @@
   background-color: rgba(237, 242, 252, 0.5);
 }
 .web h2 {
-  color: #2068B0;
+  color: #2068b0;
 }
 .web .web-content {
   display: grid;
@@ -39,11 +39,8 @@
   flex-wrap: wrap;
   width: 100%;
 }
-.web .web-content .web-right .web-services .right img {
-  margin: 0;
-  z-index: 0;
-}
-.web .web-content .web-right .web-services .right p {
+.web .web-content .web-right .web-services .right .item {
+  position: relative;
   cursor: pointer;
   display: flex;
   font-size: medium;
@@ -54,35 +51,41 @@
   align-items: center;
   z-index: 2;
 }
-.web .web-content .web-right .web-services .right .item {
+.web .web-content .web-right .web-services .right .item .icon {
+  margin: 0;
   position: relative;
   z-index: 1;
 }
-.web .web-content .web-right .web-services .right .item:hover {
-  background-color: rgb(168, 186, 241);
+.web .web-content .web-right .web-services .right .item .collapse {
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
-.web .web-content .web-right .web-services .right .dropdown {
+.web .web-content .web-right .web-services .right .item .dropdown {
   background-color: rgb(168, 186, 241);
   opacity: 1;
   z-index: 6;
   border: #1091db 1px solid;
   border-radius: 0px 0px 5px 5px;
-  padding: 1rem;
+  padding: 0.8rem;
   width: 85%;
   margin: 0 auto;
+  font-size: small;
   color: black;
   box-shadow: 2px 2px 4px 1px rgba(16, 85, 219, 0.25);
   position: absolute;
   top: 30px;
 }
-.web .web-content .web-right .web-services .right .collapse {
-  justify-content: center;
-  position: relative;
-  z-index: 1;
+.web .web-content .web-right .web-services .right .item:hover {
+  background-color: rgb(168, 186, 241);
 }
 .web .web-content .web-right .tech-stack {
   margin: 1rem 0;
   margin-bottom: 2rem;
+}
+.web .web-content .web-right .tech-stack .stack-image {
+  position: relative;
+  z-index: 1;
 }
 .web .web-content .web-right .tech-stack img:hover {
   transform: scale(1.1, 1.1);
