@@ -46,7 +46,7 @@
   font-size: medium;
   border-radius: 5px;
   gap: 0.5rem;
-  width: 100%;
+  width: 85%;
   margin: 0;
   margin-top: 0.5rem;
   align-items: center;
@@ -64,12 +64,13 @@
   color: red;
 }
 .web .web-content .web-right .web-services .right .item .dropdown {
-  background-color: rgb(168, 186, 241);
+  background-color: #FFFFFF;
   opacity: 1;
   z-index: 6;
   border: rgba(232, 48, 58, 0.35) 2px solid;
   border-radius: 5px;
   padding: 0.8rem;
+  width: 85%;
   margin: 0 auto;
   font-size: small;
   color: black;

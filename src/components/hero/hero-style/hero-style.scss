@@ -3,29 +3,28 @@
   width: 80%;
   margin: .5rem auto;
   padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
-  align-items: center;
+  // background-color : red;
 
 
   .hero-right {
-    justify-content: end;
-    align-self: flex-end;
+    display: flex;
+    justify-content: center;
 
     // width: 50%;
     img {
       width: 100%;
       height: auto;
 
-      @media screen and(min-width:600px) {
+      @media screen and (min-width:600px) {
         
           width: 20rem;
           height: auto;
           
         
       }
-             @media screen and(min-width:900px) {
+             @media screen and (min-width:900px) {
       
                width: 30rem;
                height: auto;
@@ -53,9 +52,9 @@
       font-size: 1.5rem;
       line-height: 1.6;
       padding: 3rem 0;
-      
+      // width: 60%;
 
-      @media screen and(max-width:480px) {
+      @media screen and (max-width:480px) {
         padding: 0;
         margin: 1rem 0;
         font-size: 1.2rem;
@@ -92,7 +91,7 @@
            
     }
 
-    @media screen and(min-width:600px) {
+    @media screen and (min-width:600px) {
       // width: 60%;
 
       
@@ -102,7 +101,8 @@
   }
 
   @media only screen and (min-width: 600px) {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    justify-items: space-between;
     // width: 80%;
 
     // img{display: none;}

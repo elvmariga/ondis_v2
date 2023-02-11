@@ -1,12 +1,19 @@
-import illustrator from './illustrator.svg';
-import indesign from './indesign.svg';
-import photoshop from './photoshop.svg';
-import canva from './canva.svg';
-import Figma from './figma.svg';
-import Others from './others.svg';
-import tick from './tick.svg';
+import illustrator from "./illustrator.svg";
+import indesign from "./indesign.svg";
+import photoshop from "./photoshop.svg";
+import canva from "./canva.svg";
+import Figma from "./figma.svg";
+import Others from "./others.svg";
+import tick from "./tick.svg";
 
-export const stackIcons = [illustrator, photoshop, indesign, canva, Figma, Others];
+export const stackIcons = [
+  illustrator,
+  photoshop,
+  indesign,
+  canva,
+  Figma,
+  Others,
+];
 
 export const sites = [
   {
@@ -14,28 +21,49 @@ export const sites = [
     icon: tick,
     text: "Letterheads",
     details:
-      "Designed to match a company's brand guidelines, including color, typography, and other visual elements.",
+      "Professional letterhead design strengthens your brand, reinforces values & mission, and leaves a lasting impression. Make it stand out with precise design elements.",
+  },
+  {
+    id: 5,
+    icon: tick,
+    text: "Logo",
+    details:
+      "Our logo creates recognition and connection with customers, making it an essential part of your marketing strategy. It builds a memorable brand image that lasts.",
   },
   {
     id: 1,
     icon: tick,
     text: "Business Cards",
     details:
-      "A card with unique designs, graphics, and layouts to stand out from the crowd.",
+      "Stand out with our professional Business cards. Show off your contact info, build credibility, and promote your products and services effortlessly. We'll help you make a great impression!",
   },
   {
     id: 2,
     icon: tick,
     text: "Bronchues",
     details:
-      "A brochure that provides an overview of a company, its history, mission, products, and services.",
+      "Brochures are your marketing toolkit! Choose the right type to create a successful campaign - info, promo, sales, or event brochures. Each has its own benefits, so pick the one that meets your goals!",
   },
   {
     id: 3,
     icon: tick,
     text: "Banners & Roll-up Banners",
     details:
-      "Designed with art for trade shows, conferences, or other events, to promote a company or product.",
+      "Banners are an effective way to promote, spread brand awareness, and draw attention. Choose from retractable, roll-up, vinyl, fabric, mesh, or pole banners for success! Quality materials, vivid colors, and professional graphics are key.",
+  },
+  {
+    id: 6,
+    icon: tick,
+    text: "Fliers",
+    details:
+      "As a business, fliers are an effective way to reach your target audience. Brochures, leaflets, postcards, catalogs, magazines, newsletters, and door hangers all offer unique ways to communicate your message or promote your product or service. Choose the right combination to achieve your goals.",
+  },
+  {
+    id: 7,
+    icon: tick,
+    text: "Posters",
+    details:
+      "Posters are a powerful tool for businesses - create a recognizable brand, reach specific audiences, promote offers, and boost loyalty. Invest in posters and drive customer engagement!",
   },
   {
     id: 4,

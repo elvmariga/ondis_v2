@@ -1,23 +1,23 @@
 import React from "react";
 // import PropTypes from "prop-types";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import "../Footer/footer-style/footer-style.css";
 import logo from "./assests/ondis-logo.svg";
 // import Fade from "react-reveal/Fade";
 // import { Navigate, Route, Routes } from "react-router-dom";
-import Fade from 'react-reveal/Slide';
-// import ScrollTo from "scroll-to-element";
+import Fade from "react-reveal/Slide";
+import scrollIntoViewIfNeeded from "scroll-into-view-if-needed";
 // import { SocialMedia } from "../SocialMedia/SocialMedia";
 
 const Footer = () => {
-
-  // const handleClick = (elementId) => {
-  //   ScrollTo(elementId, {
-  //     duration: 1500,
-  //     offset: -70,
-  //     smooth: true
-  //   });
-  // };
+  const handleClick = (elementId) => {
+    const targetElement = document.querySelector(elementId);
+    scrollIntoViewIfNeeded(targetElement, {
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
   return (
     <div className="footer">
       <div className="footer-content">
@@ -48,23 +48,31 @@ const Footer = () => {
 
         <Fade bottom cascade>
           <div className=".footer-middle">
+           
+            <h3>Our Services</h3>
             <Link
               className=" footLinks"
               to="/home#web"
-              offset="50"
-              // onClick={() => handleClick("#web")}
+              // offset="50"
+              onClick={() => handleClick("#web")}
             >
-              About
-            </Link>
-            <h3>Our Services</h3>
-            <Link to="/home#web"className="footLinks" href="#web">
               Web Development
             </Link>
 
-            <Link  to="/home#web" className="footLinks" href="#graphics">
+            <Link
+              className=" footLinks"
+              to="/home#graphics"
+              // offset="50"
+              onClick={() => handleClick("#graphics")}
+            >
               Graphic Design
             </Link>
-            <Link  to="/home#web" className="footLinks" href="#socialMedia">
+            <Link
+              className=" footLinks"
+              to="/home#socialMedia"
+              // offset="50"
+              onClick={() => handleClick("#socialMedia")}
+            >
               Social Media Branding
             </Link>
 
@@ -144,10 +152,6 @@ const Footer = () => {
       </div>
     </div>
   );
-
-
 };
 
-
 export default Footer;
-

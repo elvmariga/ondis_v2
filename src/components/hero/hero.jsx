@@ -12,7 +12,7 @@ const Hero = () => (
   <div className="hero">
     <div className="hero-left">
       <div>
-        <h1>Unlock the Potential of the Digital World!</h1>
+        <h1>Unlock the Potential of Your Digital World With Our:</h1>
         <Typed
           strings={["Website", "Graphics Design", "Social Media Branding"]}
           typeSpeed={80}
@@ -30,7 +30,7 @@ const Hero = () => (
       </div>
       <div className="btns">
         <Button
-          style={{ transform: "scale(1.1, 1.1) !important", color: "red" }}
+          // style={{ transform: "scale(1.1, 1.1) !important", color: "red" }}
         />
         <a
           href="https://wa.me/254700526125?text=I%20am%20interested%20in%20your%20your%20 services"

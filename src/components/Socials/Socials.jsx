@@ -13,12 +13,10 @@ import Line from "../Line/Line";
 import Fade from "react-reveal/Slide";
 
 const Socials = () => {
-
-
-    const [expanded, setExpanded] = useState({});
+  const [expanded, setExpanded] = useState({});
   const [currentExpanded, setCurrentExpanded] = useState(null);
   const [showIcons, setShowIcons] = useState(null);
-  const [hidden, setHidden] = useState(-1)
+  const [hidden, setHidden] = useState(-2);
 
   function toggleExpansion(index) {
     if (currentExpanded !== index) {
@@ -28,7 +26,7 @@ const Socials = () => {
       setExpanded({ [index]: !expanded[index] });
     }
   }
-   
+
   return (
     <div className="socials" id="socialMedia">
       <div className="socials-content">
