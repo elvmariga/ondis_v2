@@ -54,18 +54,48 @@
   margin: 0;
   margin-top: 0.5rem;
 }
-.socials .socials-content .socials-right .social-services .right .dropdown {
-  border: #1055db 1px solid;
-  border-radius: 5px;
-  padding: 1rem;
-  width: 80%;
-  margin: 0.5rem auto;
-  color: black;
-  box-shadow: 2px 2px 4px 1px rgba(16, 85, 219, 0.25);
-}
-.socials .socials-content .socials-right .social-services .right .collapse {
-  justify-content: center;
+.socials .socials-content .socials-right .item {
+  position: relative;
+  cursor: pointer;
   display: flex;
+  font-size: medium;
+  border-radius: 5px;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0;
+  margin-top: 0.5rem;
+  align-items: center;
+  z-index: 2;
+}
+.socials .socials-content .socials-right .item .icon {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.socials .socials-content .socials-right .item .collapse {
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  color: red;
+}
+.socials .socials-content .socials-right .item .dropdown {
+  background-color: rgb(168, 186, 241);
+  opacity: 1;
+  z-index: 6;
+  border: rgba(232, 48, 58, 0.35) 2px solid;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin: 0 auto;
+  font-size: small;
+  color: black;
+  box-shadow: 2px 2px 4px 1px rgba(232, 48, 58, 0.15);
+  position: absolute;
+  top: 30px;
+  margin-top: 0.5rem;
+}
+.socials .socials-content .socials-right .item:hover {
+  background-color: rgba(232, 48, 58, 0.15);
+  margin-bottom: 1.2rem;
 }
 .socials .socials-content .socials-right .tech-stack {
   margin: 1rem 0;

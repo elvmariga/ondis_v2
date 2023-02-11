@@ -11,18 +11,19 @@ import Line from "../Line/Line";
 import Fade from "react-reveal/Slide";
 
 const Graphics = () => {
-  const [expanded, setExpanded] = useState({});
-  const [currentExpanded, setCurrentExpanded] = useState(null);
-  const [showIcons, setShowIcons] = useState(null);
+    const [expanded, setExpanded] = useState({});
+    const [currentExpanded, setCurrentExpanded] = useState(null);
+    const [showIcons, setShowIcons] = useState(null);
+    const [hidden, setHidden] = useState(-1);
 
-  function toggleExpansion(index) {
-    if (currentExpanded !== index) {
-      setExpanded({ [index]: true });
-      setCurrentExpanded(index);
-    } else {
-      setExpanded({ [index]: !expanded[index] });
+    function toggleExpansion(index) {
+      if (currentExpanded !== index) {
+        setExpanded({ [index]: true });
+        setCurrentExpanded(index);
+      } else {
+        setExpanded({ [index]: !expanded[index] });
+      }
     }
-  }
   return (
     <div className="graphics" id="graphics">
       <div className="graphics-content">
@@ -50,13 +51,18 @@ const Graphics = () => {
                 {sites.map(({ icon, text, details, id }, i) => {
                   return (
                     <>
-                      <p
-                        onClick={() => toggleExpansion(i)}
+                      <div
+                        style={{ visibility: hidden === i && "hidden" }}
+                        className="item"
                         onMouseEnter={() => {
                           setShowIcons(i);
+                          toggleExpansion(i);
+                          setHidden(i + 2);
                         }}
                         onMouseLeave={() => {
                           setShowIcons(null);
+                          toggleExpansion(-1);
+                          setHidden(-1);
                         }}
                         key={id}
                       >
@@ -64,17 +70,25 @@ const Graphics = () => {
                           src={icon}
                           // style={{ marginRight: "1rem" }}
                           alt={details}
+                          className="icon"
                         />
-                        {text}
-                        {showIcons === i && (
+                        {text}{" "}
+                        {!expanded[i] && (
                           <div className="collapse">
-                            {expanded[i] ? <FcCollapse /> : <FcExpand />}
+                            <FcExpand />
                           </div>
                         )}
-                      </p>
-                      {expanded[i] && (
-                        <p className="dropdown">{`${details}`}</p>
-                      )}
+                        {showIcons === i && (
+                          <div className="collapse">
+                            {expanded[i] && <FcCollapse />}
+                          </div>
+                        )}
+                        <Zoom>
+                          {expanded[i] && (
+                            <p className="dropdown">{`${details}`}</p>
+                          )}
+                        </Zoom>
+                      </div>
                     </>
                   );
                 })}

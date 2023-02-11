@@ -44,6 +44,7 @@
   cursor: pointer;
   display: flex;
   font-size: medium;
+  border-radius: 5px;
   gap: 0.5rem;
   width: 100%;
   margin: 0;
@@ -60,24 +61,26 @@
   justify-content: center;
   position: relative;
   z-index: 1;
+  color: red;
 }
 .web .web-content .web-right .web-services .right .item .dropdown {
   background-color: rgb(168, 186, 241);
   opacity: 1;
   z-index: 6;
-  border: #1091db 1px solid;
-  border-radius: 0px 0px 5px 5px;
+  border: rgba(232, 48, 58, 0.35) 2px solid;
+  border-radius: 5px;
   padding: 0.8rem;
-  width: 85%;
   margin: 0 auto;
   font-size: small;
   color: black;
-  box-shadow: 2px 2px 4px 1px rgba(16, 85, 219, 0.25);
+  box-shadow: 2px 2px 4px 1px rgba(232, 48, 58, 0.15);
   position: absolute;
   top: 30px;
+  margin-top: 0.5rem;
 }
 .web .web-content .web-right .web-services .right .item:hover {
-  background-color: rgb(168, 186, 241);
+  background-color: rgba(232, 48, 58, 0.15);
+  margin-bottom: 1.2rem;
 }
 .web .web-content .web-right .tech-stack {
   margin: 1rem 0;

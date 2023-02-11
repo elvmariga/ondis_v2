@@ -67,8 +67,8 @@ const About = () => {
                 {/* <h1>What we do</h1> */}
 
                 <p>
-                  <strong>ONDIS Hub</strong> Crafting digital solutions for a
-                  thriving business. As a global web development and design
+                  <strong>ONDIS Hub</strong> crafts digital solutions for 
+                  thriving businesses. As a global web development and design
                   agency, based in Kenya, we blend creativity with technology to
                   bring your vision to life. Our tailor-made web applications,
                   graphics, and user designs are engineered to boost your
