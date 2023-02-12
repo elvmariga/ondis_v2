@@ -7,7 +7,7 @@ const CustomerCard = (props) => {
       
       <div className="card-content">
         <div className="left">
-          <img src={props.dp} alt="Customer image" />
+          <img src={props.dp} alt="Customer" />
         </div>
         <div className="right">
           <h4>{props.name}</h4>

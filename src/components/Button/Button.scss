@@ -1,23 +1,15 @@
 .Button {
-    // color: #FFFFFF;
-    // // padding: .4rem 1rem;
-    // // background-color: #2068B0;
+
     width: fit-content;
-    // border-radius: 5px;
+
     &:hover {
-            transform: scale(1.1, 1.1) !important;
-        }
-    
-    a{
+        transform: scale(1.1, 1.1) !important;
+    }
+
+    a {
         background-color: #E8303A;
         color: #FFFFFF;
-        
 
-           
     }
-    
-    
-   
 
 }
-

@@ -16,7 +16,7 @@ import team from "./Assets/team.svg";
 import support from "./Assets/support.svg";
 import best from "./Assets/best.svg";
 import price from "./Assets/price.svg";
-import down from './Assets/down.svg';
+
 
 import credibility from "./Assets/credibility.svg";
 import Expert from "../../components/Expert/Expert";
