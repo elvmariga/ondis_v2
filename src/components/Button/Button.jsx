@@ -19,7 +19,7 @@ const Button = ({style}) => (
        activeclassname="active"
       to="/contact"
     >
-      Get Quote<i class="fa-solid fa-angles-right"></i>
+      Get Quote<i className="fa-solid fa-angles-right"></i>
     </NavLink>
   </div>
 );

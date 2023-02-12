@@ -57,19 +57,19 @@ const Service = () => {
                   return (
                     <>
                       <div
-                      style={{ visibility: hidden === i && 'hidden'}}
+                        style={{ visibility: hidden === i && 'hidden' }}
                         className="item"
                         onMouseEnter={() => {
                           setShowIcons(i);
                           toggleExpansion(i);
-                          setHidden(i+2)
+                          setHidden(i + 2)
                         }}
                         onMouseLeave={() => {
                           setShowIcons(null);
                           toggleExpansion(-1);
                           setHidden(-1)
                         }}
-                        key={id}
+                        key={i}
                       >
                         <img
                           src={icon}
@@ -90,7 +90,7 @@ const Service = () => {
                         )}
                         <Zoom>
                           {expanded[i] && (
-                            <p className="dropdown">{`${details}`}</p>
+                            <p className="dropdown">{details}</p>
                           )}
                         </Zoom>
                       </div>

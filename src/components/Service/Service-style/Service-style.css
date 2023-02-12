@@ -35,12 +35,10 @@
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  position: relative;
   flex-wrap: wrap;
   width: 100%;
 }
 .web .web-content .web-right .web-services .right .item {
-  position: relative;
   cursor: pointer;
   display: flex;
   font-size: medium;
@@ -64,7 +62,7 @@
   color: red;
 }
 .web .web-content .web-right .web-services .right .item .dropdown {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   opacity: 1;
   z-index: 6;
   border: rgba(232, 48, 58, 0.35) 2px solid;

@@ -40,7 +40,7 @@ const Hero = () => (
         >
           WhatsApp
           <i
-            class="fa-brands fa-whatsapp "
+            className="fa-brands fa-whatsapp "
             style={{ marginLeft: "0.4rem" }}
           ></i>
         </a>

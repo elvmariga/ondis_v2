@@ -21,8 +21,8 @@ const Partners = () => {
           <Slide bottom cascade>
 
           <div className="the-partners">
-            {partnerIcon.map((image) => {
-              return <img src={image} alt="partner" />;
+            {partnerIcon.map((image,i) => {
+              return <img key={i} src={image} alt="partner" />;
             })}
             
           </div>

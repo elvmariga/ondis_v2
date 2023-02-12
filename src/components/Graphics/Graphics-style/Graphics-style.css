@@ -41,8 +41,7 @@
   margin: 0;
   margin-top: 0.5rem;
 }
-.graphics .graphics-content .graphics-right .item {
-  position: relative;
+.graphics .graphics-content .graphics-right .right .item {
   cursor: pointer;
   display: flex;
   font-size: medium;
@@ -52,22 +51,21 @@
   margin: 0;
   margin-top: 0.5rem;
   align-items: center;
-  z-index: 2;
 }
-.graphics .graphics-content .graphics-right .item .icon {
+.graphics .graphics-content .graphics-right .right .item .icon {
   margin: 0;
   position: relative;
   z-index: 1;
 }
-.graphics .graphics-content .graphics-right .item .collapse {
+.graphics .graphics-content .graphics-right .right .item .collapse {
   justify-content: center;
   position: relative;
-  z-index: 1;
+  z-index: 5;
   color: red;
 }
-.graphics .graphics-content .graphics-right .item .dropdown {
+.graphics .graphics-content .graphics-right .right .item .dropdown {
   opacity: 1;
-  z-index: 6;
+  z-index: 600;
   border: rgba(232, 48, 58, 0.35) 2px solid;
   border-radius: 5px;
   padding: 0.8rem;
@@ -79,10 +77,11 @@
   position: absolute;
   top: 30px;
   margin-top: 0.5rem;
+  position: absolute;
+  background-color: #fff;
 }
-.graphics .graphics-content .graphics-right .item:hover {
+.graphics .graphics-content .graphics-right .right .item:hover {
   background-color: rgba(232, 48, 58, 0.15);
-  margin-bottom: 1.2rem;
 }
 .graphics .graphics-content .graphics-right .tech-stack {
   margin: 1rem 0;

@@ -57,7 +57,7 @@ export const SocialMedia = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-brands fa-tiktok"></i>
+            <i className="fa-brands fa-tiktok"></i>
           </a>
         </div>
       </Fade>

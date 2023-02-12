@@ -56,12 +56,16 @@ const Socials = () => {
           </div>
           <div className="social-services">
             <div className="right">
-              <Fade bottom>
+              {/* <Fade bottom> */}
                 {sites.map(({ icon, text, details, id }, i) => {
                   return (
                     <>
                       <div
-                        style={{ visibility: hidden === i && "hidden" }}
+                         style={{ 
+                          position: hidden === i && "relative",
+                          zIndex: hidden === i && 10
+                        }}
+
                         className="item"
                         onMouseEnter={() => {
                           setShowIcons(i);
@@ -101,7 +105,7 @@ const Socials = () => {
                     </>
                   );
                 })}
-              </Fade>
+              {/* </Fade> */}
             </div>
           </div>
 
