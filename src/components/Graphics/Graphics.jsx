@@ -3,7 +3,6 @@ import { FcExpand, FcCollapse } from "react-icons/fc";
 import Zoom from "react-reveal/Zoom";
 import "./Graphics-style/Graphics-style.css";
 import Image from "./assets/graphics.svg";
-// import Product from "../Product/Product";
 import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
 import { sites } from "./assets/stacks";

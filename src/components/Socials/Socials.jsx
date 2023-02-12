@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { FcExpand, FcCollapse } from "react-icons/fc";
-// import Zoom from "react-reveal/Zoom";
 import "./Socials-style/Socials-style.css";
 import Image from "./assets/web-development.svg";
-// import Product from "../Product/Product";
-// import Stack from "../Stack/Stack";
 import Zoom from "react-reveal/Zoom";
 import { stackIcons } from "./assets/stacks";
 import Button from "../Button/Button";
@@ -56,56 +53,51 @@ const Socials = () => {
           </div>
           <div className="social-services">
             <div className="right">
-              {/* <Fade bottom> */}
-                {sites.map(({ icon, text, details, id }, i) => {
-                  return (
-                    <>
-                      <div
-                         style={{ 
-                          position: hidden === i && "relative",
-                          zIndex: hidden === i && 10
-                        }}
-
-                        className="item"
-                        onMouseEnter={() => {
-                          setShowIcons(i);
-                          toggleExpansion(i);
-                          setHidden(i + 2);
-                        }}
-                        onMouseLeave={() => {
-                          setShowIcons(null);
-                          toggleExpansion(-1);
-                          setHidden(-1);
-                        }}
-                        key={id}
-                      >
-                        <img
-                          src={icon}
-                          // style={{ marginRight: "1rem" }}
-                          alt={details}
-                          className="icon"
-                        />
-                        {text}{" "}
-                        {!expanded[i] && (
-                          <div className="collapse">
-                            <FcExpand />
-                          </div>
-                        )}
-                        {showIcons === i && (
-                          <div className="collapse">
-                            {expanded[i] && <FcCollapse />}
-                          </div>
-                        )}
-                        <Zoom>
-                          {expanded[i] && (
-                            <p className="dropdown">{`${details}`}</p>
-                          )}
-                        </Zoom>
-                      </div>
-                    </>
-                  );
-                })}
-              {/* </Fade> */}
+              {sites.map(({ icon, text, details, id }, i) => {
+                return (
+                  <>
+                    <div
+                      style={{
+                        position: hidden === i && "relative",
+                        zIndex: hidden === i && 10,
+                      }}
+                      className="item"
+                      onMouseEnter={() => {
+                        setShowIcons(i);
+                        toggleExpansion(i);
+                        setHidden(i);
+                      }}
+                      onMouseLeave={() => {
+                        setShowIcons(null);
+                        toggleExpansion(-1);
+                        setHidden(-1);
+                      }}
+                      key={id}
+                    >
+                      <img
+                        src={icon}
+                        // style={{ marginRight: "1rem" }}
+                        alt={details}
+                        className="icon"
+                      />
+                      {text}{" "}
+                      {!expanded[i] && (
+                        <div className="collapse">
+                          <FcExpand />
+                        </div>
+                      )}
+                      {showIcons === i && (
+                        <div className="collapse">
+                          {expanded[i] && <FcCollapse />}
+                        </div>
+                      )}
+                      <Zoom>
+                        {expanded[i] && <p className="dropdown">{details}</p>}
+                      </Zoom>
+                    </div>
+                  </>
+                );
+              })}
             </div>
           </div>
 

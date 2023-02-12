@@ -8,19 +8,16 @@ import values from "./Assets/values.svg";
 import graphic from "./Assets/graphics.svg";
 import social from "./Assets/social-tree.svg";
 import creative from "./Assets/creative.svg";
-import choose from './Assets/choose.jpg'
+import choose from "./Assets/choose.jpg";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Slide";
-import customer from './Assets/customer.svg';
+import customer from "./Assets/customer.svg";
 import team from "./Assets/team.svg";
 import support from "./Assets/support.svg";
 import best from "./Assets/best.svg";
 import price from "./Assets/price.svg";
-
-
 import credibility from "./Assets/credibility.svg";
 import Expert from "../../components/Expert/Expert";
-// import {Navbar} from "../../components/Navbar/Navbar"
 
 const About = () => {
   return (
@@ -64,10 +61,8 @@ const About = () => {
               </div>
 
               <div className="details">
-                {/* <h1>What we do</h1> */}
-
                 <p>
-                  <strong>ONDIS Hub</strong> crafts digital solutions for 
+                  <strong>ONDIS Hub</strong> crafts digital solutions for
                   thriving businesses. As a global web development and design
                   agency, based in Kenya, we blend creativity with technology to
                   bring your vision to life. Our tailor-made web applications,
@@ -234,29 +229,8 @@ const About = () => {
           </div>
         </div>
 
-        {/* <div class="cont tinted">
-          <div class="aboutDetails t-tails">
-            <h1>Our Values</h1>
-            <div className="container">
-              <div className="title">
-                <div class="tinted-left">
-                  <img src={Whatwedo} alt="What we do" />
-                </div>
-              </div>
-              <div className="details">
-                <h1>Our Values</h1>
-                <p>
-                  To provide Top Class Online Services Support through offering
-                  web application, graphics and other digital services to help
-                  business make more sales and increase online presence also
-                  product credibility.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
-      {/* <Footer/> */}
+     
     </div>
   );
 };
