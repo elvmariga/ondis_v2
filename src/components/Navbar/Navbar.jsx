@@ -29,7 +29,7 @@ export const Navbar = () => {
                 smooth="true"
                 spy="true"
                 activeclassname="active"
-                to="/home"
+                to="/"
               >
                 Home
               </NavLink>

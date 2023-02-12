@@ -47,10 +47,10 @@
   width: 85%;
   margin: 0;
   margin-top: 0.5rem;
+  padding-bottom: 10px;
   align-items: center;
-  z-index: 2;
 }
-.web .web-content .web-right .web-services .right .item .icon {
+.web .web-content .web-right .web-services .right .item s .icon {
   margin: 0;
   position: relative;
   z-index: 1;
@@ -74,12 +74,11 @@
   color: black;
   box-shadow: 2px 2px 4px 1px rgba(232, 48, 58, 0.15);
   position: absolute;
-  top: 30px;
+  top: 35px;
   margin-top: 0.5rem;
 }
 .web .web-content .web-right .web-services .right .item:hover {
   background-color: rgba(232, 48, 58, 0.15);
-  margin-bottom: 1.2rem;
 }
 .web .web-content .web-right .tech-stack {
   margin: 1rem 0;
