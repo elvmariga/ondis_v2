@@ -8,7 +8,7 @@ export const SocialMedia = () => {
       <Fade bottom>
         <div className="links">
           <a
-            href="href=mailto:ondishub@gmail.com?subject=Inquiry&body=The%20body%20of%20the%20email"
+            href="mailto:ondishub@gmail.com?subject=Inquiry&body=The%20body%20of%20the%20email"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -18,7 +18,7 @@ export const SocialMedia = () => {
             <i className="fa-solid fa-phone fa"></i>
           </a>
           <a
-            href="https://wa.me/254700526125?text=I%20am%20interested%20in%20your%20your%20 services"
+            href="https://wa.me/c/254700526125?text=I%20am%20interested%20in%20your%20your%20 services"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div>
             <a
-              href="href=mailto:ondishub@gmail.com?subject=Inquiry&body=The%20body%20of%20the%20email"
+              href="mailto:ondishub@gmail.com?subject=Inquiry&body=The%20body%20of%20the%20email"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -124,7 +124,7 @@ const Footer = () => {
                 <i className="fa-brands fa-linkedin-in fa"></i>
               </a>
               <a
-                href="http://tiktok.com/ondishub"
+                href="http://tiktok.com"
                 target="_blank"
                 rel="noreferrer"
               >
