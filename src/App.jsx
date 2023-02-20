@@ -18,9 +18,10 @@ export const App = () => {
       <Routes>
         {/* <Route path="/" element={<Navigate to="/home" />} /> */}
 
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </section>

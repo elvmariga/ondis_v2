@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Mail from "./Assests/mail.svg";
 import Phone from "./Assests/phone.svg";
 import Location from "./Assests/location.svg";
@@ -11,12 +11,27 @@ import MailForm from "./MailForm";
 
 const Contact = () => {
   const form = useRef();
-  // const formEmail= useRef();
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
- 
-  const phoneNumber = (e) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
+    // regular expression to match valid phone numbers
+    const phoneRegex = /^\+?\d{1,3}[- ]?\d{3}[- ]?\d{7}$/;
+
+    // get the phone number entered by the user
+    const phoneNumber = e.target.Phone.value.trim();
+
+    // check if the phone number matches the regex
+    if (!phoneRegex.test(phoneNumber)) {
+      swal("Please enter a valid phone number.");
+      return;
+    }
+
+    setIsLoading(true);
+
+    // send the phone number using emailjs
     emailjs
       .sendForm(
         "service_nhz8rve",
@@ -24,19 +39,17 @@ const Contact = () => {
         form.current,
         "3j5gJxnaqRpoOS_jT"
       )
-      .then(
-        (result) => {
-          // show the user an sent success
-          swal("Number Sent Succefull!, we will call you in a few");
-        },
-        (error) => {
-          // show the user an error
-          swal("Number not sent, try again");
-        }
-      );
+      .then(() => {
+        swal("Number sent successfully! We will call you shortly.");
+        setIsLoading(false);
+        setPhoneNumber("");
+      })
+      .catch((error) => {
+        swal("Oops! Something went wrong. Please try again later.");
+        setIsLoading(false);
+      });
   };
 
- 
   return (
     <div>
       {/* <Navbar /> */}
@@ -111,21 +124,26 @@ const Contact = () => {
           <div>
             <p className="follow">Call me!</p>
             <div className="call-form">
-              <form action="" ref={form} onSubmit={phoneNumber}>
+              <form action="" ref={form} onSubmit={handleSubmit}>
                 <input
                   type="tel"
                   name="Phone"
                   id="callme"
-                  placeholder=" +254714xxxxxx"
+                  placeholder="+254714xxxxxx"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  required
                 />
-                <input className="callme" type="submit" value="Call me" />
+                <button className="callme" type="submit" disabled={isLoading}>
+                  {isLoading ? "Sending..." : "Call me"}
+                </button>
                 <p>*Leave Your Contact, Let us Call You</p>
               </form>
             </div>
           </div>
         </div>
 
-        <MailForm/>
+        <MailForm />
       </div>
       {/* <Footer /> */}
     </div>
