@@ -29,8 +29,9 @@
       }
 
       p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: rgba(0, 0, 0, 0.7);
+        // font-weight: 400;
       }
 
       .web-services {
@@ -67,7 +68,7 @@
             // z-index: 1;
             cursor: pointer;
             display: flex;
-            font-size: medium;
+            font-size: 0.9rem;
             border-radius: 5px;
             gap: 0.5rem;
             width: 85%;
@@ -75,9 +76,8 @@
             margin-top: 0.5rem;
             padding-bottom: 10px;
             align-items: center;
-           s
 
-            .icon {
+            s .icon {
               margin: 0;
               position: relative;
               z-index: 1;
@@ -89,7 +89,7 @@
               z-index: 1;
               color: red;
             }
-            
+
             .dropdown {
               background-color: #ffffff;
               opacity: 1;
@@ -118,10 +118,17 @@
       .tech-stack {
         margin: 1rem 0;
         margin-bottom: 2rem;
+
+        h2 {
+          font-size: 1.2rem;
+          color: rgba(0, 0, 0, 0.7);
+        }
+
         .stack-image {
           position: relative;
           z-index: 1;
         }
+
         img:hover {
           transform: scale(1.1, 1.1);
         }

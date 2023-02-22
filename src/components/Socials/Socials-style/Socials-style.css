@@ -31,7 +31,7 @@
   display: none;
 }
 .socials .socials-content .socials-right p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.7);
 }
 .socials .socials-content .socials-right .social-services {
@@ -57,7 +57,7 @@
 .socials .socials-content .socials-right .item {
   cursor: pointer;
   display: flex;
-  font-size: medium;
+  font-size: 0.9rem;
   border-radius: 5px;
   gap: 0.5rem;
   width: 100%;

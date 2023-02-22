@@ -1,34 +1,16 @@
 .customer-card .card-content {
   background-color: #eef3fc;
-  border-radius: 60px 8px 8px 60px;
-  display: flex;
-  gap: 1rem;
-  height: 114px;
+  border-radius: 8px;
+  display: grid;
+  min-height: 300px;
   min-width: -moz-fit-content;
   min-width: fit-content;
+  width: 300px;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.customer-card .card-content .left {
-  align-self: center;
-}
-.customer-card .card-content .left img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.customer-card .card-content .right h4 {
-  margin: 0.2rem 0 0 0;
-}
-.customer-card .card-content .right p {
-  padding-right: 0.7rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-@media screen and (max-width: 600px) {
-  .customer-card .card-content .right p {
-    font-size: small;
-  }
-}
-@media screen and (max-width: 350px) {
-  .customer-card .card-content .right p {
-    font-size: x-small;
-  }
+.customer-card .card-content .customer-dp {
+  width: 50px;
+  height: auto;
 }/*# sourceMappingURL=CustomerCard-style.css.map */

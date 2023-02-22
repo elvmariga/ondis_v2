@@ -102,7 +102,7 @@ const Service = () => {
           </div>
 
           <div className="tech-stack">
-            <h2 style={{ color: "rgba(0, 0, 0, 0.7)" }}>Tech Stack</h2>
+            <h2 >Tech Stack</h2>
             {stackIcons.map((image) => {
               return (
                 <Fade bottom cascade>

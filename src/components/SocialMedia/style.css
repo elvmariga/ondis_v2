@@ -1,27 +1,24 @@
-.social-container {
-  background-color: #2068B0;
-  padding: 1rem 0;
-}
 .social-container .links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-@media screen and (min-width: 600px) {
-  .social-container .links {
-    gap: 3rem;
-  }
+.social-container .links .fa-envelope,
+.social-container .links .fa-phone {
+  display: none;
 }
 .social-container .links a {
   color: #FFFFFF;
   text-decoration: none;
 }
-@media screen and (min-width: 600px) {
-  .social-container .links a .fa {
-    font-size: larger;
-  }
-  .social-container .links a .fa:hover {
-    transform: scale(1.4, 1.4);
+.social-container .links a:hover {
+  transform: scale(1.4, 1.4);
+}
+
+@media screen and (max-width: 850px) {
+  .social-container .links .fa-envelope,
+  .social-container .links .fa-phone {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

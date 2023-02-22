@@ -28,7 +28,7 @@ const Customer = (props) => {
             <CustomerCard
               dp={Dp2}
               name="Elvis"
-              testimony=" OndisHub professionalism  they demonistrated was great "
+              testimony=" OndisHub professionalism  they demonistrated was great disHub professionalism  they demonistrated was great disHub professionalism  they demonistrated was greatdisHub professionalism  they demonistrated was great  "
               rating={Star}
             />
             <CustomerCard

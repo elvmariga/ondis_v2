@@ -24,7 +24,7 @@
   display: none;
 }
 .web .web-content .web-right p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.7);
 }
 .web .web-content .web-right .web-services {
@@ -41,7 +41,7 @@
 .web .web-content .web-right .web-services .right .item {
   cursor: pointer;
   display: flex;
-  font-size: medium;
+  font-size: 0.9rem;
   border-radius: 5px;
   gap: 0.5rem;
   width: 85%;
@@ -83,6 +83,10 @@
 .web .web-content .web-right .tech-stack {
   margin: 1rem 0;
   margin-bottom: 2rem;
+}
+.web .web-content .web-right .tech-stack h2 {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 .web .web-content .web-right .tech-stack .stack-image {
   position: relative;
