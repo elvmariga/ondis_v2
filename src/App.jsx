@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <section>
       <ScrollUp />
-      <SocialMedia />
+      {/* <SocialMedia /> */}
       <Navbar />
 
       <Routes>

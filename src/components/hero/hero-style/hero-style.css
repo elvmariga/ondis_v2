@@ -29,18 +29,23 @@
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
 }
+@media screen and (max-width: 600px) {
+  .hero .hero-left h1 {
+    font-size: 0.8rem;
+  }
+}
 .hero .hero-left span {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 @media screen and (max-width: 600px) {
   .hero .hero-left span {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }
 .hero .hero-left p {
   color: rgba(0, 0, 0, 0.7);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   padding: 3rem 0;
 }
@@ -48,7 +53,7 @@
   .hero .hero-left p {
     padding: 0;
     margin: 1rem 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 .hero .hero-left .btns {
