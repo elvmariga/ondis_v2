@@ -12,6 +12,7 @@ import Button from "../Button/Button";
 import { sites } from "./assets/stacks";
 import Line from "../Line/Line";
 
+
 const Service = () => {
   const [expanded, setExpanded] = useState({});
   const [currentExpanded, setCurrentExpanded] = useState(null);
@@ -43,7 +44,7 @@ const Service = () => {
 
         <div className="web-right">
           <div>
-            <h2 className="web-title">Web Development</h2>
+            {/* <h2 className="web-title">Web Development</h2> */}
             <p>
               We create user-centric websites that prioritize user experience
               and are easy to navigate. Our expertise helps you elevate your
@@ -121,6 +122,7 @@ const Service = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
