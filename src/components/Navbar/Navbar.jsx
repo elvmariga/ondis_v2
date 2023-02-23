@@ -25,12 +25,7 @@ export const Navbar = () => {
         <div className="links">
           <ul>
             <li>
-              <NavLink
-                smooth="true"
-                spy="true"
-                activeclassname="active"
-                to="/"
-              >
+              <NavLink smooth="true" spy="true" activeclassname="active" to="/">
                 Home
               </NavLink>
             </li>
@@ -59,6 +54,16 @@ export const Navbar = () => {
                 smooth="true"
                 spy="true"
                 activeclassname="active"
+                to="/portfolio"
+              >
+                Portfolio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                smooth="true"
+                spy="true"
+                activeclassname="active"
                 to="/contact"
               >
                 <Button />
@@ -67,7 +72,6 @@ export const Navbar = () => {
           </ul>
         </div>
       </div>
-
 
       <div className="mobile-menu" style={{ marginRight: "0.5rem" }}>
         <div className="mobile-nav">
@@ -78,7 +82,6 @@ export const Navbar = () => {
             {showLinks ? <ImCross /> : <GiHamburgerMenu />}
           </div>
         </div>
-
 
         <div className="mobile-container">
           {showLinks && (
