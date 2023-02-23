@@ -9,7 +9,7 @@ const projectData = [
     title: "Project 1",
     category: "web",
     cardImage:
-      "./Assests/MacBook Air - 2.jpg",
+      "https://drive.google.com/file/d/1FKDGMLvbNKA9l-edhZ8z-mYeU356B6dM/view?usp=sharing",
     modalImage:
       "https://www.canva.com/design/DAFabIPLkKw/2o1ouaS0Yk6kj9f9aIV-ZA/view?utm_content=DAFabIPLkKw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
   },
