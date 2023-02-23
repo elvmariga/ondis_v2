@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import { ScrollUp } from "./components/scrollup/ScrollUp";
 import { SocialMedia } from "./components/SocialMedia/SocialMedia";
 import ServiceCard from "./components/ServiceCard/ServiceCard";
+import Portfolio from "./pages/Portfolio/Porfolio";
 export const App = () => {
   return (
     <section>
@@ -21,7 +22,8 @@ export const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-         <Route path="/service" element={<ServiceCard/> }/>
+        <Route path="/service" element={<ServiceCard />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
