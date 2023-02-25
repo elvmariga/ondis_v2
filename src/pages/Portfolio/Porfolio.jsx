@@ -1,41 +1,45 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import pic from "../Portfolio/Assests/MacBook Air - 2.jpg"
-// import { PDFReader } from "react-pdf-reader";
+import pic from "../Portfolio/Assests/MacBook Air - 2.jpg";
+import card from "./Assests/card1.jpg";
+import banner from "./Assests/banner.jpg";
+import "./Portfolio-Style/styles.css";
+import Card from "../../components/ServiceCard/Card";
 
 const projectData = [
   {
     id: 1,
     title: "Project 1",
     category: "web",
-    cardImage:
-      "https://drive.google.com/file/d/1FKDGMLvbNKA9l-edhZ8z-mYeU356B6dM/view?usp=sharing",
-    modalImage:
-      "https://www.canva.com/design/DAFabIPLkKw/2o1ouaS0Yk6kj9f9aIV-ZA/view?utm_content=DAFabIPLkKw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+    project: "Business Card",
+    cardImage: card,
+    modalImage: pic,
   },
   {
     id: 2,
     title: "Project 2",
     category: "graphics",
-    cardImage: "project2-card.jpg",
-    modalImage: "/path/to/project2-modal.jpg",
+    project: "Business Card",
+    cardImage: card,
+    modalImage: pic,
   },
   {
     id: 3,
     title: "Project 3",
     category: "printing",
-    cardImage: "project3-card.jpg",
-    modalImage: "/path/to/project3-modal.jpg",
+    project: "Business Card",
+    cardImage: card,
+    modalImage: pic,
   },
   {
     id: 4,
     title: "Project 4",
     category: "web",
-    cardImage: "project4-card.jpg",
-    modalImage: "/path/to/project4-modal.jpg",
+    project: "Business Card",
+    cardImage: card,
+    modalImage: pic,
   },
 ];
-
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -57,54 +61,79 @@ const Portfolio = () => {
       : projectData.filter((project) => project.category === selectedCategory);
 
   return (
-    <div>
-      <header>{/* banner goes here */}</header>
-      <nav>
-        {categories.map((category) => (
-          <button key={category} onClick={() => handleCategoryClick(category)}>
-            {category}
-          </button>
-        ))}
-      </nav>
-      <main>
-        {filteredProjects.map((project) => (
-          <div key={project.id} onClick={() => handleProjectClick(project)}>
-            <img src={project.cardImage} alt={project.title} />
-            <h3>{project.title}</h3>
-          </div>
-        ))}
-      </main>
-      <Modal
-        isOpen={selectedProject !== null}
-        onRequestClose={() => setSelectedProject(null)}
-        style={{
-          overlay: {
-            backgroundColor: "rgba(0,0,0,0.6)",
-            zIndex: 999,
-          },
-          content: {
-            top: "50%",
-            left: "50%",
-            right: "auto",
-            bottom: "auto",
-            marginRight: "-50%",
-            transform: "translate(-50%, -50%)",
-            backgroundColor: "transparent",
-            border: "none",
-          },
-        }}
-      >
-        {selectedProject && (
-          <div>
-            <img
-              style={{ width: "80%", height: "auto" }}
-              src={selectedProject.modalImage}
-              alt={selectedProject.title}
-            />
-            <button onClick={() => setSelectedProject(null)}>Close</button>
-          </div>
-        )}
-      </Modal>
+    <div className="portfolio">
+      <header className="banner">
+        <img src={banner} alt="" />
+      </header>
+      <div className="potfolio-content">
+        <nav className="tabs">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => handleCategoryClick(category)}
+              className={
+                selectedCategory === category ? "active" : "not-active"
+              }
+            >
+              {category}
+            </button>
+          ))}
+        </nav>
+
+        <main>
+          {filteredProjects.map((project) => (
+            <div
+              className="card"
+              key={project.id}
+              onClick={() => handleProjectClick(project)}
+            >
+              <img
+                style={{ width: "300px", height: "auto" }}
+                src={project.cardImage}
+                alt={project.title}
+              />
+              <h3 style={{ padding: "0 1rem" }}>{project.title}</h3>
+              <p style={{ padding: " 0 1rem" }}>{project.project}</p>
+            </div>
+          ))}
+        </main>
+        <Modal
+          isOpen={selectedProject !== null}
+          onRequestClose={() => setSelectedProject(null)}
+          style={{
+            overlay: {
+              backgroundColor: "rgba(0,0,0,0.6)",
+              zIndex: 999,
+            },
+            content: {
+              top: "50%",
+              left: "50%",
+              right: "auto",
+              bottom: "auto",
+              marginRight: "-50%",
+              transform: "translate(-50%, -50%)",
+              backgroundColor: "transparent",
+              border: "none",
+            },
+          }}
+        >
+          {selectedProject && (
+            <div
+              style={{ height: "80vh", overflow: "scroll" }}
+              className="modal-content"
+            >
+              <button onClick={() => setSelectedProject(null)}>X</button>
+              <img
+                style={{ width: "100%", height: "auto" }}
+                src={selectedProject.modalImage}
+                alt={selectedProject.title}
+              />
+            </div>
+          )}
+        </Modal>
+
+      
+      </div>
     </div>
   );
 };

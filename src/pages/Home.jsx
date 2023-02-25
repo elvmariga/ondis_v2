@@ -9,6 +9,7 @@ import Service from "../components/Service/Service";
 import Graphics from '../components/Graphics/Graphics';
 import Socials from '../components/Socials/Socials';
 import Customer from "../components/Customer/Customer";
+import Card from "../components/ServiceCard/Card";
 
 
 
@@ -16,15 +17,16 @@ export const Home = () => {
   return (
     <>
       {/* <Navbar/> */}
-      <Hero/>
-   
-      <Partners/>
-      <Expert/>
-      <Service/>
+      <Hero />
+
+      <Partners />
+      <Expert />
+      {/* <Service/>
 
       <Graphics/>
-      <Socials/>
-      <Customer/>
+      <Socials/> */}
+      <Card />
+      <Customer />
       {/* <Footer/> */}
     </>
   );

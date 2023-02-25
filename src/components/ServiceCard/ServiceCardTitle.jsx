@@ -11,7 +11,7 @@ const ServiceCardTitle = (props) => {
         {props.title}
       </h2>
       <Fade bottom>
-        <img src={props.image} alt="Service Card Profile" />
+        <img className='image' src={props.image} alt="Service Card Profile" />
       </Fade>
     </div>
   );
