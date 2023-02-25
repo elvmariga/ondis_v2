@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import pic from "../Portfolio/Assests/MacBook Air - 2.jpg"
-// import { PDFReader } from "react-pdf-reader";
+import pic from "../Portfolio/Assests/MacBook Air - 2.jpg";
+import card from "./Assests/card.png"
 
 const projectData = [
   {
     id: 1,
     title: "Project 1",
     category: "web",
-    cardImage:
-      "https://drive.google.com/file/d/1FKDGMLvbNKA9l-edhZ8z-mYeU356B6dM/view?usp=sharing",
-    modalImage:
-      "https://www.canva.com/design/DAFabIPLkKw/2o1ouaS0Yk6kj9f9aIV-ZA/view?utm_content=DAFabIPLkKw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+    cardImage: card,
+    modalImage: pic,
   },
   {
     id: 2,
@@ -36,7 +34,6 @@ const projectData = [
   },
 ];
 
-
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -57,7 +54,7 @@ const Portfolio = () => {
       : projectData.filter((project) => project.category === selectedCategory);
 
   return (
-    <div>
+    <div style={{width:"80%", margin: "0 auto", minHeight:"55vh"}}>
       <header>{/* banner goes here */}</header>
       <nav>
         {categories.map((category) => (
@@ -66,10 +63,14 @@ const Portfolio = () => {
           </button>
         ))}
       </nav>
-      <main>
+      <main style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}    >
         {filteredProjects.map((project) => (
-          <div key={project.id} onClick={() => handleProjectClick(project)}>
-            <img src={project.cardImage} alt={project.title} />
+          <div style={{border: "1px red solid"}} key={project.id} onClick={() => handleProjectClick(project)}>
+            <img
+              style={{ width: "300px", height: "auto" }}
+              src={project.cardImage}
+              alt={project.title}
+            />
             <h3>{project.title}</h3>
           </div>
         ))}
@@ -95,9 +96,9 @@ const Portfolio = () => {
         }}
       >
         {selectedProject && (
-          <div>
+          <div style={{ height: "80vh", overflow: "scroll" }}>
             <img
-              style={{ width: "80%", height: "auto" }}
+              style={{ width: "100%", height: "auto" }}
               src={selectedProject.modalImage}
               alt={selectedProject.title}
             />
