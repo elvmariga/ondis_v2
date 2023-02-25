@@ -61,7 +61,7 @@
   margin: 0 0 1rem 0;
   padding: 1rem;
   border-radius: 4px;
-  border: 2px solid hsla(220deg, 75%, 84%, 0.3);
+  border: 2px solid hsla(220, 75%, 84%, 0.3);
 }
 .contact .social-icon a {
   text-decoration: none;

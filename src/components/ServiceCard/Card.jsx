@@ -1,39 +1,50 @@
-import React from 'react';
-import Line from '../Line/Line';
-import { Fade } from 'react-reveal';
-import Services from './Services';
-import TechStack from './components/StackIcons/TechStack';
-import ServiceCardTitle from './ServiceCardTitle';
-import ServiceDetails from './ServiceDetails';
-import cardData, {services, stack} from './data';
+import React from "react";
+import Line from "../Line/Line";
+import { Fade } from "react-reveal";
+import Services from "./Services";
+import TechStack from "./TechStack";
+import ServiceCardTitle from "./ServiceCardTitle";
+import ServiceDetails from "./ServiceDetails";
+import cardData from "./data";
+import "./components/ServiceStyle/Style.css"
 
-
-const Card = (props) => {
+const Card = () => {
+  
   return (
     <div className="service-card">
-      <div className="service-card-content">
-        {cardData.map((cardDetails) => (
-          <ServiceCardTitle key={cardData.id} title={cardData.title} image={cardData.image} />
-        ))}
-        <div className="right">
-          {cardData.map((cardDetails) => (
-            <ServiceDetails key={cardData.id} details={cardData.details} />
-          ))}
-          <div className="services-offered">
-            <Services
-              key ={services.id}
-              icon ={services.icon}
-              service={services.service}
-            />
+      {cardData.map((card) => (
+        <div className="service-card-content" key={card.id}>
+          <div className="card-left">
+            <Line />
+
+            <Fade cascade bottom>
+              <ServiceCardTitle title={card.title} image={card.image} />
+            </Fade>
           </div>
-          <TechStack 
-          key={stack.id}
-          stackIcon= {stack.stackIcon}
-          />
+          <div className="card-right">
+            <ServiceDetails details={card.details} />
+            <div className="services-offered">
+              {card.servicelist.map((service) => (
+                <Services
+                  key={service.id}
+                  icon={service.icon}
+                  service={service.service}
+                />
+              ))}
+            </div>
+            <div className="tech-stack">
+              <h4>Tech Stack</h4>
+              <div className="stack-icon">
+                {card.techStack.map((stack) => (
+                  <TechStack key={stack.id} stackIcon={stack.stackIcon} />
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
-}
+};
 
-export default Card
+export default Card;

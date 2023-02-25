@@ -1,0 +1,70 @@
+.service-card {
+    // display: flex;
+
+    .service-card-content {
+        width: 80%;
+        margin: 0 auto;
+
+        /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                flex: 1;
+            }
+
+
+        /* style for ServiceCardTitle component */
+        .service-title {
+            color: #2068b0;
+            margin-top: 0;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        /* End style for ServiceCardTitle component */
+
+        /* style for Services component */
+
+                .services-offered{
+                    display: grid;
+                    /* Medium devices (landscape tablets, 768px and up) */
+                        @media only screen and (min-width: 768px) {
+                            grid-template-columns: 1fr 1fr;
+                        }
+                }
+        .services-card {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+
+
+
+            p {
+                padding-left: .5rem;
+            }
+        }
+
+        /* End style for Services component */
+
+         /* style for TechStack component */
+
+         .tech-stack{
+            
+            .stack-icon{
+                display: flex;
+            }
+         }
+
+         .service-details{
+
+         }
+
+         .card-right{
+            
+         }
+    }
+}
