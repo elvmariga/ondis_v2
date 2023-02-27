@@ -1,20 +1,45 @@
 .service-card {
-    // display: flex;
-
     .service-card-content {
         width: 80%;
         margin: 0 auto;
+        margin-bottom: 1.5rem;
+        padding: 0.5rem 1rem;
 
-        /* Medium devices (landscape tablets, 768px and up) */
-            @media only screen and (min-width: 768px) {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-                flex: 1;
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            // flex-wrap: wrap;
+            gap: 2rem;
+
+            .card-left {
+                flex-basis: calc(50% - 0.5rem);
             }
 
+            .card-right {
+                flex-basis: calc(50% - 0.5rem);
+            }
 
-        /* style for ServiceCardTitle component */
+            &:nth-child(even) {
+                background-color: #eef3fc;
+                flex-direction: row-reverse;
+                width: 100%;
+                // margin: 0 10% 0 10%;
+
+
+                &>* {
+                    flex-basis: 80%;
+                        /* the content will occupy 80% of the available space */
+                    margin-left: 10%;
+                        margin-right: 10%;
+                        /* add left and right margin only to the immediate child elements */
+                    }
+                    
+                    &>*>* {
+                        margin: 0;
+                        /* remove the margin from grandchildren elements */
+                    }
+            }
+        }
+
         .service-title {
             color: #2068b0;
             margin-top: 0;
@@ -25,46 +50,28 @@
             height: auto;
         }
 
-        /* End style for ServiceCardTitle component */
+        .services-offered {
+            display: grid;
 
-        /* style for Services component */
+            @media only screen and (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
 
-                .services-offered{
-                    display: grid;
-                    /* Medium devices (landscape tablets, 768px and up) */
-                        @media only screen and (min-width: 768px) {
-                            grid-template-columns: 1fr 1fr;
-                        }
-                }
         .services-card {
             display: flex;
             align-items: center;
             font-weight: 500;
 
-
-
             p {
-                padding-left: .5rem;
+                padding-left: 0.5rem;
             }
         }
 
-        /* End style for Services component */
-
-         /* style for TechStack component */
-
-         .tech-stack{
-            
-            .stack-icon{
+        .tech-stack {
+            .stack-icon {
                 display: flex;
             }
-         }
-
-         .service-details{
-
-         }
-
-         .card-right{
-            
-         }
+        }
     }
 }

@@ -1,19 +1,35 @@
 .service-card .service-card-content {
   width: 80%;
   margin: 0 auto;
-  /* Medium devices (landscape tablets, 768px and up) */
-  /* style for ServiceCardTitle component */
-  /* End style for ServiceCardTitle component */
-  /* style for Services component */
-  /* End style for Services component */
-  /* style for TechStack component */
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
 }
 @media only screen and (min-width: 768px) {
   .service-card .service-card-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 2rem;
-    flex: 1;
+  }
+  .service-card .service-card-content .card-left {
+    flex-basis: calc(50% - 0.5rem);
+  }
+  .service-card .service-card-content .card-right {
+    flex-basis: calc(50% - 0.5rem);
+  }
+  .service-card .service-card-content:nth-child(even) {
+    background-color: #eef3fc;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+  .service-card .service-card-content:nth-child(even) > * {
+    flex-basis: 80%;
+    /* the content will occupy 80% of the available space */
+    margin-left: 10%;
+    margin-right: 10%;
+    /* add left and right margin only to the immediate child elements */
+  }
+  .service-card .service-card-content:nth-child(even) > * > * {
+    margin: 0;
+    /* remove the margin from grandchildren elements */
   }
 }
 .service-card .service-card-content .service-title {
@@ -26,7 +42,6 @@
 }
 .service-card .service-card-content .services-offered {
   display: grid;
-  /* Medium devices (landscape tablets, 768px and up) */
 }
 @media only screen and (min-width: 768px) {
   .service-card .service-card-content .services-offered {

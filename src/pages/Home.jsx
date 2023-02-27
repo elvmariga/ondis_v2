@@ -10,6 +10,7 @@ import Graphics from '../components/Graphics/Graphics';
 import Socials from '../components/Socials/Socials';
 import Customer from "../components/Customer/Customer";
 import Card from "../components/ServiceCard/Card";
+import creative from "../../src/divider.jpg"
 
 
 
@@ -26,6 +27,9 @@ export const Home = () => {
       <Graphics/>
       <Socials/> */}
       <Card />
+      <div className="creative">
+        <img src={creative} alt="" />
+      </div>
       <Customer />
       {/* <Footer/> */}
     </>

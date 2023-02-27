@@ -8,6 +8,8 @@ import Figma from "./assests/figma.svg";
 import Others from "./assests/others.svg";
 import tick from "./assests/tick.svg";
 import webDesign from "./assests/web-development.svg"
+import graphicDesign from "./assests/graphicdesign-banner.jpg"
+import socialmedia from "./assests/socialmediabanner.jpg"
 
 
 
@@ -67,34 +69,58 @@ const cardData = [
   },
   {
     id: 2,
-    title: "Grahic design",
-    image: "./assests/web-design.svg",
+    title: "Graphic design",
+    image: graphicDesign,
     details:
-      "We create user-centric websites that prioritize user experience and are easy to navigate. Our expertise helps you elevate your online presence and reach your goals.",
+      "Transform your online image with our art-tech magic - unleashing visual masterpieces that wow, communicate, and reflect your unique brand.",
     servicelist: [
       {
         id: 1,
         icon: svg,
-        category: "web",
-        service: "Blog sdfdsfd",
+        category: "graphics",
+        service: "Letterheads",
       },
       {
         id: 2,
         icon: svg,
         category: "graphics",
-        service: "ecormm Website",
+        service: "Logo",
       },
       {
         id: 3,
         icon: svg,
-        category: "socialMedia",
-        service: "Blog Website",
+        category: "graphics",
+        service: "Business Cards",
       },
       {
         id: 4,
         icon: svg,
-        category: "printing",
-        service: "Blog Website",
+        category: "graphics",
+        service: "Bronchues",
+      },
+      {
+        id: 5,
+        icon: svg,
+        category: "graphics",
+        service: "Banners & Roll-up Banners",
+      },
+      {
+        id: 6,
+        icon: svg,
+        category: "graphics",
+        service: "Fliers",
+      },
+      {
+        id: 5,
+        icon: svg,
+        category: "graphics",
+        service: "Posters",
+      },
+      {
+        id: 6,
+        icon: svg,
+        category: "graphics",
+        service: "Others",
       },
     ],
     techStack: [
@@ -118,34 +144,40 @@ const cardData = [
   },
   {
     id: 3,
-    title: "Website",
-    image: "./assests/web-design.svg",
+    title: "Social Media Management",
+    image: socialmedia,
     details:
-      "We create user-centric websites that prioritize user experience and are easy to navigate. Our expertise helps you elevate your online presence and reach your goals.",
+      "We specialize in crafting and promoting a brand's identity, messages, and content on various social media platforms with the purpose of increasing brand recognition, improving customer experience, and creating a positive perception of the brand.",
     servicelist: [
       {
         id: 1,
         icon: svg,
-        category: "web",
-        service: "Blog sdfdsfd",
+        category: "socialMedia",
+        service: "WhatsApp",
       },
       {
         id: 2,
         icon: svg,
-        category: "graphics",
-        service: "ecormm Website",
+        category: "socialMedia",
+        service: "LinkedIn",
       },
       {
         id: 3,
         icon: svg,
         category: "socialMedia",
-        service: "Blog Website",
+        service: "Facebook",
       },
       {
         id: 4,
         icon: svg,
-        category: "printing",
-        service: "Blog Website",
+        category: "socialMedia",
+        service: "Twitter",
+      },
+      {
+        id: 5,
+        icon: svg,
+        category: "socialMedia",
+        service: "Instagram",
       },
     ],
     techStack: [
@@ -169,10 +201,10 @@ const cardData = [
   },
   {
     id: 4,
-    title: "Website",
-    image: "./assests/web-design.svg",
+    title: "Printing and Branding",
+    image: webDesign,
     details:
-      "We create user-centric websites that prioritize user experience and are easy to navigate. Our expertise helps you elevate your online presence and reach your goals.",
+      "We specialize in crafting and promoting a brand's identity, messages, and content on various social media platforms with the purpose of increasing brand recognition, improving customer experience, and creating a positive perception of the brand.",
     servicelist: [
       {
         id: 1,

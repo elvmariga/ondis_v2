@@ -12,9 +12,12 @@
   color: #2068B0;
 }
 .customer .customer-content .cards {
-  display: flex;
-  justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
   color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  /* hide scrollbar */
+  scrollbar-width: none;
 }/*# sourceMappingURL=Customer-style.css.map */

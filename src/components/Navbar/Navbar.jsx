@@ -142,6 +142,23 @@ export const Navbar = () => {
                     style={{
                       textDecoration: "none",
                       fontSize: "1.3rem",
+                      // fontFamily: "Poppins"
+                      color: "#141138 ",
+                    }}
+                    activeClassName="active"
+                    to="/portfolio"
+                  >
+                    Portfolio
+                  </NavLink>
+                </li>
+                <div className="line"></div>
+                <li className="link" onClick={() => handleClick()}>
+                  <NavLink
+                    smooth="true"
+                    spy="true"
+                    style={{
+                      textDecoration: "none",
+                      fontSize: "1.3rem",
                       // fontFamily: "Poppins",
                       color: "#141138 ",
                     }}
