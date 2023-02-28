@@ -41,9 +41,10 @@ const Card = () => {
                 {card.techStack.map((stack) => (
                   <TechStack key={stack.id} stackIcon={stack.stackIcon} />
                 ))}
+               
               </div>
+               <Button text="Get Quote " />
             </div>
-            <Button text="Get Quote " />
           </div>
         </div>
       ))}

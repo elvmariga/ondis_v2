@@ -95,11 +95,13 @@
         .tech-stack {
             color: #494a4c;
             margin-bottom: 1rem;
+            
            
 
             .stack-icon {
                 display: flex;
                 gap: .6rem;
+                margin-bottom: .5rem;
 
                 img {
                     &:hover {
@@ -119,5 +121,8 @@
                     gap: 1.2rem;
                 }
             }
+
+            
     }
 }
+

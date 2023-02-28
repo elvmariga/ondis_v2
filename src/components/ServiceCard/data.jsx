@@ -128,13 +128,13 @@ const cardData = [
         service: "Fliers",
       },
       {
-        id: 5,
+        id: 7,
         icon: svg,
         category: "graphics",
         service: "Posters",
       },
       {
-        id: 6,
+        id: 8,
         icon: svg2,
         category: "graphics",
         service: "Others",

@@ -19,6 +19,8 @@
             // grid-template-rows: auto;
             // // justify-content: center;
             gap: 2rem;
+            width: 100%;
+            padding-left: 2rem;
             // // flex-wrap: wrap;
             color: rgb(0, 0, 0, 0.7);
             display: flex;
@@ -27,6 +29,7 @@
             scroll-behavior: smooth;
             /* hide scrollbar */
                 scrollbar-width: none;
+                scroll-snap-type: x mandatory;
         }
     }
 

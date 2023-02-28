@@ -69,6 +69,7 @@
 .service-card .service-card-content .tech-stack .stack-icon {
   display: flex;
   gap: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 .service-card .service-card-content .tech-stack .stack-icon img:hover {
   transform: scale(1.1);

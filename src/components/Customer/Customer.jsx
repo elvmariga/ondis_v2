@@ -24,7 +24,7 @@ const Customer = (props) => {
         container.scrollLeft >=
         container.scrollWidth - container.offsetWidth
       ) {
-        container.scrollLeft = 0;
+        container.scrollLeft = 1;
       } else {
         container.scrollLeft += container.offsetWidth;
       }
