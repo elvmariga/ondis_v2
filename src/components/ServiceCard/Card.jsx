@@ -7,6 +7,7 @@ import ServiceCardTitle from "./ServiceCardTitle";
 import ServiceDetails from "./ServiceDetails";
 import cardData from "./data";
 import "./components/ServiceStyle/Style.css"
+import Button from "../Button/Button";
 
 const Card = () => {
   
@@ -22,15 +23,17 @@ const Card = () => {
             </Fade>
           </div>
           <div className="card-right">
-            <ServiceDetails details={card.details} />
-            <div className="services-offered">
-              {card.servicelist.map((service) => (
-                <Services
-                  key={service.id}
-                  icon={service.icon}
-                  service={service.service}
-                />
-              ))}
+            <div className="card-right-details">
+              <ServiceDetails details={card.details} />
+              <div className="services-offered">
+                {card.servicelist.map((service) => (
+                  <Services
+                    key={service.id}
+                    icon={service.icon}
+                    service={service.service}
+                  />
+                ))}
+              </div>
             </div>
             <div className="tech-stack">
               <h4>Tech Stack</h4>
@@ -40,6 +43,7 @@ const Card = () => {
                 ))}
               </div>
             </div>
+            <Button text="Get Quote " />
           </div>
         </div>
       ))}

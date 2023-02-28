@@ -11,6 +11,7 @@ import Socials from '../components/Socials/Socials';
 import Customer from "../components/Customer/Customer";
 import Card from "../components/ServiceCard/Card";
 import creative from "../../src/divider.jpg"
+import Glance from "../components/Glance/Glance";
 
 
 
@@ -27,9 +28,7 @@ export const Home = () => {
       <Graphics/>
       <Socials/> */}
       <Card />
-      <div className="creative">
-        <img src={creative} alt="" />
-      </div>
+     <Glance />
       <Customer />
       {/* <Footer/> */}
     </>

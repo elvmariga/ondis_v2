@@ -1,9 +1,9 @@
-import React from 'react';
-
-import './Button.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./Button.css";
 import { NavLink } from "react-router-dom";
 
-const Button = ({style}) => (
+const Button = ({ style, text }) => (
   <div style={style} className="Button">
     <NavLink
       smooth="true"
@@ -13,19 +13,25 @@ const Button = ({style}) => (
         fontSize: "1rem",
         // fontFamily: "Poppins"
         color: "#FFFFFF ",
-        padding:"0.5rem 1rem",
-        borderRadius:"4px"
+        padding: "0.5rem 1rem",
+        borderRadius: "4px",
       }}
-       activeclassname="active"
+      activeclassname="active"
       to="/contact"
     >
-      Get Quote<i className="fa-solid fa-angles-right"></i>
+      {text}
+      <i className="fa-solid fa-angles-right"></i>
     </NavLink>
   </div>
 );
 
-Button.propTypes = {};
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  style: PropTypes.object,
+};
 
-Button.defaultProps = {};
+Button.defaultProps = {
+  style: {},
+};
 
 export default Button;

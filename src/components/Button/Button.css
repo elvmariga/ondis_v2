@@ -3,7 +3,7 @@
   width: fit-content;
 }
 .Button:hover {
-  transform: scale(1.1, 1.1) !important;
+  transform: scaleY(1.1) !important;
 }
 .Button a {
   background-color: #E8303A;

@@ -29,7 +29,7 @@ const Hero = () => (
         </p>
       </div>
       <div className="btns">
-        <Button
+        <Button text="Get Quote "
         // style={{ transform: "scale(1.1, 1.1) !important", color: "red" }}
         />
         <a

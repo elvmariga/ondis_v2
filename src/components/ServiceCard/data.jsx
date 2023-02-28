@@ -1,5 +1,6 @@
 // services data
 import svg from "./assests/bookmark.svg";
+import svg2 from "./assests/bookmark2.svg";
 import Html from "./assests/html.svg";
 import Css from "./assests/css3.svg";
 import React from "./assests/react.svg";
@@ -8,8 +9,16 @@ import Figma from "./assests/figma.svg";
 import Others from "./assests/others.svg";
 import tick from "./assests/tick.svg";
 import webDesign from "./assests/web-development.svg"
-import graphicDesign from "./assests/graphicdesign-banner.jpg"
+import graphicDesign from "./assests/graphicdesign-banner1.svg"
 import socialmedia from "./assests/socialmediabanner.jpg"
+import illustrator from "./assests/illustrator.svg";
+import indesign from "./assests/indesign.svg";
+import photoshop from "./assests/photoshop.svg";
+import WhatsApp from "./assests/WhatsApp.svg";
+import LinkedIn from "./assests/linkedin.svg";
+import Facebook from "./assests/facebook.svg";
+import Twitter from "./assests/Twitter.svg";
+import Instagram from "./assests/instagram.svg";
 
 
 
@@ -18,7 +27,7 @@ import socialmedia from "./assests/socialmediabanner.jpg"
 const cardData = [
   {
     id: 1,
-    title: "Website",
+    title: "Website Design and Development",
     image: webDesign,
     details:
       "We create user-centric websites that prioritize user experience and are easy to navigate. Our expertise helps you elevate your online presence and reach your goals.",
@@ -31,7 +40,7 @@ const cardData = [
       },
       {
         id: 2,
-        icon: svg,
+        icon: svg2,
         category: "web",
         service: "Business Website",
       },
@@ -43,7 +52,7 @@ const cardData = [
       },
       {
         id: 4,
-        icon: svg,
+        icon: svg2,
         category: "web",
         service: "E-commerce Website",
       },
@@ -51,25 +60,33 @@ const cardData = [
     techStack: [
       {
         id: 1,
-        stackIcon: svg,
+        stackIcon: Html,
       },
       {
         id: 2,
-        stackIcon: svg,
+        stackIcon: Css,
       },
       {
         id: 3,
-        stackIcon: svg,
+        stackIcon: React,
       },
       {
         id: 4,
-        stackIcon: svg,
+        stackIcon: Figma,
+      },
+      {
+        id: 5,
+        stackIcon: Angular,
+      },
+      {
+        id: 6,
+        stackIcon: Others,
       },
     ],
   },
   {
     id: 2,
-    title: "Graphic design",
+    title: "Graphic Design",
     image: graphicDesign,
     details:
       "Transform your online image with our art-tech magic - unleashing visual masterpieces that wow, communicate, and reflect your unique brand.",
@@ -82,7 +99,7 @@ const cardData = [
       },
       {
         id: 2,
-        icon: svg,
+        icon: svg2,
         category: "graphics",
         service: "Logo",
       },
@@ -94,7 +111,7 @@ const cardData = [
       },
       {
         id: 4,
-        icon: svg,
+        icon: svg2,
         category: "graphics",
         service: "Bronchues",
       },
@@ -106,7 +123,7 @@ const cardData = [
       },
       {
         id: 6,
-        icon: svg,
+        icon: svg2,
         category: "graphics",
         service: "Fliers",
       },
@@ -118,7 +135,7 @@ const cardData = [
       },
       {
         id: 6,
-        icon: svg,
+        icon: svg2,
         category: "graphics",
         service: "Others",
       },
@@ -126,19 +143,23 @@ const cardData = [
     techStack: [
       {
         id: 1,
-        stackIcon: svg,
+        stackIcon: illustrator,
       },
       {
         id: 2,
-        stackIcon: svg,
+        stackIcon: photoshop,
       },
       {
         id: 3,
-        stackIcon: svg,
+        stackIcon: indesign,
       },
       {
         id: 4,
-        stackIcon: svg,
+        stackIcon: Figma,
+      },
+      {
+        id: 5,
+        stackIcon: Others,
       },
     ],
   },
@@ -157,7 +178,7 @@ const cardData = [
       },
       {
         id: 2,
-        icon: svg,
+        icon: svg2,
         category: "socialMedia",
         service: "LinkedIn",
       },
@@ -169,7 +190,7 @@ const cardData = [
       },
       {
         id: 4,
-        icon: svg,
+        icon: svg2,
         category: "socialMedia",
         service: "Twitter",
       },
@@ -183,55 +204,63 @@ const cardData = [
     techStack: [
       {
         id: 1,
-        stackIcon: svg,
+        stackIcon: WhatsApp,
       },
       {
         id: 2,
-        stackIcon: svg,
+        stackIcon: LinkedIn,
       },
       {
         id: 3,
-        stackIcon: svg,
+        stackIcon: Facebook,
       },
       {
         id: 4,
-        stackIcon: svg,
+        stackIcon: Twitter,
+      },
+      {
+        id: 5,
+        stackIcon: Instagram,
+      },
+      {
+        id: 6,
+        stackIcon: Others,
       },
     ],
   },
-  {
-    id: 4,
-    title: "Printing and Branding",
-    image: webDesign,
-    details:
-      "We specialize in crafting and promoting a brand's identity, messages, and content on various social media platforms with the purpose of increasing brand recognition, improving customer experience, and creating a positive perception of the brand.",
-    servicelist: [
-      {
-        id: 1,
-        icon: svg,
-        category: "web",
-        service: "Blog sdfdsfd",
-      },
-      {
-        id: 2,
-        icon: svg,
-        category: "graphics",
-        service: "ecormm Website",
-      },
-      {
-        id: 3,
-        icon: svg,
-        category: "socialMedia",
-        service: "Blog Website",
-      },
-      {
-        id: 4,
-        icon: svg,
-        category: "printing",
-        service: "Blog Webdfgdfgdfgsite",
-      },
-    ],
-    techStack: [],
-  },
+  // {
+  //   id: 4,
+  //   title: "Printing and Branding",
+  //   image: webDesign,
+  //   details:
+  //     "We specialize in crafting and promoting a brand's identity, messages, and content on various social media platforms with the purpose of increasing brand recognition, improving customer experience, and creating a positive perception of the brand.",
+  //   servicelist: [
+  //     {
+  //       id: 1,
+  //       icon: svg,
+  //       category: "web",
+  //       service: "Blog sdfdsfd",
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: svg,
+  //       category: "graphics",
+  //       service: "ecormm Website",
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: svg,
+  //       category: "socialMedia",
+  //       service: "Blog Website",
+  //     },
+  //     {
+  //       id: 4,
+  //       icon: svg,
+  //       category: "printing",
+  //       service: "Blog Webdfgdfgdfgsite",
+  //     },
+  //   ],
+  //   techStack: [],
+  // },
 ];
 export default cardData;

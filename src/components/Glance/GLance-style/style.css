@@ -1,0 +1,24 @@
+.glance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  background-image: url(../assests/glance-bg.jpg);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+.glance .glancebtn {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e8303a;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 2px solid #e8303a;
+}
+.glance .glancebtn:hover {
+  transform: scaleY(1.1);
+  color: white;
+  background-color: #e8303a;
+}/*# sourceMappingURL=style.css.map */

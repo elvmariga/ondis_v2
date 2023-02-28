@@ -66,7 +66,7 @@ export const Navbar = () => {
                 activeclassname="active"
                 to="/contact"
               >
-                <Button />
+                <Button text="Get Quote " />
               </NavLink>
             </li>
           </ul>

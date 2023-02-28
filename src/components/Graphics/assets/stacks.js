@@ -10,7 +10,7 @@ export const stackIcons = [
   illustrator,
   photoshop,
   indesign,
-  canva,
+  indesign,
   Figma,
   Others,
 ];

@@ -3,7 +3,7 @@
         width: 80%;
         margin: 0 auto;
         margin-bottom: 1.5rem;
-        padding: 0.5rem 1rem;
+        padding: 2rem 1rem;
 
         @media only screen and (min-width: 768px) {
             display: flex;
@@ -17,32 +17,49 @@
             .card-right {
                 flex-basis: calc(50% - 0.5rem);
             }
+          
 
             &:nth-child(even) {
                 background-color: #eef3fc;
                 flex-direction: row-reverse;
+                justify-content: center;
                 width: 100%;
                 // margin: 0 10% 0 10%;
 
 
-                &>* {
-                    flex-basis: 80%;
-                        /* the content will occupy 80% of the available space */
-                    margin-left: 10%;
-                        margin-right: 10%;
-                        /* add left and right margin only to the immediate child elements */
-                    }
-                    
-                    &>*>* {
-                        margin: 0;
-                        /* remove the margin from grandchildren elements */
-                    }
+                // &>.card-left,
+                //     &>.card-right {
+                //     flex-basis: 80%;
+                //     /* the content will occupy 80% of the available space */
+                //     margin-left: 10%;
+                //     margin-right: 10%;
+
+                //     /* add left and right margin only to the immediate child elements */
+                // }
+                                 &>.card-left,
+                                 &>.card-right {
+                                     width: 100%;
+                                 }
+                
+                                 &>.card-left> div{
+                                    width: 80%;
+                                    margin: 0 10% 0 0;
+                                 }
+                                 &>.card-right> div {
+                                    width: 80%;
+                                        margin: 0  0 0 20%;
+                                 }
+
+                // &>*>* {
+                //     margin: 0;
+                //     /* remove the margin from grandchildren elements */
+                // }
             }
         }
 
         .service-title {
             color: #2068b0;
-            margin-top: 0;
+            margin-top: .5rem;
         }
 
         .image {
@@ -52,6 +69,7 @@
 
         .services-offered {
             display: grid;
+            gap: .5rem;
 
             @media only screen and (min-width: 768px) {
                 grid-template-columns: 1fr 1fr;
@@ -61,17 +79,45 @@
         .services-card {
             display: flex;
             align-items: center;
-            font-weight: 500;
+
 
             p {
                 padding-left: 0.5rem;
             }
         }
 
+        .service-details {
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+        }
+
         .tech-stack {
+            color: #494a4c;
+            margin-bottom: 1rem;
+           
+
             .stack-icon {
                 display: flex;
+                gap: .6rem;
+
+                img {
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
             }
         }
+
+                 .card-right{
+                    display: flex;
+                    flex-direction: column;
+                    // column-gap: 6rem;
+                    justify-content: space-evenly;
+                .card-right-details{
+                    display: grid;
+                    gap: 1.2rem;
+                }
+            }
     }
 }

@@ -6,7 +6,7 @@ const TechStack = (props) => {
     <div className="tech-stack">
       {/* <h2>Tech Stack</h2> */}
       <div className="stack-icons">
-        <img src={props.stackIcon} alt="re" />
+        <img src={props.stackIcon} alt="stack icons" />
       </div>
     </div>
   );
