@@ -1,86 +1,92 @@
-.hero {
+.herosection {
+  background: linear-gradient(180.04deg, rgba(189, 2, 4, 0.14) 0.03%, rgba(66, 133, 244, 0.2) 27.97%, rgba(255, 255, 255, 0.2) 69.07%);
+  min-height: 60vh;
+}
+.herosection .hero {
   width: 80%;
-  margin: 0.5rem auto;
+  margin: 0 auto 0.5rem auto;
   padding: 1rem 0;
   display: grid;
+  align-items: center;
   gap: 1rem;
 }
-.hero .hero-right {
+.herosection .hero .hero-right {
   display: flex;
   justify-content: center;
 }
-.hero .hero-right img {
+.herosection .hero .hero-right img {
   width: 100%;
   height: auto;
 }
 @media screen and (min-width: 600px) {
-  .hero .hero-right img {
+  .herosection .hero .hero-right img {
     width: 20rem;
     height: auto;
   }
 }
 @media screen and (min-width: 900px) {
-  .hero .hero-right img {
-    width: 30rem;
+  .herosection .hero .hero-right img {
+    width: 40rem;
     height: auto;
   }
 }
-.hero .hero-left h1 {
+.herosection .hero .hero-left h1 {
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
 }
 @media screen and (max-width: 600px) {
-  .hero .hero-left h1 {
+  .herosection .hero .hero-left h1 {
     font-size: 0.8rem;
   }
 }
-.hero .hero-left span {
+.herosection .hero .hero-left span {
   font-size: 1.7rem;
   font-weight: 700;
 }
 @media screen and (max-width: 600px) {
-  .hero .hero-left span {
+  .herosection .hero .hero-left span {
     font-size: 1.2rem;
   }
 }
-.hero .hero-left p {
+.herosection .hero .hero-left p {
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
   line-height: 1.6;
   padding: 3rem 0;
 }
 @media screen and (max-width: 480px) {
-  .hero .hero-left p {
+  .herosection .hero .hero-left p {
     padding: 0;
     margin: 1rem 0;
     font-size: 1rem;
   }
 }
-.hero .hero-left .btns {
+.herosection .hero .hero-left .btns {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.hero .hero-left .btns a {
+.herosection .hero .hero-left .btns a {
   text-decoration: none;
   border-radius: 5px;
   padding: 0.45rem 1rem;
 }
-.hero .hero-left .btns a:hover {
+.herosection .hero .hero-left .btns a:hover {
   transform: scale(1.1, 1.1);
 }
-.hero .hero-left .btns .whatsapp-icon {
+.herosection .hero .hero-left .btns .whatsapp-icon {
   color: #2068B0;
   border: 1px solid #2068B0;
 }
-.hero .hero-left .btns .whatsapp-icon:hover {
+.herosection .hero .hero-left .btns .whatsapp-icon:hover {
   color: #FFFFFF;
   border: none;
   background-color: green;
 }
 @media only screen and (min-width: 785px) {
-  .hero {
+  .herosection .hero {
     grid-template-columns: 1fr 1fr;
     justify-items: space-between;
+    align-items: center;
   }
 }/*# sourceMappingURL=hero-style.css.map */

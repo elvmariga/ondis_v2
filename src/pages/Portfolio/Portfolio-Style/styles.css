@@ -21,10 +21,6 @@
   gap: 1rem;
   margin-bottom: 1rem;
 }
-.portfolio .tabs button {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-}
 .portfolio .tabs .not-active {
   width: 100px;
   padding: 4px 12px;

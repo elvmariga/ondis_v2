@@ -16,26 +16,23 @@
         // margin-bottom: 0.5rem;
         // height: min-content;
         width: 100%;
-            margin: 0 auto;
+        margin: 0 auto;
 
         img {
             width: 100%;
             height: auto;
         }
     }
+    
 
     .tabs {
 
         display: flex;
-justify-content: center;
+        justify-content: center;
         gap: 1rem;
         margin-bottom: 1rem;
 
-        button {
-            font-size: 1rem;
-            font-family: 'Montserrat', sans-serif;
-
-        }
+      
 
         .not-active {
             width: 100px;
@@ -93,5 +90,6 @@ justify-content: center;
 
         }
     }
+    
 
 }

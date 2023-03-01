@@ -7,7 +7,6 @@ import React from "./assests/react.svg";
 import Angular from "./assests/angular.svg";
 import Figma from "./assests/figma.svg";
 import Others from "./assests/others.svg";
-import tick from "./assests/tick.svg";
 import webDesign from "./assests/web-development.svg"
 import graphicDesign from "./assests/graphicdesign-banner1.svg"
 import socialmedia from "./assests/socialmediabanner.jpg"
@@ -19,6 +18,7 @@ import LinkedIn from "./assests/linkedin.svg";
 import Facebook from "./assests/facebook.svg";
 import Twitter from "./assests/Twitter.svg";
 import Instagram from "./assests/instagram.svg";
+
 
 
 

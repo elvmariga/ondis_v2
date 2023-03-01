@@ -7,7 +7,7 @@
         // width: 50%;
         display: grid;
         // gap: 1rem;
-        min-height: 300px;
+        height: 320px;
         min-width: fit-content;
         width: 300px;
         justify-items: center;
@@ -18,43 +18,11 @@
             height: auto;
         }
 
+        p{
+            padding: 0 10px;
+        }
 
-        // .left {
-        //     align-self: center;
-
-        //     img {
-        //         object-fit: cover;
-        //     }
-        // }
-
-        // .right {
-
-        //     // padding: 1rem;
-        //     // align-self: center;
-        //     // overflow: scroll;
-        //     h4 {
-        //         margin: .2rem 0 0 0;
-        //     }
-
-        //     p {
-        //         padding-right: .7rem;
-        //         text-overflow: ellipsis;
-        //         overflow: hidden;
-
-
-        //         @media screen and (max-width:600px) {
-
-        //             font-size: small;
-
-        //         }
-
-        //         @media screen and (max-width:350px) {
-
-        //             font-size: x-small;
-
-        //         }
-        //     }
-        // }
+      
     }
 
 

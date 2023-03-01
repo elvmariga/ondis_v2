@@ -1,15 +1,22 @@
 .customer {
   margin: 2rem auto;
+  min-height: 500px;
 }
 .customer .customer-content {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
 }
+.customer .customer-content .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .customer .customer-content .title h2 {
   text-align: center;
-  color: #2068B0;
+  color: rgba(0, 0, 0, 0.8);
 }
 .customer .customer-content .cards {
   gap: 2rem;
@@ -22,5 +29,4 @@
   scroll-behavior: smooth;
   /* hide scrollbar */
   scrollbar-width: none;
-  scroll-snap-type: x mandatory;
 }/*# sourceMappingURL=Customer-style.css.map */

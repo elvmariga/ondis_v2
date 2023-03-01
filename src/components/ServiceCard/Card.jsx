@@ -6,7 +6,7 @@ import TechStack from "./TechStack";
 import ServiceCardTitle from "./ServiceCardTitle";
 import ServiceDetails from "./ServiceDetails";
 import cardData from "./data";
-import "./components/ServiceStyle/Style.css"
+import "./ServiceStyle/Style.css"
 import Button from "../Button/Button";
 
 const Card = () => {

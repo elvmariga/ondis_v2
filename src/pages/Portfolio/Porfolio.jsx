@@ -3,38 +3,42 @@ import Modal from "react-modal";
 import pic from "../Portfolio/Assests/MacBook Air - 2.jpg";
 import card from "./Assests/card1.jpg";
 import banner from "./Assests/banner.jpg";
+import runempireLogo from "./Assests/card2.jpg"
+import runempireMockup from "./Assests/rubeempire.jpg";
+import limuruMockup from "./Assests/Limuruwebdesign.jpg";
+import limurudp from "./Assests//limurudp.jpg";
 import "./Portfolio-Style/styles.css";
-import Card from "../../components/ServiceCard/Card";
+
 
 const projectData = [
   {
     id: 1,
-    title: "Project 1",
-    category: "web",
-    project: "Business Card",
+    title: "Next Tech Logo",
+    category: "Graphics",
+    project: "Logo Design",
     cardImage: card,
     modalImage: pic,
   },
   {
     id: 2,
-    title: "Project 2",
-    category: "graphics",
-    project: "Business Card",
-    cardImage: card,
-    modalImage: pic,
+    title: "Run Empire Logo",
+    category: "Graphics",
+    project: "Logo Design",
+    cardImage: runempireLogo,
+    modalImage: runempireMockup,
   },
   {
     id: 3,
-    title: "Project 3",
-    category: "printing",
-    project: "Business Card",
-    cardImage: card,
-    modalImage: pic,
+    title: "Limuru Cherish Home",
+    category: "Websites",
+    project: "Websites Design",
+    cardImage: limurudp,
+    modalImage: limuruMockup,
   },
   {
     id: 4,
     title: "Project 4",
-    category: "web",
+    category: "Websites",
     project: "Business Card",
     cardImage: card,
     modalImage: pic,
@@ -42,9 +46,9 @@ const projectData = [
 ];
 
 const Portfolio = () => {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
-  const categories = ["all", "web", "graphics", "printing"];
+  const categories = ["All", "Websites", "Graphics", "Printing "];
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -56,7 +60,7 @@ const Portfolio = () => {
   };
 
   const filteredProjects =
-    selectedCategory === "all"
+    selectedCategory === "All"
       ? projectData
       : projectData.filter((project) => project.category === selectedCategory);
 
@@ -88,7 +92,7 @@ const Portfolio = () => {
               onClick={() => handleProjectClick(project)}
             >
               <img
-                style={{ width: "300px", height: "auto" }}
+                style={{ width: "300px", height: "250px" }}
                 src={project.cardImage}
                 alt={project.title}
               />
@@ -122,7 +126,7 @@ const Portfolio = () => {
               style={{ height: "80vh", overflow: "scroll" }}
               className="modal-content"
             >
-              <button onClick={() => setSelectedProject(null)}>X</button>
+              <button style={{color:"red", border:"none", background:"none", fontSize:"1.2rem", display:"flex", justifyContent:"flex-end"}} className="close" onClick={() => setSelectedProject(null)}>X</button>
               <img
                 style={{ width: "100%", height: "auto" }}
                 src={selectedProject.modalImage}
