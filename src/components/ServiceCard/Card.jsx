@@ -10,44 +10,42 @@ import "./ServiceStyle/Style.css"
 import Button from "../Button/Button";
 
 const Card = () => {
-  
+
   return (
     <div className="service-card">
-      {cardData.map((card) => (
-        <div className="service-card-content" key={card.id}>
+
+      {cardData.map(({ id, title, details, servicelist, techStack, image }) => (
+        <div className="service-card-content" key={id}>
           <div className="card-left">
             <Line />
 
             <Fade cascade bottom>
-              <ServiceCardTitle title={card.title} image={card.image} />
+              <ServiceCardTitle title={title} image={image} />
             </Fade>
           </div>
+
           <div className="card-right">
+
             <div className="card-right-details">
-              <ServiceDetails details={card.details} />
+              <ServiceDetails details={details} />
               <div className="services-offered">
-                {card.servicelist.map((service) => (
-                  <Services
-                    key={service.id}
-                    icon={service.icon}
-                    service={service.service}
-                  />
-                ))}
+                {servicelist.map((service) => ( <Services { ...service} />))}
               </div>
             </div>
+
             <div className="tech-stack">
               <h4>Tech Stack</h4>
               <div className="stack-icon">
-                {card.techStack.map((stack) => (
-                  <TechStack key={stack.id} stackIcon={stack.stackIcon} />
-                ))}
-               
+                {techStack.map((stack) => (<TechStack {...stack}/> ))}
               </div>
-               <Button text="Get Quote " />
+              <Button text="Get Quote " />
             </div>
+            
           </div>
         </div>
+
       ))}
+
     </div>
   );
 };

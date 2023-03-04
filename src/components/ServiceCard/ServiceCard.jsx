@@ -8,11 +8,9 @@ import data from './data';
 import Card from './Card';
 
 const ServiceCard = () => {
-
-
-<div>
- <Card />
-</div>
+    <div>
+        <Card />
+    </div>
 }
 
 export default ServiceCard
