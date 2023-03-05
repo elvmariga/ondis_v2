@@ -7,6 +7,8 @@ import runempireLogo from "./Assests/card2.jpg"
 import runempireMockup from "./Assests/rubeempire.jpg";
 import limuruMockup from "./Assests/Limuruwebdesign.jpg";
 import limurudp from "./Assests//limurudp.jpg";
+import ema_banner from "./Assests/ema_banner.png";
+import ema_mockup from "./Assests/ema_mockup.png"
 import "./Portfolio-Style/styles.css";
 
 
@@ -34,21 +36,22 @@ const projectData = [
     project: "Websites Design",
     cardImage: limurudp,
     modalImage: limuruMockup,
+    url: "https://limuru-cheshire-webapp-frontend.vercel.app/about",
   },
   {
     id: 4,
-    title: "Project 4",
+    title: "Ema Westlink Ltd ",
     category: "Websites",
-    project: "Business Card",
-    cardImage: card,
-    modalImage: pic,
+    project: "Web Development",
+    cardImage: ema_banner,
+    modalImage: ema_mockup,
   },
 ];
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
-  const categories = ["All", "Websites", "Graphics", "Printing "];
+  const categories = ["All", "Websites", "Graphics"];
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -126,17 +129,33 @@ const Portfolio = () => {
               style={{ height: "80vh", overflow: "scroll" }}
               className="modal-content"
             >
-              <button style={{color:"red", border:"none", background:"none", fontSize:"1.2rem", display:"flex", justifyContent:"flex-end"}} className="close" onClick={() => setSelectedProject(null)}>X</button>
+              <button
+                style={{
+                  color: "red",
+                  border: "none",
+                  background: "none",
+                  fontSize: "1.2rem",
+                  display: "flex",
+                  justifyContent: "flex-end",
+                }}
+                className="close"
+                onClick={() => setSelectedProject(null)}
+              >
+                X
+              </button>
+              {/* <a href={project.url}>a</a> */}
               <img
-                style={{ width: "100%", height: "auto" }}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderBottom: "1px solid #000000",
+                }}
                 src={selectedProject.modalImage}
                 alt={selectedProject.title}
               />
             </div>
           )}
         </Modal>
-
-      
       </div>
     </div>
   );
