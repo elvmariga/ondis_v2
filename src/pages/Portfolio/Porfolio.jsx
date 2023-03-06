@@ -8,8 +8,11 @@ import runempireMockup from "./Assests/rubeempire.jpg";
 import limuruMockup from "./Assests/Limuruwebdesign.jpg";
 import limurudp from "./Assests//limurudp.jpg";
 import ema_banner from "./Assests/ema_banner.png";
-import ema_mockup from "./Assests/ema_mockup.png"
+import ema_mockup from "./Assests/ema_mockup.png";
+import midland_banner from "./Assests/midlandBanner.png";
+import midland_mockup from "./Assests/midlandMOckUp.png"
 import "./Portfolio-Style/styles.css";
+import { Fade } from "react-reveal";
 
 
 const projectData = [
@@ -45,6 +48,14 @@ const projectData = [
     project: "Web Development",
     cardImage: ema_banner,
     modalImage: ema_mockup,
+  },
+  {
+    id: 5,
+    title: "Midland School ",
+    category: "Websites",
+    project: "Web Development",
+    cardImage: midland_banner,
+    modalImage: midland_mockup,
   },
 ];
 
@@ -86,24 +97,29 @@ const Portfolio = () => {
             </button>
           ))}
         </nav>
-
-        <main>
-          {filteredProjects.map((project) => (
-            <div
-              className="card"
-              key={project.id}
-              onClick={() => handleProjectClick(project)}
-            >
-              <img
-                style={{ width: "300px", height: "250px" }}
-                src={project.cardImage}
-                alt={project.title}
-              />
-              <h3 style={{ padding: "0 1rem" }}>{project.title}</h3>
-              <p style={{ padding: " 0 1rem" }}>{project.project}</p>
-            </div>
-          ))}
-        </main>
+        <Fade cascade bottom>
+          <main>
+            {filteredProjects.map((project) => (
+              <div className="card">
+                <img
+                  className="bannerImg"
+                  style={{ width: "300px", height: "250px" }}
+                  src={project.cardImage}
+                  alt={project.title}
+                  key={project.id}
+                  onClick={() => handleProjectClick(project)}
+                />
+                <h3 style={{ padding: "0 1rem" }}>{project.title}</h3>
+                <p style={{ padding: " 0 1rem", color: "rgb(0, 0, 0, 0.7)" }}>
+                  <a href={project.url} target="_blank">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p style={{ padding: " 0 1rem" }}>{project.project}</p>
+              </div>
+            ))}
+          </main>
+        </Fade>
         <Modal
           isOpen={selectedProject !== null}
           onRequestClose={() => setSelectedProject(null)}

@@ -64,9 +64,9 @@
 .service-card .service-card-content .services-card .service_card_details {
   color: rgba(0, 0, 0, 0.7);
   position: absolute;
-  z-index: 999;
+  z-index: 5;
   background-color: #FFFFFF;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   padding: 1rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -79,7 +79,7 @@
 }
 @media only screen and (min-width: 768px) {
   .service-card .service-card-content .services-card .service_card_details {
-    width: 30%;
+    width: 60%;
   }
 }
 .service-card .service-card-content .service-details {

@@ -6,14 +6,12 @@ import TechStack from "./TechStack";
 import ServiceCardTitle from "./ServiceCardTitle";
 import ServiceDetails from "./ServiceDetails";
 import cardData from "./data";
-import "./ServiceStyle/Style.css"
+import "./ServiceStyle/Style.css";
 import Button from "../Button/Button";
 
 const Card = () => {
-
   return (
     <div className="service-card">
-
       {cardData.map(({ id, title, details, servicelist, techStack, image }) => (
         <div className="service-card-content" key={id}>
           <div className="card-left">
@@ -25,27 +23,31 @@ const Card = () => {
           </div>
 
           <div className="card-right">
+            <Fade cascade bottom>
+              <div className="card-right-details">
+                <ServiceDetails details={details} />
 
-            <div className="card-right-details">
-              <ServiceDetails details={details} />
-              <div className="services-offered">
-                {servicelist.map((service) => ( <Services { ...service} />))}
+                <div className="services-offered">
+                  {servicelist.map((service) => (
+                    <Services {...service} />
+                  ))}
+                </div>
               </div>
-            </div>
-
-            <div className="tech-stack">
-              <h4>Tech Stack</h4>
-              <div className="stack-icon">
-                {techStack.map((stack) => (<TechStack {...stack}/> ))}
+            </Fade>
+            <Fade cascade bottom>
+              <div className="tech-stack">
+                <h4>Tech Stack</h4>
+                <div className="stack-icon">
+                  {techStack.map((stack) => (
+                    <TechStack {...stack} />
+                  ))}
+                </div>
+                <Button text="Get Quote " />
               </div>
-              <Button text="Get Quote " />
-            </div>
-            
+            </Fade>
           </div>
         </div>
-
       ))}
-
     </div>
   );
 };

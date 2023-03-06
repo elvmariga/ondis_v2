@@ -14,7 +14,6 @@
 .portfolio .banner img {
   width: 100%;
   height: auto;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 .portfolio .tabs {
   display: flex;
@@ -60,7 +59,12 @@
   max-width: 302px;
   background-color: #FFFFFF;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
-.portfolio main .card:hover {
-  transform: scale(1.05);
+.portfolio main .card .bannerImg {
+  transition: transform 0.2s;
+}
+.portfolio main .card .bannerImg:hover {
+  transform: scale(1.2, 1.1);
+  transform-origin: center center;
 }/*# sourceMappingURL=styles.css.map */
