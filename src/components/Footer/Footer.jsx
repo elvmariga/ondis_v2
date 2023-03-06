@@ -48,7 +48,6 @@ const Footer = () => {
 
         <Fade bottom cascade>
           <div className=".footer-middle">
-           
             <h3>Our Services</h3>
             <Link
               className=" footLinks"
@@ -117,17 +116,13 @@ const Footer = () => {
                 <i className="fa-brands fa-instagram fa"></i>
               </a>
               <a
-                href="http://linkedin.com/in/ondishub"
+                href="https://www.linkedin.com/company/ondishub/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="fa-brands fa-linkedin-in fa"></i>
               </a>
-              <a
-                href="http://tiktok.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="http://tiktok.com" target="_blank" rel="noreferrer">
                 <i class="fa-brands fa-tiktok"></i>
               </a>
             </div>

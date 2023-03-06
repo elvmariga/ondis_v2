@@ -9,11 +9,16 @@ import { ScrollUp } from "./components/scrollup/ScrollUp";
 import { SocialMedia } from "./components/SocialMedia/SocialMedia";
 import ServiceCard from "./components/ServiceCard/ServiceCard";
 import Portfolio from "./pages/Portfolio/Porfolio";
-import bg from "./divider.jpg"
+
+import bg from "./divider.jpg";
+
+
 
 
 
 export const App = () => {
+
+  
   return (
     <section style={{ backgroundImage: `url(${bg})` }}>
       <ScrollUp />

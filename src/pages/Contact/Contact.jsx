@@ -58,7 +58,7 @@ const Contact = () => {
           <div className="contact-top">
             <h1>Feel free to contact us</h1>
             <p>
-              <a href="tel:+254719311036">+254 712 345 667</a>
+              <a href="tel:+254719311036">+254 719 311 036</a>
             </p>
             <p>
               <a href="mailto:ondishub@gmail.com">ondishub@gmail</a>
@@ -106,7 +106,7 @@ const Contact = () => {
                 <i className="fa-brands fa-instagram fa"></i>
               </a>
               <a
-                href="http://linkedin.com/in/ondishub"
+                href="https://www.linkedin.com/company/ondishub/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
