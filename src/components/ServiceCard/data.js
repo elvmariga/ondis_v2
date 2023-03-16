@@ -29,15 +29,14 @@ const cardData = [
     id: 1,
     title: "Website Design and Development",
     image: webDesign,
-
+    details: "We create user-centric websites that prioritize user experience and are easy to navigate. Our expertise helps you elevate your online presence and reach your goals.",
     servicelist: [
       {
         id: 1,
         icon: svg,
         category: "web",
         service: "Standard Website",
-        details:
-          "This is ideal for Blogs, Landing page and Portifolio websites",
+        details: "This is ideal for Blogs, Landing page and Portifolio websites",
       },
       {
         id: 2,

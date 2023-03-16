@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Mail from "./Assests/mail.svg";
 import Phone from "./Assests/phone.svg";
 import Location from "./Assests/location.svg";
@@ -13,6 +13,10 @@ const Contact = () => {
   const form = useRef();
   const [phoneNumber, setPhoneNumber] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -1,135 +1,148 @@
-.herosection{
-// background-image: url(../assests/bg.svg);
-background: linear-gradient(180.04deg, rgba(189, 2, 4, 0.14) 0.03%, rgba(66, 133, 244, 0.2) 27.97%, rgba(255, 255, 255, 0.2) 69.07%);
-min-height: 60vh;
-  .hero {
+.hero-container{
+  background-color: #FFFFFF;
+  .herosection {
+      // background-image: url(../assests/bg.svg);
+      background: linear-gradient(180.04deg, rgba(189, 2, 4, 0.14) 0.03%, rgba(66, 133, 244, 0.2) 27.97%, rgba(255, 255, 255, 0.2) 69.07%);
+      min-height: 60vh;
   
-      width: 80%;
-      margin: 0 auto .5rem auto;
-      padding: 1rem 0;
-      display: grid;
-      align-items: center;
-      gap: 1rem;
-      
+      .hero {
+  
+        width: 80%;
+        margin: 0 auto .5rem auto;
+        padding: 1rem 0;
+        display: grid;
+        align-items: center;
+        gap: 1rem;
   
   
-      .hero-right {
-        display: flex;
-        justify-content: center;
   
-        // width: 50%;
-        img {
-          width: 100%;
-          height: auto;
+        .hero-right {
+          display: flex;
+          justify-content: center;
   
-          @media screen and (min-width:600px) {
-  
-            width: 20rem;
+          // width: 50%;
+          img {
+            width: 100%;
             height: auto;
   
+            @media screen and (min-width:768px) {
   
-          }
-  
-          @media screen and (min-width:900px) {
-  
-            width: 40rem;
-            height: auto;
+              width: 23em;
+              height: auto;
   
   
-          }
-        }
-      }
+            }
   
-      .hero-left {
-        h1 {
-          color: rgba(0, 0, 0, 0.7);
-          font-size: 1.2rem;
+            @media screen and (min-width:1200px) {
   
-          @media screen and (max-width:600px) {
+              width: 40rem;
+              height: auto;
   
-            font-size: 0.8rem;
   
+            }
           }
         }
   
-        span {
-          font-size: 1.7rem;
-          font-weight: 700;
-  
-          @media screen and (max-width:600px) {
-  
+        .hero-left {
+          h1 {
+            color: rgba(0, 0, 0, 0.7);
             font-size: 1.2rem;
   
+            @media screen and (max-width:600px) {
+  
+              font-size: 0.8rem;
+  
+            }
+          }
+  
+          span {
+            font-size: 1.7rem;
+            font-weight: 700;
+  
+            @media screen and (max-width:600px) {
+  
+              font-size: 1.2rem;
+  
+            }
+          }
+  
+  
+          p {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 1.2rem;
+            line-height: 1.6;
+            padding: 3rem 0;
+            // width: 60%;
+  
+            @media screen and (max-width:480px) {
+              padding: 0;
+              margin: 1rem 0;
+              font-size: 1rem;
+  
+            }
+          }
+  
+          .btns {
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            // @media screen and (max-width:830px ) {
+  
+            //  flex-direction: column;
+            //  justify-content: start;
+            //  align-items: start;
+            //  gap: 1rem;
+  
+  
+            //   }
+  
+            a {
+              text-decoration: none;
+  
+              border-radius: 5px;
+              padding: 0.45rem .8rem;
+  
+  
+              &:hover {
+                transform: scale(1.1, 1.1);
+              }
+  
+            }
+  
+            .whatsapp-icon {
+              color: #2068B0;
+              border: 1px solid #2068B0;
+  
+              &:hover {
+                color: #FFFFFF;
+                border: none;
+                background-color: green;
+              }
+            }
+  
+          }
+  
+          @media screen and (min-width:600px) {
+            // width: 60%;
+  
+  
+  
+  
           }
         }
   
-  
-        p {
-          color: rgba(0, 0, 0, 0.7);
-          font-size: 1.2rem;
-          line-height: 1.6;
-          padding: 3rem 0;
-          // width: 60%;
-  
-          @media screen and (max-width:480px) {
-            padding: 0;
-            margin: 1rem 0;
-            font-size: 1rem;
-  
-          }
-        }
-  
-        .btns {
-          display: flex;
-          gap: 1rem;
+        @media only screen and (min-width: 785px) {
+          grid-template-columns: 1fr 1fr;
+          justify-items: space-between;
           align-items: center;
+          // width: 80%;
   
-          a {
-            text-decoration: none;
-  
-            border-radius: 5px;
-            padding: 0.45rem 1rem;
-  
-  
-            &:hover {
-              transform: scale(1.1, 1.1);
-            }
-  
-          }
-  
-          .whatsapp-icon {
-            color: #2068B0;
-            border: 1px solid #2068B0;
-  
-            &:hover {
-              color: #FFFFFF;
-              border: none;
-              background-color: green;
-            }
-          }
-  
+          // img{display: none;}
+          // background-image: url(../assests/hero.svg);
+          // background-size: 50%;
+          // background-position: right bottom;
+          // background-repeat: no-repeat;
         }
-  
-        @media screen and (min-width:600px) {
-          // width: 60%;
-  
-  
-  
-  
-        }
-      }
-  
-      @media only screen and (min-width: 785px) {
-        grid-template-columns: 1fr 1fr;
-        justify-items: space-between;
-        align-items: center;
-        // width: 80%;
-  
-        // img{display: none;}
-        // background-image: url(../assests/hero.svg);
-        // background-size: 50%;
-        // background-position: right bottom;
-        // background-repeat: no-repeat;
       }
     }
 }

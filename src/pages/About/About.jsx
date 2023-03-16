@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./About-style/About-style.css";
 import Whatwedo from "./Assets/whatwedo.png";
 import Line from "../../components/Line/Line";
@@ -19,7 +19,12 @@ import price from "./Assets/price.svg";
 import credibility from "./Assets/credibility.svg";
 import Expert from "../../components/Expert/Expert";
 
+
+
 const About = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="aboutpage" id="about">
       {/* <Navbar/> */}

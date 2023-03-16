@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
 import Fade from "react-reveal/Fade";
 
 const ServiceCardTitle = (props) => {
@@ -7,7 +6,7 @@ const ServiceCardTitle = (props) => {
     <div className="left">
       <h2 className="service-title">
         {" "}
-        <Link />
+        
         {props.title}
       </h2>
       <Fade bottom>

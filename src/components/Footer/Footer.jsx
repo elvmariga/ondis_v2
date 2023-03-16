@@ -7,17 +7,16 @@ import logo from "./assests/ondis-logo.svg";
 // import { Navigate, Route, Routes } from "react-router-dom";
 import Fade from "react-reveal/Slide";
 import scrollIntoViewIfNeeded from "scroll-into-view-if-needed";
+import FooterLinks from "./FooterLinks";
+import cardData from "../ServiceCard/data";
 // import { SocialMedia } from "../SocialMedia/SocialMedia";
 
-const Footer = () => {
-  const handleClick = (elementId) => {
-    const targetElement = document.querySelector(elementId);
-    scrollIntoViewIfNeeded(targetElement, {
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
+const Footer = (card) => {
+  const handleClick = (id) => {
+    const element = document.querySelector(id);
+    element.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <div className="footer">
       <div className="footer-content">
@@ -49,31 +48,12 @@ const Footer = () => {
         <Fade bottom cascade>
           <div className=".footer-middle">
             <h3>Our Services</h3>
-            <Link
-              className=" footLinks"
-              to="/home#web"
-              // offset="50"
-              onClick={() => handleClick("#web")}
-            >
-              Web Development
-            </Link>
 
-            <Link
-              className=" footLinks"
-              to="/home#graphics"
-              // offset="50"
-              onClick={() => handleClick("#graphics")}
-            >
-              Graphic Design
-            </Link>
-            <Link
-              className=" footLinks"
-              to="/home#socialMedia"
-              // offset="50"
-              onClick={() => handleClick("#socialMedia")}
-            >
-              Social Media Branding
-            </Link>
+            <div>
+              {cardData.map(({ id, title }) => (
+                <FooterLinks id={id} title={title} />
+              ))}
+            </div>
 
             <p>Serch Engine Optimization</p>
             <p>Branding and Printing</p>

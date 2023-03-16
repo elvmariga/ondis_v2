@@ -18,7 +18,7 @@ const Card = () => {
             <Line />
 
             <Fade cascade bottom>
-              <ServiceCardTitle title={title} image={image} />
+              <ServiceCardTitle title={title} image={image} id={id}/>
             </Fade>
           </div>
 
