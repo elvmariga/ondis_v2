@@ -1,4 +1,6 @@
 import React, {useEffect, useRef} from "react";
+
+
 import CustomerCard from "../CustomerCard/CustomerCard";
 import "./Customer-style/Customer-style.css";
 import Dp from "./assets/Ellipse 1.svg";
@@ -9,6 +11,7 @@ import Dp5 from "./assets/Ellipse 5.svg";
 import Star from "./assets/stars.svg";
 import Fade from "react-reveal/Slide";
 import Icon from '../Expert/assets/down-icon.svg';
+import Testimony from "../Testimony/Testimony";
 
  
 
@@ -43,7 +46,7 @@ useEffect(() => {
     <div className="customer">
       <Fade cascade bottom>
         <div className="customer-content">
-          <div className="title">
+          {/* <div className="title">
             <h2>What Our Clients Say</h2>
             
               <img src={Icon} alt="Down Icon" />
@@ -89,8 +92,12 @@ useEffect(() => {
               testimony="Ondishub is the best company. It delivers on time"
               rating={Star}
             />
-          </div>
+          </div> */}
+
+          
+        
         </div>
+        <Testimony />
       </Fade>
     </div>
   );

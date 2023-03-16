@@ -29,4 +29,10 @@
   scroll-behavior: smooth;
   /* hide scrollbar */
   scrollbar-width: none;
+}
+.customer .eui-widget-title {
+  font-size: 2rem;
+  color: #2068b0;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=Customer-style.css.map */

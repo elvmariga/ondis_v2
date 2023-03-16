@@ -48,6 +48,7 @@
 .service-card .service-card-content .services-offered {
   display: grid;
   gap: 0.5rem;
+  z-index: 2;
 }
 @media only screen and (min-width: 768px) {
   .service-card .service-card-content .services-offered {
@@ -90,6 +91,7 @@
 .service-card .service-card-content .tech-stack {
   color: #494a4c;
   margin-bottom: 1rem;
+  z-index: 1;
 }
 .service-card .service-card-content .tech-stack .stack-icon {
   display: flex;

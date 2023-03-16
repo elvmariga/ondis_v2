@@ -79,6 +79,7 @@
         .services-offered {
             display: grid;
             gap: .5rem;
+            z-index: 2;
 
             @media only screen and (min-width: 768px) {
                 grid-template-columns: 1fr 1fr;
@@ -129,6 +130,7 @@
         .tech-stack {
             color: #494a4c;
             margin-bottom: 1rem;
+            z-index: 1;
 
 
 
