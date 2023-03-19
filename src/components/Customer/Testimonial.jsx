@@ -18,7 +18,7 @@ const Testimonial = () => {
     {
       id: 2,
       image:
-        "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGljfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "https://images.unsplash.com/photo-14722234103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGljfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
       rate: 5,
       quote:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum velit in velit semper sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum velit in velit semper sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum velit in velit semper sagittis.",
@@ -51,9 +51,9 @@ const Testimonial = () => {
 
   return (
     <div className="testimony">
-      <div >
+      <div>
         <button className="testimony-arrows" onClick={goToPrevious}>
-          <i class="fa-solid fa-circle-arrow-left fa-2xl"></i>
+          <i class="fa-solid fa-arrow-left-long fa-2xl"></i>
         </button>
       </div>
       <div className="testimony-container">
@@ -82,10 +82,10 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <div >
-        <button className="testimony-arrows"  onClick={goToPrevious}>
+      <div>
+        <button className="testimony-arrows" onClick={goToPrevious}>
           {" "}
-          <i class="fa-solid fa-circle-arrow-right fa-2xl"></i>
+          <i class="fa-solid fa-arrow-right-long fa-2xl"></i>
         </button>
       </div>
     </div>

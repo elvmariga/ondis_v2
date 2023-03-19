@@ -6,6 +6,10 @@
   margin: 0 auto;
   padding: 5rem 0;
 }
+.process-card .process-content .title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
 .process-card .process-content .card {
   border-radius: 4px;
   box-shadow: 0 0.525rem 0.45rem rgba(107, 105, 105, 0.25);
@@ -41,6 +45,9 @@
   grid-template-columns: 0.1fr 1fr;
   justify-content: center;
   padding: 1rem 0;
+}
+.process-card .process-content .card-left i {
+  color: #e8303a;
 }
 .process-card .process-content .card-left .card-left-step-number {
   color: #2068b0;

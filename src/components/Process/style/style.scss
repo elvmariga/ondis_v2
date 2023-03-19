@@ -5,11 +5,17 @@
         width: 80%;
         margin: 0 auto;
         padding: 5rem 0;
+        // background-color: #FFFFFF;
         //    gap: 1rem;
 
 
 
-
+            .title{
+                // background-color: #ffffff;
+                text-align: center;
+                padding-bottom: 1rem;
+               
+            }
 
         .card {
             border-radius: 4px;
@@ -62,6 +68,9 @@
             justify-content: center;
             padding: 1rem 0;
 
+            i {
+                    color: #e8303a;
+                }
 
             .card-left-step-number {
                 color: #2068b0;

@@ -49,11 +49,11 @@ const projectData = [
   },
   {
     id: 4,
-    title: "Ema Westlink Ltd ",
+    title: "Ecommerce conference",
     category: "Websites",
     project: "Web Development",
-    cardImage: ema_banner,
-    modalImage: ema_mockup,
+    cardImage: require("./Assests/selling_online_banner.jpg"),
+    modalImage: require("./Assests/selling_online_mockup.jpg"),
   },
   {
     id: 5,
@@ -136,13 +136,13 @@ const projectData = [
     modalImage: require("./Assests/tina_creatives_logo_mockup.jpg"),
   },
   {
-    id: 9,
+    id: 13,
     title: "Twiga",
     category: "Graphics",
     project: "Logo Design",
     cardImage: require("./Assests/twiga_logo_banner.jpg"),
     modalImage: require("./Assests/twiga_logo_mockup.jpg"),
-  }
+  },
 ];
 
 const Portfolio = () => {
@@ -189,7 +189,7 @@ const Portfolio = () => {
               <div className="card">
                 <img
                   className="bannerImg"
-                  style={{ width: "300px", height: "250px" }}
+                  style={{ width: "300px", height: "200px" }}
                   src={project.cardImage}
                   alt={project.title}
                   key={project.id}

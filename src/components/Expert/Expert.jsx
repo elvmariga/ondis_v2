@@ -3,10 +3,10 @@ import React from 'react';
 import './expert-style/expert-style.css';
 import Icon from './assets/down-icon.svg'
 
-const Expert = () => (
+const Expert = (props) => (
   <div className='expert'>
     <div>
-      <h2 className='title'>Experts in:</h2>
+      <h2 className='title'>{props.title}</h2>
     </div>
     <div>
       <img src={Icon} alt="Down Icon" />

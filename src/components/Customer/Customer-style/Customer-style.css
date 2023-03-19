@@ -39,12 +39,18 @@
 .testimony {
   background-color: #eef3fc;
   border-radius: 4px;
-  width: 60%;
+  width: 90%;
   margin: 2rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+}
+@media only screen and (min-width: 600px) {
+  .testimony {
+    width: 60%;
+  }
 }
 .testimony .testimony-arrows {
   border: none;

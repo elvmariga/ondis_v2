@@ -23,7 +23,7 @@ export const Home = () => {
       <Hero />
 
       <Partners />
-      <Expert />
+      <Expert title="Expert in" />
       {/* <Service/>
 
       <Graphics/>
