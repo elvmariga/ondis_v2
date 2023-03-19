@@ -12,6 +12,7 @@ import Customer from "../components/Customer/Customer";
 import Card from "../components/ServiceCard/Card";
 import creative from "../../src/divider.jpg"
 import Glance from "../components/Glance/Glance";
+import Process from "../components/Process/Process";
 
 
 
@@ -28,6 +29,7 @@ export const Home = () => {
       <Graphics/>
       <Socials/> */}
       <Card />
+      <Process />
      <Glance />
       <Customer />
       {/* <Footer/> */}

@@ -63,8 +63,24 @@
 }
 .portfolio main .card .bannerImg {
   transition: transform 0.2s;
+  border-bottom: 1px solid #e9b7ba;
 }
 .portfolio main .card .bannerImg:hover {
   transform: scale(1.2, 1.1);
   transform-origin: center center;
+}
+
+.close {
+  color: #FFFFFF;
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: flex-end;
+}
+.close:hover {
+  color: red;
 }/*# sourceMappingURL=styles.css.map */

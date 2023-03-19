@@ -1,0 +1,66 @@
+.process-card {
+  background-color: #eef3fc;
+}
+.process-card .process-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.process-card .process-content .card {
+  border-radius: 4px;
+  box-shadow: 0 0.525rem 0.45rem rgba(107, 105, 105, 0.25);
+  display: grid;
+  gap: 2rem;
+  background-color: #ffffff;
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .process-card .process-content .card {
+    display: flex;
+    margin-top: 0;
+    box-shadow: none;
+  }
+  .process-card .process-content .card .card-left {
+    flex-basis: calc(50% - 0.5rem);
+  }
+  .process-card .process-content .card .card-right {
+    flex-basis: calc(50% - 0.5rem);
+  }
+  .process-card .process-content .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+.process-card .process-content .card-right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.process-card .process-content .card-left {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.process-card .process-content .card-left .card-left-step-number {
+  color: #2068b0;
+  font-size: x-large;
+}
+.process-card .process-content .card-left .card-left-step-number h3 {
+  margin: 0;
+  padding-left: 0.6rem;
+  text-align: center;
+}
+.process-card .process-content .card-left .card-left-step-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.process-card .process-content .card-left .card-left-step-details p,
+.process-card .process-content .card-left .card-left-step-details h4 {
+  margin: 0;
+  padding-right: 0.3rem;
+}/*# sourceMappingURL=style.css.map */

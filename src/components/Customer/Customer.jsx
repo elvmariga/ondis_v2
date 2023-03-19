@@ -12,6 +12,7 @@ import Star from "./assets/stars.svg";
 import Fade from "react-reveal/Slide";
 import Icon from '../Expert/assets/down-icon.svg';
 import Testimony from "../Testimony/Testimony";
+import Testimonial from "./Testimonial";
 
  
 
@@ -97,7 +98,8 @@ useEffect(() => {
           
         
         </div>
-        <Testimony />
+        {/* <Testimony /> */}
+        <Testimonial />
       </Fade>
     </div>
   );

@@ -41,7 +41,6 @@
             padding: 4px 12px;
             border: 1px #e30613 solid;
             border-radius: 4px;
-
             background-color: #FFFFFF;
 
         }
@@ -87,10 +86,11 @@
             margin-bottom: 1rem;
             overflow: hidden;
 
-        
+
             .bannerImg {
                 transition: transform 0.2s;
-                
+                border-bottom: 1px solid #e9b7ba;
+
 
 
                 &:hover {
@@ -103,5 +103,21 @@
 
     }
 
-
+   
 }
+
+ .close {
+     color: #FFFFFF;
+     border: none;
+     background: none;
+     font-weight: 700;
+     font-size: 2rem;
+     width: 100%;
+     display: flex;
+     margin-bottom: 1rem;
+     justify-content: flex-end;
+
+     &:hover {
+         color: red;
+     }
+ }
