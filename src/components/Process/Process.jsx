@@ -1,6 +1,9 @@
 import React from "react";
 import "./style/style.css";
 import step1 from "./assets/step1.jpg";
+import step2 from "./assets/step2.jpeg";
+import step3 from "./assets/step3.jpg";
+import step4 from "./assets/step4.jpg";
 import icon1 from "./assets/bookmark.svg"
 import Expert from "../Expert/Expert";
 
@@ -15,27 +18,27 @@ const steps = [
   },
   {
     index: 2,
-    image: step1,
+    image: step2,
     icon: "fa-solid fa-wand-magic-sparkles fa-2xl",
     title: "Planning",
     details:
-      "We develop a detailed plan for the project. This should include a project timeline, milestones, and deliverables. The agency should work with the client to identify key performance indicators (KPIs) and establish a process for measuring and reporting progress.",
+      "We develop a detailed plan for the project. This should include a project timeline, milestones, and deliverables. TWe work with the client to identify Key Performance Indicators (KPIs) and establish a process for measuring and reporting progress.",
   },
   {
     index: 3,
-    image: step1,
+    image: step3,
     icon: "fa-solid fa-laptop-code fa-2xl",
     title: "Execution",
     details:
-      "With a plan in place, we begin executing the project. This typically involves creating content, designing assets, developing software, or implementing marketing campaigns. Throughout the execution phase, maintaining clear communication with the client, providing regular updates and soliciting feedback to ensure that the project is on track.",
+      "With a plan in place, we begin executing the project. This typically involves creating content, designing assets, developing software, or implementing marketing campaigns. Throughout the execution phase, maintaining clear communication with our client, providing regular updates and soliciting feedback to ensure that the project is on track.",
   },
   {
     index: 4,
-    image: step1,
+    image: step4,
     icon: "fa-solid fa-truck-ramp-box fa-2xl",
     title: "Delivery",
     details:
-      "Oh ok, nobody saves, we all keep checking the community files till u see d one that works for u. And u should use the key word material I mean material ui kit . not android ui kit,",
+      "We deliver the final product or service to our client. This may involve launching a website, publishing content, or deploying a software application. In addition, a final quality assurance check is done to ensure that the project meets the client's requirements and is free of errors or defects. We also provide the client with any necessary training or support to ensure that they can effectively use and maintain the product or service.",
   },
 ];
 
@@ -46,7 +49,7 @@ const Process = () => {
         <div className="process-content">
           <div className="title">
             <Expert title="Our Process" />
-            <p>We love, What we do</p>
+            <h4>We love, What we do</h4>
             <p>
               It's a labor of love that allows us to create innovative solutions
               and achieve exceptional results for our clients.

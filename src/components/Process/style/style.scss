@@ -1,21 +1,22 @@
 .process-card {
     background-color: #eef3fc;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #191919;
 
     .process-content {
         width: 80%;
         margin: 0 auto;
         padding: 5rem 0;
-        // background-color: #FFFFFF;
-        //    gap: 1rem;
 
 
+        .title {
 
-            .title{
-                // background-color: #ffffff;
-                text-align: center;
-                padding-bottom: 1rem;
-               
-            }
+            text-align: center;
+            padding-bottom: 1rem;
+
+        }
 
         .card {
             border-radius: 4px;
@@ -27,12 +28,9 @@
 
             @media only screen and (min-width: 768px) {
                 display: flex;
-                // align-items: end;
+
                 margin-top: 0;
                 box-shadow: none;
-                // border: #2068b0 1px solid;
-                // gap: 2rem;
-                // margin: 1rem auto;
 
                 .card-left {
                     flex-basis: calc(50% - 0.5rem);
@@ -49,11 +47,8 @@
         }
 
         .card-right {
-            // background-color: #eef3fc;
-            // padding-top: 1rem;
 
 
-            // // background-color: #FFFFFF;
             img {
                 object-fit: cover;
                 // display: none;
@@ -69,8 +64,8 @@
             padding: 1rem 0;
 
             i {
-                    color: #e8303a;
-                }
+                color: #e8303a;
+            }
 
             .card-left-step-number {
                 color: #2068b0;
@@ -99,6 +94,12 @@
                     margin: 0;
                     padding-right: .3rem;
                 }
+
+                p {
+                    padding-right: 1.2rem;
+                    margin-bottom: 1.2rem;
+                }
+
 
             }
         }

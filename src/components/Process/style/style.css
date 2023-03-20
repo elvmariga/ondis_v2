@@ -1,5 +1,9 @@
 .process-card {
   background-color: #eef3fc;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #191919;
 }
 .process-card .process-content {
   width: 80%;
@@ -70,4 +74,8 @@
 .process-card .process-content .card-left .card-left-step-details h4 {
   margin: 0;
   padding-right: 0.3rem;
+}
+.process-card .process-content .card-left .card-left-step-details p {
+  padding-right: 1.2rem;
+  margin-bottom: 1.2rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,28 +1,60 @@
 import { useState, useEffect } from "react";
-import './Customer-style/Customer-style.css';
-import logo from "./assets/figma_logo.svg"
+import "./Customer-style/Customer-style.css";
+import logo from "./assets/figma_logo.svg";
+import Dp from "./assets/Ellipse 1.svg";
+import Dp2 from "./assets/Ellipse 2.svg";
+import Dp3 from "./assets/Ellipse 3.svg";
+import Dp4 from "./assets/Ellipse 4.svg";
+import Dp5 from "./assets/Ellipse 5.svg";
+import Star from "./assets/stars.svg";
 
 const Testimonial = () => {
   const [testimonies, setTestimonies] = useState([
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGljfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-      rate: 5,
+      image: Dp,
+      rate: Star,
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum velit in velit semper sagittis.",
-      name: "John Doe",
+        "The digital agent effectively meets all of my customer's needs, streamlining my customer service processes and enhancing the overall customer experience. I highly recommend it to anyone looking to improve their business performance.",
+      name: "Phoebe Toel",
       title: "CEO",
       companyLogo: logo,
     },
     {
       id: 2,
-      image:
-        "https://images.unsplash.com/photo-14722234103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGljfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-      rate: 5,
+      image: Dp,
+      rate: Star,
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum velit in velit semper sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum velit in velit semper sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum velit in velit semper sagittis.",
-      name: "John Doe",
+        "Digital marketing services provided by OndisHub has been a game-changer for our business. Their strategic approach has helped us significantly increase our online presence and reach our target audience more effectively.  ",
+      name: "Kevin Brown",
+      title: "CTO",
+      companyLogo: logo,
+    },
+    {
+      id: 3,
+      image: Dp3,
+      rate: Star,
+      quote:
+        "Digital marketing services provided by OndisHub has been a game-changer for our business. Their strategic approach has helped us significantly increase our online presence and reach our target audience more effectively.  ",
+      name: "Miss Owanda",
+      title: null,
+      companyLogo: logo,
+    },
+    {
+      id: 4,
+      image: Dp4,
+      rate: Star,
+      quote: "Easy to communicate with the team, with 24/7 support.",
+      name: "Victor W.",
+      title: "CTO",
+      companyLogo: logo,
+    },
+    {
+      id: 5,
+      image: Dp5,
+      rate: Star,
+      quote: "Ondishub is the best company. It delivers on time",
+      name: "Dr. Achando",
       title: "CTO",
       companyLogo: logo,
     },
@@ -66,13 +98,17 @@ const Testimonial = () => {
         <div className="testimony-content">
           <div className="testimony-quote">
             <span className="testimony-rate">
-              {currentTestimony.rate} stars
+              <img src={currentTestimony.rate} alt="rates" />
             </span>
-            <p>{currentTestimony.quote}</p>
+            <p className="testimony-quote">{currentTestimony.quote}</p>
           </div>
           <div className="testimony-author">
-            <div className="testimony-name">{currentTestimony.name}</div>
-            <div className="testimony-title">{currentTestimony.title}</div>
+            <div className="testimony-name">
+              <h4>{currentTestimony.name}</h4>
+            </div>
+            <div className="testimony-title">
+              <p>{currentTestimony.title}</p>
+            </div>
             <div className="testimony-company-logo">
               <img
                 src={currentTestimony.companyLogo}

@@ -1,5 +1,8 @@
 .customer {
   margin: 2rem auto;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 .customer .customer-content {
   width: 80%;
@@ -81,4 +84,7 @@
   align-items: center;
   text-align: center;
   margin: 0 1rem;
+}
+.testimony .testimony-container .testimony-content .testimony-author h4, .testimony .testimony-container .testimony-content .testimony-author p {
+  margin: 0;
 }/*# sourceMappingURL=Customer-style.css.map */
