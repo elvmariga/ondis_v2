@@ -27,16 +27,16 @@ const projectData = [
     title: "Next Tech Logo",
     category: "Graphics",
     project: "Logo Design",
-    cardImage: card,
-    modalImage: pic,
+    cardImage: require("./Assests/nexTech_logo_banner.jpeg"),
+    modalImage: require("./Assests/nexTech_logo_mockup.jpeg"),
   },
   {
     id: 2,
     title: "Run Empire Logo",
     category: "Graphics",
     project: "Logo Design",
-    cardImage: runempireLogo,
-    modalImage: runempireMockup,
+    cardImage: require("./Assests/rube_empire_logo_banner.jpeg"),
+    modalImage: require("./Assests/rube_empire_logo_mockup.jpeg"),
   },
   {
     id: 3,
@@ -142,6 +142,14 @@ const projectData = [
     project: "Logo Design",
     cardImage: require("./Assests/twiga_logo_banner.jpg"),
     modalImage: require("./Assests/twiga_logo_mockup.jpg"),
+  },
+  {
+    id: 13,
+    title: "Viva Health Care",
+    category: "Graphics",
+    project: "Logo Design",
+    cardImage: require("./Assests/viva_health_logo_banner.jpeg"),
+    modalImage: require("./Assests/viva_health_logo_mockup.jpeg"),
   },
 ];
 
