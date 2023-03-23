@@ -144,12 +144,20 @@ const projectData = [
     modalImage: require("./Assests/twiga_logo_mockup.jpg"),
   },
   {
-    id: 13,
+    id: 14,
     title: "Viva Health Care",
     category: "Graphics",
     project: "Logo Design",
     cardImage: require("./Assests/viva_health_logo_banner.jpeg"),
     modalImage: require("./Assests/viva_health_logo_mockup.jpeg"),
+  },
+  {
+    id: 14,
+    title: "Gibs Nails",
+    category: "Graphics",
+    project: "Logo Design",
+    cardImage: require("./Assests/viva_health_logo_banner.jpeg"),
+    modalImage: require("./Assests/gibs_nails_logo_mockup.jpeg"),
   },
 ];
 
