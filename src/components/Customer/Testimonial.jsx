@@ -120,7 +120,7 @@ const Testimonial = () => {
       </div>
       <div>
         <button className="testimony-arrows" onClick={goToPrevious}>
-          {" "}
+         
           <i class="fa-solid fa-arrow-right-long fa-2xl"></i>
         </button>
       </div>

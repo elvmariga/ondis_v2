@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import pic from "../Portfolio/Assests/MacBook Air - 2.jpg";
-import card from "./Assests/card1.jpg";
 import banner from "./Assests/banner.jpg";
-import runempireLogo from "./Assests/card2.jpg"
-import runempireMockup from "./Assests/rubeempire.jpg";
 import limuruMockup from "./Assests/Limuruwebdesign.jpg";
 import limurudp from "./Assests//limurudp.jpg";
-import ema_banner from "./Assests/ema_banner.png";
-import ema_mockup from "./Assests/ema_mockup.png";
 import midland_banner from "./Assests/midlandBanner.png";
 import midland_mockup from "./Assests/midlandMOckUp.png";
 import kings_banner from "./Assests/kings_touch_logo_banner.jpg";
