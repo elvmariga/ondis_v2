@@ -1,0 +1,56 @@
+.pricing {
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}
+.pricing .plan {
+  font-weight: 400;
+  font-size: xx-large;
+}
+.pricing nav {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.pricing nav button:hover {
+  transform: scaleY(1.1);
+}
+.pricing .card_container {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 350px);
+}
+.pricing .card_container .card {
+  border: 1px solid #abbfe4;
+  max-width: 320px;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+.pricing .card_container .card .card_title {
+  color: #2068b0;
+}
+.pricing .card_container .card .card_description {
+  font-weight: 600;
+  font-size: x-large;
+  margin: 0;
+}
+.pricing .card_container .card .list {
+  text-align: left;
+  list-style-type: none;
+  padding: 2px;
+}
+.pricing .card_container .card .list .items {
+  display: flex;
+  gap: 4px;
+}
+.pricing .card_container .card .list .items i {
+  margin-top: 4px;
+  color: #e8303a;
+  padding-right: 4px;
+}
+.pricing .card_container .card .list li {
+  margin-bottom: 12px;
+}/*# sourceMappingURL=style.css.map */
