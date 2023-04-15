@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./style/style.css";
 import Expert from "../Expert/Expert";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 
 function CardGallery() {
   const [activeCategory, setActiveCategory] = useState("category1");
@@ -15,7 +16,7 @@ function CardGallery() {
           id: 1,
           title: "Standard Website",
           from: "Starting from",
-          description: "KES 25,000",
+          description: " 25,000",
           list: [
             "One to Four pages",
             "Custom Design and Development",
@@ -29,7 +30,7 @@ function CardGallery() {
           id: 2,
           title: "Business Website",
           from: "Starting from",
-          description: "KES 40,000",
+          description: " 40,000",
           list: [
             "One to Six Unique Pages Design",
             "Custom Design and Development",
@@ -46,7 +47,7 @@ function CardGallery() {
           id: 3,
           title: "Corporate Website",
           from: "Starting from",
-          description: "KES 60,000",
+          description: " 60,000",
           list: [
             "One to 20 Unique Pages Design",
             "Custom Design and Development",
@@ -67,7 +68,7 @@ function CardGallery() {
           id: 4,
           title: "E-commerce Website",
           from: "Starting from",
-          description: "KES 100, 000",
+          description: " 100, 000",
           list: [
             "Responsive Design (Optimized for Desktop, Mobile and Tablet)",
             "Custom website design and development",
@@ -94,50 +95,88 @@ function CardGallery() {
       cards: [
         {
           id: 5,
-          title: "Logo",
+          title: "Logo Design",
           from: "Starting from",
-          description: "KES 2,500",
+          description: " 2,500",
           list: [
-            " Number of design concepts 2",
-            "Number of revisions 2",
-            "Delivery time frame",
-            "Color options (e.g. black and white, full color, or both)",
+            " Number of design concepts: 1",
+            "Number of revisions: 2",
+            "Delivery time frame: 2 DAYS",
+            "Deliverables: PNG and PDF Logo formats",
           ],
         },
         {
           id: 6,
           title: "Business Cards",
           from: "Starting from",
-          description: "KES",
-                   list: [
-            " Number of design concepts 2",
-            "Number of revisions 2",
-            "Delivery time frame",
-            "Color options (e.g. black and white, full color, or both)",
+          description: "1,000",
+          list: [
+            " Number of design concepts: 1",
+            "Number of revisions: 2",
+            "Number of pages: 2",
+
+            "Delivery time frame: 1 DAY",
           ],
         },
         {
           id: 7,
           title: "Bronchues",
           from: "Starting from",
-          description: "KES",
-                   list: [
-            " Number of design concepts 2",
-            "Number of revisions 2",
-            "Delivery time frame",
-            "Color options (e.g. black and white, full color, or both)",
+          description: "1,000",
+          list: [
+            " Number of design concepts: 1",
+            "Number of revisions: 2",
+            "Deliverables: High quality printable card",
+            "Size of brochure: A4",
+            "High-resolution print-ready files",
+            "Design consultation",
+            "Delivery time frame: 3 days",
           ],
         },
         {
           id: 8,
-          title: "Card 2B",
+          title: "Banners & Roll-Up Banners",
           from: "Starting from",
-          description: "KES",
-                   list: [
-            " Number of design concepts 2",
-            "Number of revisions 2",
-            "Delivery time frame",
-            "Color options (e.g. black and white, full color, or both)",
+          description: "1,000",
+          list: [
+            " Number of design concepts: 1",
+            "Number of revisions: 2",
+            "Delivery time frame: 2 DAYS",
+            "Banner size options: 3x5 FEET,",
+            "High-resolution printing for crisp and clear images",
+            "Roll-up banner options for easy transportation and storage",
+            "Customizable designs with company branding, logos, and colors",
+            "Optional installation services for on-site setup",
+          ],
+        },
+        {
+          id: 9,
+          title: "Fliers",
+          from: "Starting from",
+          description: "1,000",
+          list: [
+            " Number of design concepts: 1",
+            "Number of revisions: 2",
+            "Delivery time frame: 2 DAYS",
+            "Size options  8.5x11 ",
+            "Single or double-sided design",
+            "Customizable colors and fonts",
+            "Print-ready or digital-only delivery options",
+            "Different file formats provided (PDF, JPG, PNG)",
+          ],
+        },
+        {
+          id: 10,
+          title: "Posters",
+          from: "Starting from",
+          description: "1,000",
+          list: [
+            " Number of design concepts: 1",
+            "Number of revisions: 2",
+            "Delivery time frame: 2 DAYS",
+            "Poster size: dimensions and resolution (e.g 18x24 inches at 300 dpi)",
+            "Orientation: landscape, portrait, or square",
+            "Delivery format: digital file, printed poster, or both",
           ],
         },
       ],
@@ -147,55 +186,104 @@ function CardGallery() {
       name: "Social Media Management",
       cards: [
         {
-          id: 9,
-          title: "Card 3A",
-          from: "Starting from",
-          description: "KES",
-          list: ["Item 1A", "Item 2A", "Item 3A"],
-        },
-        {
-          id: 10,
-          title: "Card 3B",
-          from: "Starting from",
-          description: "KES",
-          list: ["Item 1B", "Item 2B", "Item 3B"],
-        },
-        {
           id: 11,
-          title: "Card 2B",
+          title: "WhatsApp Business Management",
           from: "Starting from",
-          description: "KES",
-          list: ["Item 1B", "Item 2B", "Item 3B"],
+          description: "5,000",
+          list: [
+            "Business profile",
+            "Automated Messages",
+            "Labels",
+            "Catalog",
+            "Quick Replies",
+            "WhatsApp Web",
+          ],
         },
         {
           id: 12,
-          title: "Card 2B",
+          title: "LinkedIn  Business Management",
           from: "Starting from",
-          description: "KES",
-          list: ["Item 1B", "Item 2B", "Item 3B"],
+          description: "5,000",
+          list: [
+            "Company Page",
+            "Content Creation",
+            "Analytics",
+            "Sponsored Content",
+            "Lead Generation Forms",
+            "Sales Navigator",
+          ],
         },
-      ],
-    },
-    {
-      id: "category4",
-      name: "Printing and Branding",
-      cards: [
         {
           id: 13,
-          title: "Card 4A",
+          title: "Facebook Business Management",
           from: "Starting from",
-          description: "KES",
-          list: ["Item 1A", "Item 2A", "Item 3A"],
+          description: "5,000",
+          list: [
+            "Business Profile",
+            "Content creation",
+            "Posting and scheduling",
+            "Community management",
+            "Analytics and reporting",
+            "Advertising",
+            "Strategy development",
+            "Influencer marketing",
+            "A/B testing",
+          ],
         },
         {
           id: 14,
-          title: "Card 4B",
+          title: "Twitter Business Management",
           from: "Starting from",
-          description: "KES",
-          list: ["Item 1B", "Item 2B", "Item 3B"],
+          description: "5,000",
+          list: [
+            "Instagram Business Profile",
+            "Twitter Ads",
+            "Twitter Cards",
+            "TweetDeck",
+            "Direct messaging",
+            "Customer support features",
+            "Hashtags",
+            "Twitter Lists",
+          ],
+        },
+        {
+          id: 15,
+          title: "Instagram Business Management",
+          from: "Starting from",
+          description: "5,000",
+          list: [
+            "Instagram Business Profile",
+            "Instagram Insights",
+            "Instagram Ads",
+            "Instagram Shopping",
+            "Instagram Stories",
+            "Instagram Live",
+            "Instagram Reels",
+            "Instagram Guides",
+          ],
         },
       ],
     },
+    // {
+    //   id: "category4",
+    //   name: "Printing and Branding",
+    //   cards: [
+    //     {
+    //       id: 14,
+    //       title: "Card 4A",
+    //       from: "Starting from",
+    //       description: "",
+    //       list: ["Item 1A", "Item 2A", "Item 3A"],
+    //     },
+    //     {
+    //       id: 15,
+    //       title: "Card 4B",
+    //       from: "Starting from",
+    //       description: "",
+    //       list: ["Item 1B", "Item 2B", "Item 3B"],
+    //     },
+    //   ],
+    // },
   ];
 
   const activeCategoryObject = categories.find(
@@ -214,12 +302,12 @@ function CardGallery() {
             style={{
               fontWeight: category.id === activeCategory ? "bold" : "normal",
               backgroundColor:
-                category.id === activeCategory ? "#e8303a" : "transparent",
+                category.id === activeCategory ? "#e8303a" : "#FFFFFF",
               color: "#00000",
               color: category.id === activeCategory ? "#FFFFFF" : "#000000",
               border: "1px solid #e8303a",
               borderRadius: "4px",
-              padding: ".5rem 0.3rem",
+              padding: "8px 16px",
               marginRight: " 0.5rem",
             }}
           >
@@ -235,7 +323,9 @@ function CardGallery() {
           <div className="card" key={card.id}>
             <h4 className="card_title">{card.title}</h4>
             <p className="start">{card.from}</p>
-            <p className="card_description">{card.description}</p>
+            <p className="card_description">
+              <span className="kes">KES</span> {card.description}
+            </p>
             {card.list && (
               <ul className="list">
                 {card.list.map((item) => (
@@ -253,10 +343,23 @@ function CardGallery() {
       </div>
       <p>
         <strong>Can&#x27;t decide?</strong> Don&#x27;t hesitate to
-        <span style={{ paddingLeft: "8px" }}>
-          <Link to="/contact">Contact us</Link>
+        <span
+          style={{
+            padding: "4px 8px",
+            color: "#e8303a",
+            border: "2px solid #e8303a",
+            borderRadius: "4px",
+            margin: "8px",
+          }}
+        >
+          <Link
+            to="/contact"
+            style={{ color: "#e8303a", textDecoration: "none", fontWeight:"600" }}
+          >
+            Contact us
+          </Link>
         </span>
-        !
+        
       </p>
     </div>
   );

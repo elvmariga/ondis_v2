@@ -22,7 +22,7 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      image: Dp,
+      image: Dp2,
       rate: Star,
       quote:
         "Digital marketing services provided by OndisHub has been a game-changer for our business. Their strategic approach has helped us significantly increase our online presence and reach our target audience more effectively.  ",

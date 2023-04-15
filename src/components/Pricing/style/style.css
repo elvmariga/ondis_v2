@@ -42,6 +42,10 @@
   font-size: x-large;
   margin: 0;
 }
+.pricing .card_container .card .card_description .kes {
+  font-weight: 400;
+  font-size: small;
+}
 .pricing .card_container .card .list {
   text-align: left;
   list-style-type: none;

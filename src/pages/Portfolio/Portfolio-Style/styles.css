@@ -63,7 +63,7 @@
 }
 .portfolio main .card .bannerImg {
   transition: transform 0.2s;
-  border-bottom: 1px solid #e9b7ba;
+  border-bottom: 1px solid #fef2f3;
 }
 .portfolio main .card .bannerImg:hover {
   transform: scale(1.2, 1.1);
