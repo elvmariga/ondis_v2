@@ -39,7 +39,7 @@ export const Navbar = () => {
                 About
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 smooth="true"
                 spy="true"
@@ -48,7 +48,7 @@ export const Navbar = () => {
               >
                 Contact
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 smooth="true"

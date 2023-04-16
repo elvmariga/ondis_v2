@@ -6,6 +6,9 @@
   /* Large devices (laptops/desktops, 992px and up) */
   /* Extra large devices (large laptops and desktops, 1200px and up) */
 }
+.aboutpage .fa-2xl {
+  color: #e8303a;
+}
 .aboutpage .top img {
   width: 100%;
   height: auto;

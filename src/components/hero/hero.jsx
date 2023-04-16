@@ -16,7 +16,7 @@ const Hero = () => (
           <div>
             <h1>Unlock the Potential of Your Digital World With Our:</h1>
             <Typed
-              strings={["Website", "Graphics Design", "Social Media Branding"]}
+              strings={["Website", "Graphics Design", "Social Media Management", "Printing and Branding"]}
               typeSpeed={80}
               backSpeed={50}
               loop

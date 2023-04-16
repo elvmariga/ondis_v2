@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import banner from "./Assests/banner.jpg";
-import limuruMockup from "./Assests/Limuruwebdesign.jpg";
-import limurudp from "./Assests//limurudp.jpg";
-import midland_banner from "./Assests/midlandBanner.png";
-import midland_mockup from "./Assests/midlandMOckUp.png";
-import kings_banner from "./Assests/kings_touch_logo_banner.jpg";
-import kings_mockup from "./Assests/kings_touch_logo_mockup.jpg";
-import epoch_banner from "./Assests/epoch_poster_banner.jpg";
-import epoch_mockup from "./Assests/epoch_poster_mockup.jpg";
+
 
 import "./Portfolio-Style/styles.css";
 import { Fade } from "react-reveal";

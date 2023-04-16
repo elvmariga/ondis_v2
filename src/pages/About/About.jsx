@@ -79,29 +79,38 @@ const About = () => {
                     <Fade bottom cascade>
                       <div className="icon-details">
                         <div>
-                          <img src={webDev} className="icon" alt="" />
+                          <i class="fa-solid fa-code fa-2xl"></i>
                         </div>
                         <div className="icon-content">
-                          <p>Web Development</p>
+                          <p>Website Design and Development</p>
                         </div>
                       </div>
                     </Fade>
 
                     <div className="icon-details">
                       <div>
-                        <img src={graphic} className="icon" alt="" />
+                        <i class="fa-solid fa-bezier-curve fa-2xl"></i>
                       </div>
                       <div className="icon-content">
-                        <p>Graphic Designing</p>
+                        <p>Graphic Design</p>
                       </div>
                     </div>
                     <div className="icon-details">
                       <div>
-                        <img src={social} className="icon" alt="" />
+                        <i class="fa-solid fa-share-nodes fa-2xl"></i>
                       </div>
 
                       <div className="icon-content">
-                        <p>Social Media Branding</p>
+                        <p>Social Media Management</p>
+                      </div>
+                    </div>
+                    <div className="icon-details">
+                      <div>
+                        <i class="fa-solid fa-shirt fa-2xl"></i>
+                      </div>
+
+                      <div className="icon-content">
+                        <p>Printing and Branding</p>
                       </div>
                     </div>
                   </div>
@@ -141,7 +150,7 @@ const About = () => {
                   <div className="icons">
                     <div className="icon-details">
                       <div>
-                        <img src={customer} className="icon" alt="" />
+                        <i class="fa-solid fa-lightbulb fa-2xl"></i>
                       </div>
                       <div className="icon-content">
                         <p>Custom Tailored</p>
@@ -150,7 +159,7 @@ const About = () => {
 
                     <div className="icon-details">
                       <div>
-                        <img src={team} className="icon" alt="" />
+                        <i class="fa-solid fa-people-group fa-2xl"></i>
                       </div>
                       <div className="icon-content">
                         <p>Creative Team</p>
@@ -158,7 +167,7 @@ const About = () => {
                     </div>
                     <div className="icon-details">
                       <div>
-                        <img src={credibility} className="icon" alt="" />
+                        <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
                       </div>
 
                       <div className="icon-content">
@@ -203,7 +212,7 @@ const About = () => {
                   <div className="icons">
                     <div className="icon-details">
                       <div>
-                        <img src={support} className="icon" alt="" />
+                        <i class="fa-solid fa-headset fa-2xl"></i>
                       </div>
                       <div className="icon-content">
                         <p>24/7 Customer Support</p>
@@ -212,7 +221,7 @@ const About = () => {
 
                     <div className="icon-details">
                       <div>
-                        <img src={best} className="icon" alt="" />
+                        <i class="fa-solid fa-award fa-2xl"></i>
                       </div>
                       <div className="icon-content">
                         <p>Creative Tailored Design</p>
@@ -220,7 +229,7 @@ const About = () => {
                     </div>
                     <div className="icon-details">
                       <div>
-                        <img src={price} className="icon" alt="" />
+                        <i class="fa-solid fa-magnifying-glass-dollar fa-2xl"></i>
                       </div>
 
                       <div className="icon-content">
@@ -233,9 +242,7 @@ const About = () => {
             </div>
           </div>
         </div>
-
       </div>
-     
     </div>
   );
 };

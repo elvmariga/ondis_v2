@@ -18,12 +18,16 @@ function CardGallery() {
           from: "Starting from",
           description: " 25,000",
           list: [
-            "One to Four pages",
+            "1 - 5 pages",
             "Custom Design and Development",
-            "Basic Contact/Inquiry Form",
             "Site Upload & Setup of domain emails",
+            "Interactive Maps and Location Information",
+            "Social Media Intergration",
+            "Basic Contact/Inquiry Form",
+
             "Search Engine Optimization (SEO)",
-            "2 months free support after delivery",
+            "Speed Optimization",
+            "1 month free support after delivery",
           ],
         },
         {
@@ -32,7 +36,7 @@ function CardGallery() {
           from: "Starting from",
           description: " 40,000",
           list: [
-            "One to Six Unique Pages Design",
+            "5 - 10 Unique Pages Design",
             "Custom Design and Development",
             "Basic Contact/Inquiry Form",
             "Site Upload & Setup of domain emails",
@@ -49,7 +53,7 @@ function CardGallery() {
           from: "Starting from",
           description: " 60,000",
           list: [
-            "One to 20 Unique Pages Design",
+            "10 - 20 Unique Pages Design",
             "Custom Design and Development",
             "Corporate Branding and Identity",
             "Basic Contact/Inquiry Form",
@@ -101,7 +105,7 @@ function CardGallery() {
           list: [
             " Number of design concepts: 1",
             "Number of revisions: 2",
-            "Delivery time frame: 2 DAYS",
+            "Delivery time frame: 1 DAY",
             "Deliverables: PNG and PDF Logo formats",
           ],
         },
@@ -109,24 +113,24 @@ function CardGallery() {
           id: 6,
           title: "Business Cards",
           from: "Starting from",
-          description: "1,000",
+          description: "500",
           list: [
             " Number of design concepts: 1",
             "Number of revisions: 2",
-            "Number of pages: 2",
-
+            // "Number of pages: 2",
+            "Deliverables: Single-sided print-ready card",
             "Delivery time frame: 1 DAY",
           ],
         },
         {
           id: 7,
-          title: "Bronchues",
+          title: "Brochures",
           from: "Starting from",
-          description: "1,000",
+          description: "2,000",
           list: [
             " Number of design concepts: 1",
             "Number of revisions: 2",
-            "Deliverables: High quality printable card",
+            "Deliverables: High quality, 2-Fold printable design",
             "Size of brochure: A4",
             "High-resolution print-ready files",
             "Design consultation",
@@ -137,13 +141,13 @@ function CardGallery() {
           id: 8,
           title: "Banners & Roll-Up Banners",
           from: "Starting from",
-          description: "1,000",
+          description: "1,500",
           list: [
             " Number of design concepts: 1",
             "Number of revisions: 2",
-            "Delivery time frame: 2 DAYS",
-            "Banner size options: 3x5 FEET,",
-            "High-resolution printing for crisp and clear images",
+            "Delivery time frame: 1 DAY",
+            "Banner size options: 1x1 Meters,",
+            "Deliverables: High-resolution printing with crisp and clear images",
             "Roll-up banner options for easy transportation and storage",
             "Customizable designs with company branding, logos, and colors",
             "Optional installation services for on-site setup",
@@ -157,12 +161,12 @@ function CardGallery() {
           list: [
             " Number of design concepts: 1",
             "Number of revisions: 2",
-            "Delivery time frame: 2 DAYS",
-            "Size options  8.5x11 ",
+            "Delivery time frame: 1 DAY",
+            // "Size options  8.5x11 ",
             "Single or double-sided design",
             "Customizable colors and fonts",
-            "Print-ready or digital-only delivery options",
-            "Different file formats provided (PDF, JPG, PNG)",
+            "Deliverables: High-resolution Printable or digital ready  design",
+            // "Different file formats provided (PDF, JPG, PNG)",
           ],
         },
         {
@@ -173,10 +177,10 @@ function CardGallery() {
           list: [
             " Number of design concepts: 1",
             "Number of revisions: 2",
-            "Delivery time frame: 2 DAYS",
+            "Delivery time frame: 1 DAY",
             "Poster size: dimensions and resolution (e.g 18x24 inches at 300 dpi)",
             "Orientation: landscape, portrait, or square",
-            "Delivery format: digital file, printed poster, or both",
+            "Deliverables: digital file, printed poster, or both",
           ],
         },
       ],
@@ -354,12 +358,15 @@ function CardGallery() {
         >
           <Link
             to="/contact"
-            style={{ color: "#e8303a", textDecoration: "none", fontWeight:"600" }}
+            style={{
+              color: "#e8303a",
+              textDecoration: "none",
+              fontWeight: "600",
+            }}
           >
             Contact us
           </Link>
         </span>
-        
       </p>
     </div>
   );
