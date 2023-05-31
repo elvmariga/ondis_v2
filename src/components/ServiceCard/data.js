@@ -231,6 +231,15 @@ const cardData = [
         details:
           "Upgrade your Instagram presence and stand out from the crowd with our optimization services! Get the most out of your Instagram Business Account and start achieving the success you deserve.",
       },
+      {
+        id: 6,
+        icon: svg,
+        category: "socialMedia",
+        service: "TikTok",
+        details:
+          "Take your TikTok business to the next level with our optimization services.",
+      },
+     
     ],
     techStack: [
       {
