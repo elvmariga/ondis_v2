@@ -27,7 +27,7 @@ const Footer = (card) => {
           </div>
 
           <div>
-            <a href="tel:+254719311036">
+            <a href="tel:+254700526125">
               <i class="fa-solid fa-phone"></i> +254 719 311 036
             </a>
           </div>

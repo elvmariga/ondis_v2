@@ -62,7 +62,7 @@ const Contact = () => {
           <div className="contact-top">
             <h1>Feel free to contact us</h1>
             <p>
-              <a href="tel:+254719311036">+254 719 311 036</a>
+              <a href="tel:+254700526125">+254 719 311 036</a>
             </p>
             <p>
               <a href="mailto:ondishub@gmail.com">ondishub@gmail</a>
@@ -75,7 +75,7 @@ const Contact = () => {
               </a>
             </p>
             <p>
-              <a href="tel:+254719311036">
+              <a href="tel:+254700526125">
                 <img src={Phone} alt="" />
               </a>
             </p>

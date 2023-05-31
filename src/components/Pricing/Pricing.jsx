@@ -18,7 +18,7 @@ function CardGallery() {
           from: "Starting from",
           description: " 25,000",
           list: [
-            "1 - 5 pages",
+            "1 - 5 Unique Pages Design",
             "Custom Design and Development",
             "Site Upload & Setup of domain emails",
             "Interactive Maps and Location Information",
