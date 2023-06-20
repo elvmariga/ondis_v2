@@ -32,7 +32,7 @@ const projectData = [
     project: "Websites Design",
     cardImage: require("./Assests/Limuru_logo_banner.jpg"),
     modalImage: require("./Assests/limurudp.jpg"),
-    url: "https://limuru-cheshire-webapp-frontend.vercel.app/about",
+    url: "https://limuru-cheshire-webapp-frontend.vercel.app",
   },
   {
     id: 4,
@@ -48,7 +48,8 @@ const projectData = [
     category: "Websites",
     project: "Web Development",
     cardImage: require("./Assests/midland_banner.jpg"),
-    modalImage: require("./Assests/selling_online_mockup.jpg"),
+    modalImage: require("./Assests/midlandMOckUp.png"),
+    url:"https://midlandschool.co.ke/"
   },
   {
     id: 6,
@@ -146,6 +147,14 @@ const projectData = [
     cardImage: require("./Assests/gibz_logo_banner.jpg"),
     modalImage: require("./Assests/gibs_nails_logo_mockup.jpeg"),
   },
+  // {
+  //   id: 15,
+  //   title: "BillHill CampSite",
+  //   category: "Web Development",
+  //   project: "Web  Design",
+  //   cardImage: require("./Assests/gibz_logo_banner.jpg"),
+  //   modalImage: require("./Assests/gibs_nails_logo_mockup.jpeg"),
+  // },
 ];
 
 const Portfolio = () => {
